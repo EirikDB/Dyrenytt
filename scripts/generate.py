@@ -93,7 +93,16 @@ To programledere: Kari (lysere stemme) og Tom (dypere stemme). Målgruppen høre
 Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
 Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter.
 Start med en kort intro med dagens dato, avslutt med en vennlig outro. Vær konkret og praktisk, gi gjerne råd til kjæledyreiere.
-Unngå engelske ord der det finnes norske. Ikke bruk overskrifter, emojier eller punktlister.
+
+VIKTIG – teksten leses opp av en norsk talesyntese (Piper), som uttaler engelsk og forkortelser feil. Skriv derfor talesyntese-vennlig:
+- Unngå engelske ord der det finnes norske.
+- Skriv alle tall og årstall med bokstaver (f.eks. «2026» → «to tusen og tjueseks», «15 %» → «femten prosent», «kl. 07» → «klokka sju»).
+- Egennavn, engelske ord og forkortelser som kan uttales feil, skriver du lydnært med norsk rettskriving. Eksempler: «Adequan» → «Adekvan», «Long Island» → «Long Æiland», «USA» → «U-ess-A», «WHO» → «Vé-Há-O», «zoonose» → «soonoose». Bruk skjønn på nye ord etter samme mønster.
+- Skriv forkortelser helt ut (f.eks. «bl.a.» → «blant annet», «f.eks.» → «for eksempel»).
+- Ikke bruk kolon, semikolon, parenteser, tankestrek eller spesialtegn. Bruk kun vanlige punktum, komma, spørsmålstegn og utropstegn.
+- Del opp lange setninger i kortere, så tonefallet flyter naturlig.
+
+Ikke bruk overskrifter, emojier eller punktlister.
 Returner KUN gyldig JSON: en liste av objekter {"speaker","text"}, der speaker er "K" eller "T".
 Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
 
@@ -168,9 +177,16 @@ def build_script_template(dato_str, animal, general):
     return D
 
 # ---------------------------------------------------------------- lyd
+# Sikkerhetsnett for ord som talesyntesen ofte bommer på. Sonnet skriver
+# stort sett talesyntese-vennlig selv, men dette fanger opp resten (og hjelper
+# mal-manuset som leser rå nyhetstekst). Utvid gjerne med egne ord.
 REPLACE = {
     "Adequan":"Adekvan","American Regent":"Amerikan Rídsjent","Long Island":"Long Æiland",
-    "USA":"U-ess-A","zoonose":"soonoose","API":"Á-Pí-Í","RSS":"ærr-ess-ess",
+    "zoonose":"soonoose","zoonoser":"soonooser",
+    "USA":"U-ess-A","EU":"E-U","FN":"Ef-En","WHO":"Vé-Há-O","NATO":"Nato",
+    "NRK":"En-Err-Kå","NTNU":"En-Te-En-U","NKK":"En-Kå-Kå",
+    "API":"Á-Pí-Í","RSS":"ærr-ess-ess","HPAI":"H-P-A-I","DNA":"De-En-A",
+    "e.coli":"e-koli","E.coli":"e-koli",
 }
 def preprocess(text):
     for a,b in REPLACE.items():
@@ -319,18 +335,23 @@ def main():
     size = os.path.getsize(mp3_path)
     print(f"MP3: {fname} – {dur}s, {size} bytes.")
 
-    url = f"https://github.com/{REPO}/releases/download/{RELEASE_TAG}/{fname}"
-    desc = "Dagens dyrehelse- og kjæledyrnyheter: " + "; ".join(i["title"] for i in animal[:4])
+    publish = os.environ.get("PUBLISH", "1") == "1"
 
-    eps = [e for e in load_state() if e["file"] != fname]  # unngå duplikat samme dag
-    eps.insert(0, {"date":date_id,"file":fname,"url":url,"title":title,
-                   "desc":desc,"duration":dur,"size":size,
-                   "pubdate":format_datetime(now)})
-    eps = eps[:KEEP]
-    save_state(eps)
-    build_feed(eps)
+    if publish:
+        url = f"https://github.com/{REPO}/releases/download/{RELEASE_TAG}/{fname}"
+        desc = "Dagens dyrehelse- og kjæledyrnyheter: " + "; ".join(i["title"] for i in animal[:4])
+        eps = [e for e in load_state() if e["file"] != fname]  # unngå duplikat samme dag
+        eps.insert(0, {"date":date_id,"file":fname,"url":url,"title":title,
+                       "desc":desc,"duration":dur,"size":size,
+                       "pubdate":format_datetime(now)})
+        eps = eps[:KEEP]
+        save_state(eps)
+        build_feed(eps)
+        print("Publisert til feed.")
+    else:
+        print("TESTMODUS – feeden er IKKE endret. Last ned lydfila fra kjøringens artefakter for å lytte.")
 
-    # fortell workflow hvilken fil som skal lastes opp
+    # fortell workflow hvilken fil som ble laget
     gh_out = os.environ.get("GITHUB_OUTPUT")
     if gh_out:
         with open(gh_out,"a") as f:
