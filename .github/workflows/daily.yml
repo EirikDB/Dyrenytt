@@ -77,10 +77,15 @@ jobs:
           # Manus (tekst): Sonnet skriver dialogen ut fra dagens nyheter.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: claude-sonnet-5
-          # Stemme (lyd): finnes GEMINI_API_KEY, brukes Gemini TTS (to ekte stemmer).
-          # Uten den faller den tilbake til den gratis Piper-stemmen.
+          # Stemme (lyd) – prioritetsrekkefølge:
+          #   1) GOOGLE_TTS_API_KEY  -> Google Cloud TTS, faste/deterministiske norske stemmer (anbefalt).
+          #   2) GEMINI_API_KEY      -> Gemini TTS (generativ; stemmene kan variere litt).
+          #   3) ingen               -> gratis Piper-stemme.
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          # (valgfritt) bytt stemmer: GOOGLE_VOICE_KARI / GOOGLE_VOICE_TOM
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: gemini-2.5-flash-preview-tts
+          GEMINI_MAX_CHARS: "4000"
         run: python scripts/generate.py
 
       # ---- Testmodus: legg lydfila som nedlastbar artefakt, ikke i feeden ----
