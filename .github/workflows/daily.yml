@@ -1,12 +1,21 @@
 name: Dyrenytt daglig episode
 
-# Kjører hverdager kl. 03:30 UTC = 05:30 norsk sommertid (04:30 vintertid).
-# Endre tidspunktet her; cron er alltid i UTC. Du kan også trykke "Run workflow"
-# manuelt fra Actions-fanen for å teste.
+# Planlagt: hver dag kl. 05:00 UTC = 07:00 norsk sommertid (06:00 vintertid).
+# Cron er ALLTID i UTC og følger ikke sommertid/vintertid. Vil du treffe 07:00
+# hele året, sett "0 6 * * *" etter at vintertiden starter i slutten av oktober.
+#
+# Manuell kjøring (Actions -> Run workflow) er som standard en TESTKJØRING:
+# den lager en lydfil du kan laste ned under kjøringen, men rører IKKE feeden
+# eller Spotify. Vil du publisere en manuell kjøring, sett "publish" til true.
 on:
   schedule:
-    - cron: "30 3 * * 1-5"
+    - cron: "0 5 * * *"
   workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publiser til feed/Spotify? (false = bare testfil å lytte på)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,6 +30,17 @@ jobs:
     steps:
       - name: Sjekk ut repo
         uses: actions/checkout@v4
+
+      - name: Avgjør modus (publisere eller teste)
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.publish }}" = "true" ]; then
+            echo "publish=1" >> "$GITHUB_OUTPUT"
+            echo "Modus: PUBLISER"
+          else
+            echo "publish=0" >> "$GITHUB_OUTPUT"
+            echo "Modus: TEST (ingen publisering)"
+          fi
 
       - name: Sett opp Python
         uses: actions/setup-python@v5
@@ -52,13 +72,25 @@ jobs:
           SITE_BASE: ${{ steps.site.outputs.base }}
           RELEASE_TAG: episodes
           KEEP_EPISODES: "30"
+          PUBLISH: ${{ steps.mode.outputs.publish }}
           FEED_EMAIL: ${{ secrets.FEED_EMAIL }}
-          # Valgfri: sett ANTHROPIC_API_KEY som repo-secret for LLM-generert manus.
+          # Sett ANTHROPIC_API_KEY som repo-secret for LLM-generert manus.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ANTHROPIC_MODEL: claude-sonnet-5claude-sonnet-5
+          ANTHROPIC_MODEL: claude-sonnet-5
         run: python scripts/generate.py
 
+      # ---- Testmodus: legg lydfila som nedlastbar artefakt, ikke i feeden ----
+      - name: Last opp testfil (kun testmodus)
+        if: steps.mode.outputs.publish != '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dyrenytt-testepisode
+          path: ${{ steps.gen.outputs.mp3_path }}
+          retention-days: 7
+
+      # ---- Publiseringsmodus: legg ut lyd + oppdater feed ----
       - name: Sørg for at release finnes
+        if: steps.mode.outputs.publish == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -66,11 +98,13 @@ jobs:
             gh release create episodes --title "Episoder" --notes "Lydfiler for Dyrenytt" --latest=false
 
       - name: Last opp lydfil til release
+        if: steps.mode.outputs.publish == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release upload episodes "${{ steps.gen.outputs.mp3_path }}" --clobber
 
       - name: Rydd bort gamle lydfiler
+        if: steps.mode.outputs.publish == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -83,6 +117,7 @@ jobs:
           done
 
       - name: Publiser feed til Pages (commit docs/)
+        if: steps.mode.outputs.publish == '1'
         run: |
           git config user.name "dyrenytt-bot"
           git config user.email "dyrenytt-bot@users.noreply.github.com"
