@@ -329,8 +329,8 @@ GEMINI_STYLE = os.environ.get("GEMINI_STYLE",
     "Les dette som to varme, tydelige norske programledere i en morgenpodkast, med naturlig tempo og tonefall.")
 GEMINI_SR = 24000
 
-def _gemini_tts(convo_text):
-    import urllib.request, base64
+def _gemini_tts(convo_text, timeout=300, attempts=3):
+    import urllib.request, urllib.error, base64, time
     key = os.environ["GEMINI_API_KEY"]
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     body = json.dumps({
@@ -343,14 +343,26 @@ def _gemini_tts(convo_text):
             ]}},
         },
     }).encode()
-    req = urllib.request.Request(url, data=body, method="POST",
-        headers={"content-type":"application/json","x-goog-api-key":key})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        resp = json.load(r)
-    b64 = resp["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
-    return base64.b64decode(b64)
+    last = None
+    for a in range(attempts):
+        try:
+            req = urllib.request.Request(url, data=body, method="POST",
+                headers={"content-type":"application/json","x-goog-api-key":key})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                resp = json.load(r)
+            return base64.b64decode(resp["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "ignore")[:400]
+            last = f"HTTP {e.code}: {detail}"
+            if e.code in (400, 401, 403, 404):  # klientfeil – nytter ikke å prøve igjen
+                break
+        except Exception as e:
+            last = f"{type(e).__name__}: {e}"
+        if a < attempts - 1:
+            time.sleep(4 * (a + 1))
+    raise RuntimeError(last or "ukjent Gemini-feil")
 
-def _chunk_dialog(dialog, max_chars=1400):
+def _chunk_dialog(dialog, max_chars=700):
     """Grupper replikker i biter så ingen enkelt TTS-forespørsel blir for lang."""
     chunks, cur, n = [], [], 0
     for spk, text in dialog:
@@ -366,8 +378,9 @@ def _chunk_dialog(dialog, max_chars=1400):
 def build_audio_gemini(dialog, mp3_path, title):
     header = GEMINI_STYLE + "\nTTS the following conversation between Kari and Tom:\n"
     pcm = bytearray()
-    silence = b"\x00\x00" * int(GEMINI_SR * 0.35)
+    silence = b"\x00\x00" * int(GEMINI_SR * 0.28)
     chunks = _chunk_dialog(dialog)
+    print(f"  Gemini: {len(chunks)} biter å syntetisere...")
     for i, chunk in enumerate(chunks):
         data = _gemini_tts(header + "\n".join(chunk))
         if pcm: pcm += silence
