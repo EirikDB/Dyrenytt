@@ -107,7 +107,7 @@ def build_script_llm(dato_str, animal, general):
             f"GENERELLE NYHETER (bruk 1–2 kort til slutt):\n{fmt(general)}\n\n"
             "Skriv episoden nå som JSON.")
     body = json.dumps({
-        "model": model, "max_tokens": 4000,
+        "model": model, "max_tokens": 8000,
         "system": SYSTEM_PROMPT,
         "messages": [{"role":"user","content":user}],
     }).encode()
