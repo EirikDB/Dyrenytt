@@ -190,7 +190,7 @@ To programledere: Kari (lysere stemme) og Tom (dypere stemme). Målgruppen høre
 Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
 Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
 PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
-Start med en kort intro med dagens dato, avslutt med en vennlig outro. Vær konkret og praktisk, gi gjerne råd til kjæledyreiere.
+Start med en kort intro med dagens dato, avslutt med en kort, vennlig outro. Hold en journalistisk NYHETSTONE: rapporter hva som har skjedd, hvem det gjelder, når og hvorfor det er relevant. Vær saklig og nøytral, som to nyhetsverter som diskuterer dagens saker. UNNGÅ moralisering, formaninger og lister med gode råd – dette er en nyhetspodkast, ikke en rådgivningsspalte. En kort faktaforklaring når noe er teknisk er fint, men la lytteren trekke egne slutninger.
 
 VIKTIG – teksten leses opp av en norsk talesyntese (Piper), som uttaler engelsk og forkortelser feil. Skriv derfor talesyntese-vennlig:
 - Unngå engelske ord der det finnes norske.
@@ -210,7 +210,7 @@ To programledere: Kari og Tom. Målgruppen hører på mens de løper eller pendl
 Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
 Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
 PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
-Start med en kort intro med dagens dato, avslutt med en vennlig outro. Vær konkret og praktisk, gi gjerne råd til kjæledyreiere.
+Start med en kort intro med dagens dato, avslutt med en kort, vennlig outro. Hold en journalistisk NYHETSTONE: rapporter hva som har skjedd, hvem det gjelder, når og hvorfor det er relevant. Vær saklig og nøytral, som to nyhetsverter som diskuterer dagens saker. UNNGÅ moralisering, formaninger og lister med gode råd – dette er en nyhetspodkast, ikke en rådgivningsspalte. En kort faktaforklaring når noe er teknisk er fint, men la lytteren trekke egne slutninger.
 Skriv helt naturlig norsk – du trenger IKKE lydskrive ord eller unngå tall og forkortelser, stemmen uttaler dette riktig.
 Ikke bruk overskrifter, emojier eller punktlister.
 Returner KUN gyldig JSON: en liste av objekter {"speaker","text"}, der speaker er "K" eller "T".
@@ -277,18 +277,13 @@ def build_script_template(dato_str, animal, general, weather=None):
         summ = it.get("summary") or ""
         D.append(("SEG_"+s, f"{lead} {it['title']}." + (f" {summ}" if summ else "")))
         D.append((other, rnd.choice(REACTS) + " Da går vi videre."))
-    # roterende dagens tips
-    D.append(("SEG_K", "Før vi runder av dyredelen, tar vi dagens lille tips."))
-    D.append(("T", TIPS[seed % len(TIPS)]))
-    D.append(("K", "Et godt og lavterskel råd."))
     if general:
         D.append(("SEG_K", "Og helt til slutt, litt fra nyhetsbildet ellers, for det skjer jo mer i verden enn bare dyr."))
         for it in general[:2]:
             summ = it.get("summary") or ""
             D.append(("T", f"{it['title']}." + (f" {summ}" if summ else "")))
     if weather:
-        D.append(("SEG_K", f"Og været i Oslo i dag: {weather}."))
-        D.append(("T", "Kle deg etter forholdene."))
+        D.append(("SEG_K", f"Og til slutt været i Oslo i dag: {weather}."))
     D.append(("SEG_K", f"Og det var Dyrenytt for i dag, {dato_str}. Takk for at du løp, eller gikk, sammen med oss."))
     D.append(("T", "Ha en riktig fin dag, så høres vi igjen i morgen tidlig."))
     return D
