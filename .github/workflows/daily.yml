@@ -55,7 +55,7 @@ jobs:
           FEED_EMAIL: ${{ secrets.FEED_EMAIL }}
           # Valgfri: sett ANTHROPIC_API_KEY som repo-secret for LLM-generert manus.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ANTHROPIC_MODEL: claude-3-5-haiku-latest
+          ANTHROPIC_MODEL: claude-sonnet-5claude-sonnet-5
         run: python scripts/generate.py
 
       - name: Sørg for at release finnes
