@@ -434,16 +434,19 @@ GEMINI_STYLE = os.environ.get("GEMINI_STYLE",
     "Les dette som to varme, tydelige norske programledere i en morgenpodkast, med naturlig tempo og tonefall.")
 GEMINI_SR = 24000
 
-def _gemini_tts_single(text, voice, timeout=300, attempts=3):
-    """Syntetiser ÉN stemme (enkelt-taler). Fast voiceName = samme stemme hver gang."""
+def _gemini_tts_multi(convo_text, timeout=300, attempts=3):
+    """Fler-taler i ÉTT kall. Begge stemmene er konsistente innenfor samme kall."""
     import urllib.request, urllib.error, base64, time
     key = os.environ["GEMINI_API_KEY"]
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     body = json.dumps({
-        "contents":[{"parts":[{"text":text}]}],
+        "contents":[{"parts":[{"text":convo_text}]}],
         "generationConfig":{
             "responseModalities":["AUDIO"],
-            "speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voice}}},
+            "speechConfig":{"multiSpeakerVoiceConfig":{"speakerVoiceConfigs":[
+                {"speaker":"Kari","voiceConfig":{"prebuiltVoiceConfig":{"voiceName":V_KARI}}},
+                {"speaker":"Tom","voiceConfig":{"prebuiltVoiceConfig":{"voiceName":V_TOM}}},
+            ]}},
         },
     }).encode()
     last = None
@@ -465,8 +468,53 @@ def _gemini_tts_single(text, voice, timeout=300, attempts=3):
             time.sleep(4 * (a + 1))
     raise RuntimeError(last or "ukjent Gemini-feil")
 
-def _speaker_runs(dialog, max_chars=600):
-    """Slå sammen påfølgende replikker fra samme person, men bytt aldri stemme midt i."""
+def _chunk_convo(dialog, max_chars):
+    """Del samtalen i FÅ, store biter (hver bit har begge stemmer -> konsistent)."""
+    chunks, cur, n = [], [], 0
+    for spk, text in dialog:
+        s = spk.split("_")[-1]
+        name = "Kari" if s == "K" else "Tom"
+        line = f"{name}: {text}"
+        if cur and n + len(line) > max_chars:
+            chunks.append(cur); cur, n = [], 0
+        cur.append(line); n += len(line) + 1
+    if cur: chunks.append(cur)
+    return chunks
+
+def build_audio_gemini(dialog, mp3_path, title):
+    # Fler-taler i ETT (eller få) kall -> Kari og Tom holder samme stemme.
+    # Færre/større biter = mindre variasjon. Juster med GEMINI_MAX_CHARS.
+    max_chars = int(os.environ.get("GEMINI_MAX_CHARS", "4000"))
+    header = "Les dette som en naturlig norsk podkast-samtale mellom Kari og Tom:\n"
+    chunks = _chunk_convo(dialog, max_chars)
+    print(f"  Gemini (fler-taler): {len(chunks)} bit(er), maks {max_chars} tegn (Kari={V_KARI}, Tom={V_TOM})...")
+    pcm = bytearray()
+    sil = b"\x00\x00" * int(GEMINI_SR * 0.25)
+    for i, chunk in enumerate(chunks):
+        data = _gemini_tts_multi(header + "\n".join(chunk))
+        if pcm: pcm += sil
+        pcm += data
+        print(f"  bit {i+1}/{len(chunks)} ok ({len(data)} bytes)")
+    wav = os.path.join(OUT, "gemini.wav")
+    with wave.open(wav, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(GEMINI_SR); w.writeframes(bytes(pcm))
+    dur = len(pcm) / 2 / GEMINI_SR
+    fo = max(0.1, round(dur - 0.5, 2))
+    subprocess.run(["ffmpeg","-y","-loglevel","error","-i",wav,
+        "-af",f"afade=t=in:st=0:d=0.3,afade=t=out:st={fo}:d=0.5",
+        "-codec:a","libmp3lame","-b:a","128k",
+        "-metadata",f"title={title}","-metadata","artist=Dyrenytt","-metadata","album=Dyrenytt",
+        mp3_path], check=True)
+    os.remove(wav)
+    return int(round(dur))
+
+# ---------------------------------------------------------------- Google Cloud TTS (deterministisk)
+GTTS_SR  = 24000
+GV_KARI = os.environ.get("GOOGLE_VOICE_KARI", "nb-NO-Chirp3-HD-Kore")     # kvinne
+GV_TOM  = os.environ.get("GOOGLE_VOICE_TOM",  "nb-NO-Chirp3-HD-Charon")   # mann
+
+def _speaker_runs(dialog, max_chars=2500):
+    """Slå sammen påfølgende replikker fra samme person (én stemme per forespørsel)."""
     runs = []  # (spk 'K'/'T', text, is_seg)
     for spk, text in dialog:
         seg = spk.startswith("SEG_")
@@ -477,23 +525,53 @@ def _speaker_runs(dialog, max_chars=600):
             runs.append((s, text, seg))
     return runs
 
-def build_audio_gemini(dialog, mp3_path, title):
-    # Én fast stemme per person gjennom HELE episoden (enkelt-taler per replikk).
+def _gcloud_tts(text, voice, timeout=120, attempts=3):
+    """Deterministisk: samme voice.name gir NØYAKTIG samme stemme hver gang."""
+    import urllib.request, urllib.error, base64, time, io
+    key = os.environ["GOOGLE_TTS_API_KEY"]
+    url = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={key}"
+    body = json.dumps({
+        "input": {"text": text},
+        "voice": {"languageCode": "nb-NO", "name": voice},
+        "audioConfig": {"audioEncoding": "LINEAR16", "sampleRateHertz": GTTS_SR},
+    }).encode()
+    last = None
+    for a in range(attempts):
+        try:
+            req = urllib.request.Request(url, data=body, method="POST",
+                headers={"content-type": "application/json"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                resp = json.load(r)
+            audio = base64.b64decode(resp["audioContent"])
+            with wave.open(io.BytesIO(audio), "rb") as w:   # LINEAR16 = WAV; hent PCM
+                return w.readframes(w.getnframes())
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "ignore")[:400]
+            last = f"HTTP {e.code}: {detail}"
+            if e.code in (400, 401, 403, 404):
+                break
+        except Exception as e:
+            last = f"{type(e).__name__}: {e}"
+        if a < attempts - 1:
+            time.sleep(4 * (a + 1))
+    raise RuntimeError(last or "ukjent Google-TTS-feil")
+
+def build_audio_gcloud(dialog, mp3_path, title):
     runs = _speaker_runs(dialog)
-    print(f"  Gemini: {len(runs)} replikker å syntetisere (Kari={V_KARI}, Tom={V_TOM})...")
+    print(f"  Google TTS: {len(runs)} replikker (Kari={GV_KARI}, Tom={GV_TOM}) – deterministisk...")
     pcm = bytearray()
-    sil       = b"\x00\x00" * int(GEMINI_SR * 0.30)
-    sil_seg   = b"\x00\x00" * int(GEMINI_SR * 0.60)
+    sil     = b"\x00\x00" * int(GTTS_SR * 0.30)
+    sil_seg = b"\x00\x00" * int(GTTS_SR * 0.60)
     for i, (s, text, seg) in enumerate(runs):
-        voice = V_KARI if s == "K" else V_TOM
-        data = _gemini_tts_single(text, voice)
+        voice = GV_KARI if s == "K" else GV_TOM
+        data = _gcloud_tts(text, voice)
         if pcm: pcm += (sil_seg if seg else sil)
         pcm += data
         print(f"  replikk {i+1}/{len(runs)} ({'Kari' if s=='K' else 'Tom'}) ok")
-    wav = os.path.join(OUT, "gemini.wav")
+    wav = os.path.join(OUT, "gcloud.wav")
     with wave.open(wav, "wb") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(GEMINI_SR); w.writeframes(bytes(pcm))
-    dur = len(pcm) / 2 / GEMINI_SR
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(GTTS_SR); w.writeframes(bytes(pcm))
+    dur = len(pcm) / 2 / GTTS_SR
     fo = max(0.1, round(dur - 0.5, 2))
     subprocess.run(["ffmpeg","-y","-loglevel","error","-i",wav,
         "-af",f"afade=t=in:st=0:d=0.3,afade=t=out:st={fo}:d=0.5",
@@ -516,11 +594,16 @@ def main():
     weather = fetch_weather()
     print(f"Hentet {len(animal)} dyre-saker, {len(general)} generelle. Vær: {weather or 'utilgjengelig'}.")
 
-    engine = "gemini" if os.environ.get("GEMINI_API_KEY") else "piper"
+    if os.environ.get("GOOGLE_TTS_API_KEY"):
+        engine = "google"
+    elif os.environ.get("GEMINI_API_KEY"):
+        engine = "gemini"
+    else:
+        engine = "piper"
 
     try:
         if os.environ.get("ANTHROPIC_API_KEY"):
-            dialog = build_script_llm(dato_str, animal, general, natural=(engine == "gemini"), weather=weather)
+            dialog = build_script_llm(dato_str, animal, general, natural=(engine != "piper"), weather=weather)
             print("Manus: LLM.")
         else:
             raise KeyError("ingen nøkkel")
@@ -528,7 +611,14 @@ def main():
         print(f"Bruker mal-manus ({e}).")
         dialog = build_script_template(dato_str, animal, general, weather=weather)
 
-    if engine == "gemini":
+    if engine == "google":
+        try:
+            dur = build_audio_gcloud(dialog, mp3_path, title)
+            print("Lyd: Google Cloud TTS (deterministisk).")
+        except Exception as e:
+            print(f"Google TTS feilet ({e}) – faller tilbake til Piper.")
+            dur = synthesize(dialog, mp3_path, title)
+    elif engine == "gemini":
         try:
             dur = build_audio_gemini(dialog, mp3_path, title)
             print("Lyd: Gemini TTS.")
