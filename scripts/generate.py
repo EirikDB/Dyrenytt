@@ -41,57 +41,155 @@ MONTHS = ["januar","februar","mars","april","mai","juni","juli","august",
 DAYS   = ["mandag","tirsdag","onsdag","torsdag","fredag","lørdag","søndag"]
 
 # ---------------------------------------------------------------- nyheter
-ANIMAL_QUERY = ("(dyrehelse OR kjæledyr OR veterinær OR hund OR katt OR "
-                "dyrevelferd OR Mattilsynet OR Veterinærinstituttet)")
-GENERAL_QUERY = "Norge nyheter"
-
-def _gnews_url(query, days=2):
+def _gnews(query, hl="no", gl="NO", ceid="NO:no", days=3):
     from urllib.parse import quote
     q = quote(f"{query} when:{days}d")
-    return f"https://news.google.com/rss/search?q={q}&hl=no&gl=NO&ceid=NO:no"
+    return f"https://news.google.com/rss/search?q={q}&hl={hl}&gl={gl}&ceid={ceid}"
+
+# Målrettede nyhetsstrømmer. cat styrer prioritet: chip/ID øverst, så kjæledyr,
+# så regelverk/velferd. Vi henter både norsk og EU/engelsk (hl/gl/ceid).
+# (cat, query, hl, gl, ceid, dager, ønsket antall)
+TOPICS = [
+    # --- Chip-/ID-merking og sporbarhet – Norge (bred tidsvindu, regelverk kommer sjelden) ---
+    ("chip", 'chipmerking OR ID-merking OR mikrochip OR "obligatorisk merking" (hund OR katt OR kjæledyr OR sporbarhet OR DyreID OR regelverk OR forskrift)',
+     "no", "NO", "NO:no", 30, 3),
+    # --- Chip-/ID-merking og sporbarhet – EU/Europa (engelsk) ---
+    ("chip", 'pet microchipping OR "compulsory microchipping" OR animal identification OR pet passport OR animal traceability (EU OR Europe OR regulation OR directive OR law)',
+     "en-GB", "GB", "GB:en", 45, 3),
+    # --- Kjæledyr-nyheter – Norge (kort vindu, ferske saker) ---
+    ("pet", 'kjæledyr OR hund OR katt OR kanin (helse OR veterinær OR dyrlege OR advarsel OR tilbakekalling OR sykdom OR dyrevelferd)',
+     "no", "NO", "NO:no", 4, 4),
+    # --- Kjæledyr-nyheter – Europa/internasjonalt (engelsk) ---
+    ("pet", 'dog OR cat OR pet (health OR recall OR disease OR welfare OR EU regulation)',
+     "en-GB", "GB", "GB:en", 4, 2),
+    # --- Regelverk og dyrevelferd – Norge ---
+    ("reg", '(dyrevelferd OR Mattilsynet OR dyrehelse) (kjæledyr OR hund OR katt OR regelverk OR forskrift OR "ny lov" OR forbud OR krav)',
+     "no", "NO", "NO:no", 14, 2),
+]
+GENERAL_TOPICS = [("Norge nyheter", "no", "NO", "NO:no", 1)]
+
+def _clean(title):
+    title = html.unescape(re.sub("<[^>]+>", "", title or "")).strip()
+    source = ""
+    if " - " in title:                     # Google News: "Tittel - Kilde"
+        base, source = title.rsplit(" - ", 1)
+        title = base.strip(); source = source.strip()
+    return title, source
 
 def fetch_news():
     if os.environ.get("MOCK_NEWS") == "1":
         return MOCK_ANIMAL, MOCK_GENERAL
     import feedparser
-    def grab(url, n):
-        d = feedparser.parse(url)
-        items = []
-        for e in d.entries[:n*2]:
-            title = html.unescape(re.sub("<[^>]+>", "", e.get("title", ""))).strip()
-            summary = html.unescape(re.sub("<[^>]+>", "", e.get("summary", ""))).strip()
-            source = ""
-            if title.endswith(")") and " - " in title:
-                # google news legger ofte "- Kilde" til slutt; behold tittel ren
-                pass
-            src = e.get("source", {})
-            if isinstance(src, dict):
-                source = src.get("title", "")
-            items.append({"title": title, "summary": summary[:300], "source": source})
-            if len(items) >= n:
+    seen = set()
+    def norm(t): return re.sub(r"\s+", " ", t.lower()).strip()
+    buckets = {"chip": [], "pet": [], "reg": []}
+    for cat, q, hl, gl, ceid, days, want in TOPICS:
+        try:
+            d = feedparser.parse(_gnews(q, hl, gl, ceid, days))
+        except Exception:
+            continue
+        got = 0
+        for e in d.entries:
+            title, tsrc = _clean(e.get("title", ""))
+            if not title or len(title) < 8:
+                continue
+            k = norm(title)
+            if k in seen:
+                continue
+            summary, _ = _clean(e.get("summary", ""))
+            src = tsrc
+            if not src and isinstance(e.get("source"), dict):
+                src = e["source"].get("title", "")
+            seen.add(k)
+            buckets[cat].append({"title": title, "summary": summary[:300], "source": src, "cat": cat})
+            got += 1
+            if got >= want:
                 break
-        return items
-    animal = grab(_gnews_url(ANIMAL_QUERY, 2), 6)
-    general = grab(_gnews_url(GENERAL_QUERY, 1), 3)
-    if not animal:  # nødfallback
-        animal, general = MOCK_ANIMAL, MOCK_GENERAL
-    return animal, general
+    # Prioritert rekkefølge: chip/ID først, så kjæledyr, så regelverk.
+    animal = buckets["chip"] + buckets["pet"] + buckets["reg"]
+
+    general = []
+    for q, hl, gl, ceid, days in GENERAL_TOPICS:
+        try:
+            d = feedparser.parse(_gnews(q, hl, gl, ceid, days))
+        except Exception:
+            continue
+        for e in d.entries[:5]:
+            title, tsrc = _clean(e.get("title", ""))
+            if title and norm(title) not in seen:
+                seen.add(norm(title))
+                general.append({"title": title, "summary": _clean(e.get("summary", ""))[0][:200], "source": tsrc})
+            if len(general) >= 2:
+                break
+
+    if not animal:                          # nødfallback
+        return MOCK_ANIMAL, MOCK_GENERAL
+    return animal[:8], general[:2]
 
 MOCK_ANIMAL = [
-    {"title":"Fortsatt fugleinfluensa hos villfugl i Finnmark","summary":"Veterinærinstituttet følger store utbrudd av høypatogen fugleinfluensa. Risikoen for kjæledyr vurderes som lav, men eiere bør holde hund og katt unna syke og døde fugler.","source":"Veterinærinstituttet"},
-    {"title":"Nytt døgnåpent dyresykehus styrker tilbudet","summary":"Et av landets mest moderne dyresykehus tilbyr spesialistbehandling hele døgnet.","source":"Evidensia"},
-    {"title":"Husk varmen når du trener med hund","summary":"Veterinærer minner om at hunder ikke svetter og lett overopphetes på varme dager.","source":"NKK"},
+    {"title":"EU strammer inn krav til chipmerking av hund og katt","summary":"Nytt europeisk regelverk vil kreve obligatorisk ID-merking og registrering for bedre sporbarhet og oppfølging av dyrevelferd. Endringene ventes å påvirke også norske kjæledyreiere.","source":"European Commission","cat":"chip"},
+    {"title":"Krav om ID-merking av katt vurderes i Norge","summary":"Myndighetene ser på om obligatorisk chipmerking og registrering bør utvides fra hund til også å gjelde katt, for å redusere antall hjemløse dyr.","source":"Mattilsynet","cat":"chip"},
+    {"title":"Fugleinfluensa hos villfugl – lav risiko for kjæledyr","summary":"Eiere bør likevel holde hund og katt unna syke og døde fugler.","source":"Veterinærinstituttet","cat":"pet"},
+    {"title":"Veterinærer advarer mot varmen for hund","summary":"Hunder svetter ikke og overopphetes lett på varme dager.","source":"NKK","cat":"pet"},
 ]
 MOCK_GENERAL = [
-    {"title":"Mye regn meldt på Vestlandet","summary":"Meteorologene varsler kraftig nedbør og fare for lokale ras.","source":"NRK"},
+    {"title":"Mye regn meldt på Vestlandet","summary":"Meteorologene varsler kraftig nedbør.","source":"NRK"},
     {"title":"Signalfeil gir togtrøbbel i Oslo-området","summary":"Bane Nor melder om forsinkelser.","source":"NRK"},
 ]
+
+# ---------------------------------------------------------------- vær (Oslo)
+_WEATHER_NB = {
+    "clearsky":"klart", "fair":"lettskyet", "partlycloudy":"delvis skyet", "cloudy":"skyet",
+    "fog":"tåke", "lightrain":"lett regn", "rain":"regn", "heavyrain":"kraftig regn",
+    "lightrainshowers":"lette regnbyger", "rainshowers":"regnbyger", "heavyrainshowers":"kraftige regnbyger",
+    "lightsleet":"lett sludd", "sleet":"sludd", "heavysleet":"kraftig sludd",
+    "lightsnow":"lett snø", "snow":"snø", "heavysnow":"kraftig snø",
+    "snowshowers":"snøbyger", "lightsnowshowers":"lette snøbyger",
+    "lightrainshowersandthunder":"regnbyger og torden", "rainandthunder":"regn og torden",
+}
+def _wsym(code):
+    base = (code or "").split("_")[0]
+    return _WEATHER_NB.get(base, "")
+
+def fetch_weather(lat=59.913, lon=10.752):   # Oslo sentrum
+    if os.environ.get("MOCK_NEWS") == "1":
+        return "delvis skyet, mellom fjorten og tjueén grader"
+    try:
+        import urllib.request
+        url = f"https://api.met.no/weatherapi/locationforecast/2.0/compact?lat={lat}&lon={lon}"
+        contact = os.environ.get("FEED_EMAIL") or "dyrenytt@example.com"
+        req = urllib.request.Request(url, headers={
+            "User-Agent": f"Dyrenytt-podcast/1.0 ({contact})"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.load(r)
+        ts = data["properties"]["timeseries"]
+        today = datetime.now(TZ).date()
+        temps, symbol = [], None
+        for entry in ts:
+            dt = datetime.fromisoformat(entry["time"].replace("Z", "+00:00")).astimezone(TZ)
+            if dt.date() > today:
+                break
+            if dt.date() != today:
+                continue
+            temps.append(entry["data"]["instant"]["details"]["air_temperature"])
+            if 11 <= dt.hour <= 15 and not symbol:
+                nb = entry["data"].get("next_6_hours") or entry["data"].get("next_1_hours") or {}
+                symbol = nb.get("summary", {}).get("symbol_code")
+        if not temps:
+            return None
+        lo, hi = round(min(temps)), round(max(temps))
+        desc = _wsym(symbol)
+        return (f"{desc}, " if desc else "") + f"mellom {lo} og {hi} grader"
+    except Exception as e:
+        print(f"Vær utilgjengelig ({e}).")
+        return None
 
 # ---------------------------------------------------------------- manus
 SYSTEM_PROMPT = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
 To programledere: Kari (lysere stemme) og Tom (dypere stemme). Målgruppen hører på mens de løper eller pendler til jobb.
 Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
-Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter.
+Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
+PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
 Start med en kort intro med dagens dato, avslutt med en vennlig outro. Vær konkret og praktisk, gi gjerne råd til kjæledyreiere.
 
 VIKTIG – teksten leses opp av en norsk talesyntese (Piper), som uttaler engelsk og forkortelser feil. Skriv derfor talesyntese-vennlig:
@@ -110,22 +208,26 @@ Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
 SYSTEM_PROMPT_NATURAL = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
 To programledere: Kari og Tom. Målgruppen hører på mens de løper eller pendler til jobb.
 Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
-Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter.
+Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
+PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
 Start med en kort intro med dagens dato, avslutt med en vennlig outro. Vær konkret og praktisk, gi gjerne råd til kjæledyreiere.
 Skriv helt naturlig norsk – du trenger IKKE lydskrive ord eller unngå tall og forkortelser, stemmen uttaler dette riktig.
 Ikke bruk overskrifter, emojier eller punktlister.
 Returner KUN gyldig JSON: en liste av objekter {"speaker","text"}, der speaker er "K" eller "T".
 Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
 
-def build_script_llm(dato_str, animal, general, natural=False):
+def build_script_llm(dato_str, animal, general, natural=False, weather=None):
     import urllib.request
     key = os.environ["ANTHROPIC_API_KEY"]
     model = os.environ.get("ANTHROPIC_MODEL", "claude-3-5-haiku-latest")
     system = SYSTEM_PROMPT_NATURAL if natural else SYSTEM_PROMPT
     def fmt(items):
-        return "\n".join(f"- {i['title']}. {i['summary']} (Kilde: {i.get('source','')})" for i in items)
+        lab = {"chip":"[ID/CHIP-MERKING] ", "pet":"[KJÆLEDYR] ", "reg":"[REGELVERK] "}
+        return "\n".join(f"- {lab.get(i.get('cat',''),'')}{i['title']}. {i['summary']} (Kilde: {i.get('source','')})" for i in items)
+    weather_line = f"\n\nVÆR I OSLO I DAG (nevn kort, kun én setning helt til slutt): {weather}" if weather else ""
     user = (f"Dato: {dato_str}.\n\nDYREHELSE-/KJÆLEDYR-NYHETER:\n{fmt(animal)}\n\n"
-            f"GENERELLE NYHETER (bruk 1–2 kort til slutt):\n{fmt(general)}\n\n"
+            f"GENERELLE NYHETER (bruk 1–2 kort til slutt):\n{fmt(general)}"
+            f"{weather_line}\n\n"
             "Skriv episoden nå som JSON.")
     body = json.dumps({
         "model": model, "max_tokens": 8000,
@@ -161,7 +263,7 @@ TIPS = [
  "Dagens tips handler om flått. I sesongen bør du sjekke pelsen etter turer, særlig rundt hode, ører og poter. Bruk gjerne forebyggende middel, og fjern flått raskt med en flåttfjerner rett mot huden.",
 ]
 
-def build_script_template(dato_str, animal, general):
+def build_script_template(dato_str, animal, general, weather=None):
     import random
     seed = sum(ord(c) for c in dato_str)
     rnd = random.Random(seed)
@@ -184,6 +286,9 @@ def build_script_template(dato_str, animal, general):
         for it in general[:2]:
             summ = it.get("summary") or ""
             D.append(("T", f"{it['title']}." + (f" {summ}" if summ else "")))
+    if weather:
+        D.append(("SEG_K", f"Og været i Oslo i dag: {weather}."))
+        D.append(("T", "Kle deg etter forholdene."))
     D.append(("SEG_K", f"Og det var Dyrenytt for i dag, {dato_str}. Takk for at du løp, eller gikk, sammen med oss."))
     D.append(("T", "Ha en riktig fin dag, så høres vi igjen i morgen tidlig."))
     return D
@@ -408,19 +513,20 @@ def main():
     mp3_path = os.path.join(OUT, fname)
 
     animal, general = fetch_news()
-    print(f"Hentet {len(animal)} dyre-saker, {len(general)} generelle.")
+    weather = fetch_weather()
+    print(f"Hentet {len(animal)} dyre-saker, {len(general)} generelle. Vær: {weather or 'utilgjengelig'}.")
 
     engine = "gemini" if os.environ.get("GEMINI_API_KEY") else "piper"
 
     try:
         if os.environ.get("ANTHROPIC_API_KEY"):
-            dialog = build_script_llm(dato_str, animal, general, natural=(engine == "gemini"))
+            dialog = build_script_llm(dato_str, animal, general, natural=(engine == "gemini"), weather=weather)
             print("Manus: LLM.")
         else:
             raise KeyError("ingen nøkkel")
     except Exception as e:
         print(f"Bruker mal-manus ({e}).")
-        dialog = build_script_template(dato_str, animal, general)
+        dialog = build_script_template(dato_str, animal, general, weather=weather)
 
     if engine == "gemini":
         try:
