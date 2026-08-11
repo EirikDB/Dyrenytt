@@ -74,9 +74,13 @@ jobs:
           KEEP_EPISODES: "30"
           PUBLISH: ${{ steps.mode.outputs.publish }}
           FEED_EMAIL: ${{ secrets.FEED_EMAIL }}
-          # Sett ANTHROPIC_API_KEY som repo-secret for LLM-generert manus.
+          # Manus (tekst): Sonnet skriver dialogen ut fra dagens nyheter.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: claude-sonnet-5
+          # Stemme (lyd): finnes GEMINI_API_KEY, brukes Gemini TTS (to ekte stemmer).
+          # Uten den faller den tilbake til den gratis Piper-stemmen.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash-preview-tts
         run: python scripts/generate.py
 
       # ---- Testmodus: legg lydfila som nedlastbar artefakt, ikke i feeden ----
