@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dyrenytt</title>
+    <link>https://eirikdb.github.io/Dyrenytt</link>
+    <atom:link href="https://eirikdb.github.io/Dyrenytt/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Daglig dose nyheter om dyrehelse og kjæledyr – rundt ti minutter, laget for veien til jobb.</description>
+    <language>no</language>
+    <copyright>Dyrenytt</copyright>
+    <itunes:author>Dyrenytt</itunes:author>
+    <itunes:summary>Daglig dose nyheter om dyrehelse og kjæledyr – rundt ti minutter, laget for veien til jobb.</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:owner><itunes:name>Dyrenytt</itunes:name><itunes:email>eirik@dyreid.no</itunes:email></itunes:owner>
+    <itunes:image href="https://eirikdb.github.io/Dyrenytt/cover.png"/>
+    <itunes:category text="News"/>
+    <itunes:explicit>no</itunes:explicit>
+    <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
+    <item>
+      <title>Dyrenytt – tirsdag 11. august</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Status for krepsepestutbrotet i Drammensvassdraget - Veterinærinstituttet; Status for utbruddet av krepsepest i Drammensvassdraget - NTB Kommunikasjon; Laksesykdom påvist – fem kommuner får restriksjoner - ht.no; Denne skapte debatt på oppslagstavla. Er den lovlig? - altaposten.no</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Status for krepsepestutbrotet i Drammensvassdraget - Veterinærinstituttet; Status for utbruddet av krepsepest i Drammensvassdraget - NTB Kommunikasjon; Laksesykdom påvist – fem kommuner får restriksjoner - ht.no; Denne skapte debatt på oppslagstavla. Er den lovlig? - altaposten.no</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-11.mp3" length="2552185" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-11.mp3</guid>
+      <pubDate>Tue, 11 Aug 2026 20:59:12 +0200</pubDate>
+      <itunes:duration>2:39</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+  </channel>
+</rss>
