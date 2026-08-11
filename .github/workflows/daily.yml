@@ -1,0 +1,95 @@
+name: Dyrenytt daglig episode
+
+# Kjører hverdager kl. 03:30 UTC = 05:30 norsk sommertid (04:30 vintertid).
+# Endre tidspunktet her; cron er alltid i UTC. Du kan også trykke "Run workflow"
+# manuelt fra Actions-fanen for å teste.
+on:
+  schedule:
+    - cron: "30 3 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dyrenytt
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sjekk ut repo
+        uses: actions/checkout@v4
+
+      - name: Sett opp Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Hurtigbuffer Piper-modell
+        uses: actions/cache@v4
+        with:
+          path: model
+          key: piper-no-talesyntese-medium-v1
+
+      - name: Installer Python-avhengigheter
+        run: pip install -r requirements.txt
+
+      - name: Beregn Pages-URL
+        id: site
+        run: |
+          owner=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          repo="${GITHUB_REPOSITORY#*/}"
+          echo "base=https://${owner}.github.io/${repo}" >> "$GITHUB_OUTPUT"
+
+      - name: Generer episode
+        id: gen
+        env:
+          SITE_BASE: ${{ steps.site.outputs.base }}
+          RELEASE_TAG: episodes
+          KEEP_EPISODES: "30"
+          FEED_EMAIL: ${{ secrets.FEED_EMAIL }}
+          # Valgfri: sett ANTHROPIC_API_KEY som repo-secret for LLM-generert manus.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: claude-3-5-haiku-latest
+        run: python scripts/generate.py
+
+      - name: Sørg for at release finnes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view episodes >/dev/null 2>&1 || \
+            gh release create episodes --title "Episoder" --notes "Lydfiler for Dyrenytt" --latest=false
+
+      - name: Last opp lydfil til release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload episodes "${{ steps.gen.outputs.mp3_path }}" --clobber
+
+      - name: Rydd bort gamle lydfiler
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          keep=$(jq -r '.[].file' docs/episodes.json)
+          for a in $(gh release view episodes --json assets -q '.assets[].name'); do
+            if ! echo "$keep" | grep -qx "$a"; then
+              echo "Sletter gammel asset: $a"
+              gh release delete-asset episodes "$a" -y || true
+            fi
+          done
+
+      - name: Publiser feed til Pages (commit docs/)
+        run: |
+          git config user.name "dyrenytt-bot"
+          git config user.email "dyrenytt-bot@users.noreply.github.com"
+          git add docs/feed.xml docs/episodes.json
+          if git diff --cached --quiet; then
+            echo "Ingen endringer å committe."
+          else
+            git commit -m "Episode ${{ github.run_id }}"
+            git push
+          fi
