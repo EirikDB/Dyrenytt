@@ -329,18 +329,16 @@ GEMINI_STYLE = os.environ.get("GEMINI_STYLE",
     "Les dette som to varme, tydelige norske programledere i en morgenpodkast, med naturlig tempo og tonefall.")
 GEMINI_SR = 24000
 
-def _gemini_tts(convo_text, timeout=300, attempts=3):
+def _gemini_tts_single(text, voice, timeout=300, attempts=3):
+    """Syntetiser ÉN stemme (enkelt-taler). Fast voiceName = samme stemme hver gang."""
     import urllib.request, urllib.error, base64, time
     key = os.environ["GEMINI_API_KEY"]
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     body = json.dumps({
-        "contents":[{"parts":[{"text":convo_text}]}],
+        "contents":[{"parts":[{"text":text}]}],
         "generationConfig":{
             "responseModalities":["AUDIO"],
-            "speechConfig":{"multiSpeakerVoiceConfig":{"speakerVoiceConfigs":[
-                {"speaker":"Kari","voiceConfig":{"prebuiltVoiceConfig":{"voiceName":V_KARI}}},
-                {"speaker":"Tom","voiceConfig":{"prebuiltVoiceConfig":{"voiceName":V_TOM}}},
-            ]}},
+            "speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voice}}},
         },
     }).encode()
     last = None
@@ -362,30 +360,31 @@ def _gemini_tts(convo_text, timeout=300, attempts=3):
             time.sleep(4 * (a + 1))
     raise RuntimeError(last or "ukjent Gemini-feil")
 
-def _chunk_dialog(dialog, max_chars=700):
-    """Grupper replikker i biter så ingen enkelt TTS-forespørsel blir for lang."""
-    chunks, cur, n = [], [], 0
+def _speaker_runs(dialog, max_chars=600):
+    """Slå sammen påfølgende replikker fra samme person, men bytt aldri stemme midt i."""
+    runs = []  # (spk 'K'/'T', text, is_seg)
     for spk, text in dialog:
+        seg = spk.startswith("SEG_")
         s = spk.split("_")[-1]
-        name = "Kari" if s == "K" else "Tom"
-        line = f"{name}: {text}"
-        if cur and n + len(line) > max_chars:
-            chunks.append(cur); cur, n = [], 0
-        cur.append(line); n += len(line) + 1
-    if cur: chunks.append(cur)
-    return chunks
+        if runs and runs[-1][0] == s and not seg and len(runs[-1][1]) + len(text) < max_chars:
+            p = runs[-1]; runs[-1] = (s, p[1] + " " + text, p[2])
+        else:
+            runs.append((s, text, seg))
+    return runs
 
 def build_audio_gemini(dialog, mp3_path, title):
-    header = GEMINI_STYLE + "\nTTS the following conversation between Kari and Tom:\n"
+    # Én fast stemme per person gjennom HELE episoden (enkelt-taler per replikk).
+    runs = _speaker_runs(dialog)
+    print(f"  Gemini: {len(runs)} replikker å syntetisere (Kari={V_KARI}, Tom={V_TOM})...")
     pcm = bytearray()
-    silence = b"\x00\x00" * int(GEMINI_SR * 0.28)
-    chunks = _chunk_dialog(dialog)
-    print(f"  Gemini: {len(chunks)} biter å syntetisere...")
-    for i, chunk in enumerate(chunks):
-        data = _gemini_tts(header + "\n".join(chunk))
-        if pcm: pcm += silence
+    sil       = b"\x00\x00" * int(GEMINI_SR * 0.30)
+    sil_seg   = b"\x00\x00" * int(GEMINI_SR * 0.60)
+    for i, (s, text, seg) in enumerate(runs):
+        voice = V_KARI if s == "K" else V_TOM
+        data = _gemini_tts_single(text, voice)
+        if pcm: pcm += (sil_seg if seg else sil)
         pcm += data
-        print(f"  Gemini-bit {i+1}/{len(chunks)} ok ({len(data)} bytes)")
+        print(f"  replikk {i+1}/{len(runs)} ({'Kari' if s=='K' else 'Tom'}) ok")
     wav = os.path.join(OUT, "gemini.wav")
     with wave.open(wav, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(GEMINI_SR); w.writeframes(bytes(pcm))
