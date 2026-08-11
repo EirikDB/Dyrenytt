@@ -106,10 +106,22 @@ Ikke bruk overskrifter, emojier eller punktlister.
 Returner KUN gyldig JSON: en liste av objekter {"speaker","text"}, der speaker er "K" eller "T".
 Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
 
-def build_script_llm(dato_str, animal, general):
+# Naturlig variant – brukes med Gemini TTS, som uttaler ord riktig selv.
+SYSTEM_PROMPT_NATURAL = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
+To programledere: Kari og Tom. Målgruppen hører på mens de løper eller pendler til jobb.
+Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
+Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter.
+Start med en kort intro med dagens dato, avslutt med en vennlig outro. Vær konkret og praktisk, gi gjerne råd til kjæledyreiere.
+Skriv helt naturlig norsk – du trenger IKKE lydskrive ord eller unngå tall og forkortelser, stemmen uttaler dette riktig.
+Ikke bruk overskrifter, emojier eller punktlister.
+Returner KUN gyldig JSON: en liste av objekter {"speaker","text"}, der speaker er "K" eller "T".
+Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
+
+def build_script_llm(dato_str, animal, general, natural=False):
     import urllib.request
     key = os.environ["ANTHROPIC_API_KEY"]
     model = os.environ.get("ANTHROPIC_MODEL", "claude-3-5-haiku-latest")
+    system = SYSTEM_PROMPT_NATURAL if natural else SYSTEM_PROMPT
     def fmt(items):
         return "\n".join(f"- {i['title']}. {i['summary']} (Kilde: {i.get('source','')})" for i in items)
     user = (f"Dato: {dato_str}.\n\nDYREHELSE-/KJÆLEDYR-NYHETER:\n{fmt(animal)}\n\n"
@@ -117,7 +129,7 @@ def build_script_llm(dato_str, animal, general):
             "Skriv episoden nå som JSON.")
     body = json.dumps({
         "model": model, "max_tokens": 8000,
-        "system": SYSTEM_PROMPT,
+        "system": system,
         "messages": [{"role":"user","content":user}],
     }).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, method="POST",
@@ -309,6 +321,71 @@ def build_feed(eps):
 """
     open(os.path.join(DOCS,"feed.xml"),"w",encoding="utf-8").write(xml)
 
+# ---------------------------------------------------------------- Gemini TTS
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash-preview-tts")
+V_KARI = os.environ.get("GEMINI_VOICE_KARI", "Kore")     # lysere/kvinnelig
+V_TOM  = os.environ.get("GEMINI_VOICE_TOM",  "Charon")   # dypere/mannlig
+GEMINI_STYLE = os.environ.get("GEMINI_STYLE",
+    "Les dette som to varme, tydelige norske programledere i en morgenpodkast, med naturlig tempo og tonefall.")
+GEMINI_SR = 24000
+
+def _gemini_tts(convo_text):
+    import urllib.request, base64
+    key = os.environ["GEMINI_API_KEY"]
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+    body = json.dumps({
+        "contents":[{"parts":[{"text":convo_text}]}],
+        "generationConfig":{
+            "responseModalities":["AUDIO"],
+            "speechConfig":{"multiSpeakerVoiceConfig":{"speakerVoiceConfigs":[
+                {"speaker":"Kari","voiceConfig":{"prebuiltVoiceConfig":{"voiceName":V_KARI}}},
+                {"speaker":"Tom","voiceConfig":{"prebuiltVoiceConfig":{"voiceName":V_TOM}}},
+            ]}},
+        },
+    }).encode()
+    req = urllib.request.Request(url, data=body, method="POST",
+        headers={"content-type":"application/json","x-goog-api-key":key})
+    with urllib.request.urlopen(req, timeout=180) as r:
+        resp = json.load(r)
+    b64 = resp["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
+    return base64.b64decode(b64)
+
+def _chunk_dialog(dialog, max_chars=1400):
+    """Grupper replikker i biter så ingen enkelt TTS-forespørsel blir for lang."""
+    chunks, cur, n = [], [], 0
+    for spk, text in dialog:
+        s = spk.split("_")[-1]
+        name = "Kari" if s == "K" else "Tom"
+        line = f"{name}: {text}"
+        if cur and n + len(line) > max_chars:
+            chunks.append(cur); cur, n = [], 0
+        cur.append(line); n += len(line) + 1
+    if cur: chunks.append(cur)
+    return chunks
+
+def build_audio_gemini(dialog, mp3_path, title):
+    header = GEMINI_STYLE + "\nTTS the following conversation between Kari and Tom:\n"
+    pcm = bytearray()
+    silence = b"\x00\x00" * int(GEMINI_SR * 0.35)
+    chunks = _chunk_dialog(dialog)
+    for i, chunk in enumerate(chunks):
+        data = _gemini_tts(header + "\n".join(chunk))
+        if pcm: pcm += silence
+        pcm += data
+        print(f"  Gemini-bit {i+1}/{len(chunks)} ok ({len(data)} bytes)")
+    wav = os.path.join(OUT, "gemini.wav")
+    with wave.open(wav, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(GEMINI_SR); w.writeframes(bytes(pcm))
+    dur = len(pcm) / 2 / GEMINI_SR
+    fo = max(0.1, round(dur - 0.5, 2))
+    subprocess.run(["ffmpeg","-y","-loglevel","error","-i",wav,
+        "-af",f"afade=t=in:st=0:d=0.3,afade=t=out:st={fo}:d=0.5",
+        "-codec:a","libmp3lame","-b:a","128k",
+        "-metadata",f"title={title}","-metadata","artist=Dyrenytt","-metadata","album=Dyrenytt",
+        mp3_path], check=True)
+    os.remove(wav)
+    return int(round(dur))
+
 # ---------------------------------------------------------------- main
 def main():
     now = datetime.now(TZ)
@@ -321,9 +398,11 @@ def main():
     animal, general = fetch_news()
     print(f"Hentet {len(animal)} dyre-saker, {len(general)} generelle.")
 
+    engine = "gemini" if os.environ.get("GEMINI_API_KEY") else "piper"
+
     try:
         if os.environ.get("ANTHROPIC_API_KEY"):
-            dialog = build_script_llm(dato_str, animal, general)
+            dialog = build_script_llm(dato_str, animal, general, natural=(engine == "gemini"))
             print("Manus: LLM.")
         else:
             raise KeyError("ingen nøkkel")
@@ -331,7 +410,15 @@ def main():
         print(f"Bruker mal-manus ({e}).")
         dialog = build_script_template(dato_str, animal, general)
 
-    dur = synthesize(dialog, mp3_path, title)
+    if engine == "gemini":
+        try:
+            dur = build_audio_gemini(dialog, mp3_path, title)
+            print("Lyd: Gemini TTS.")
+        except Exception as e:
+            print(f"Gemini TTS feilet ({e}) – faller tilbake til Piper.")
+            dur = synthesize(dialog, mp3_path, title)
+    else:
+        dur = synthesize(dialog, mp3_path, title)
     size = os.path.getsize(mp3_path)
     print(f"MP3: {fname} – {dur}s, {size} bytes.")
 
