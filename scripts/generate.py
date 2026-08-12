@@ -506,7 +506,7 @@ def build_audio_gemini(dialog, mp3_path, title):
 # ---------------------------------------------------------------- Google Cloud TTS (deterministisk)
 GTTS_SR  = 24000
 GV_KARI = os.environ.get("GOOGLE_VOICE_KARI", "nb-NO-Chirp3-HD-Kore")     # kvinne
-GV_TOM  = os.environ.get("GOOGLE_VOICE_TOM",  "nb-NO-Chirp3-HD-Charon")   # mann
+GV_TOM  = os.environ.get("GOOGLE_VOICE_TOM",  "nb-NO-Chirp3-HD-Schedar")   # mann
 
 def _speaker_runs(dialog, max_chars=2500):
     """Slå sammen påfølgende replikker fra samme person (én stemme per forespørsel)."""
