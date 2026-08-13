@@ -130,6 +130,56 @@ def _pubts(e):
             except Exception: pass
     return 0
 
+def fetch_rss_feeds(seen, kept, norm):
+    """Egne, prioriterte RSS-kilder fra secret RSS_FEEDS (flere skilles med komma/linjeskift).
+    Respekterer dato: saker eldre enn RSS_MAX_AGE_DAYS (default 3) hoppes over."""
+    raw = (os.environ.get("RSS_FEEDS") or "").strip()
+    if not raw:
+        return []
+    import feedparser
+    urls = [u.strip() for u in re.split(r"[\s,]+", raw) if u.strip()]
+    max_age = int(os.environ.get("RSS_MAX_AGE_DAYS", "3"))
+    now = int(datetime.now(timezone.utc).timestamp())
+    out = []
+    import datetime as _dt
+    for u in urls:
+        try:
+            d = feedparser.parse(u)
+        except Exception as ex:
+            print(f"RSS-feil ({u}): {ex}")
+            continue
+        feed_title = ""
+        try: feed_title = d.feed.get("title", "")
+        except Exception: pass
+        raw = len(getattr(d, "entries", []))
+        n_old = n_dupe = n_ok = 0
+        if raw == 0:
+            print(f"RSS: 0 elementer fra feeden ({u}) – sjekk URL/tilgang.")
+        def _txt(s):                                     # rydd HTML/tegn uten "- kilde"-splitt
+            s = html.unescape(re.sub("<[^>]+>", "", s or ""))
+            s = re.sub(r"\.{3,}", " … ", s)              # Retriever bruker "...." mellom utdrag
+            return re.sub(r"\s+", " ", s).strip()
+        for e in d.entries[:25]:
+            title = _txt(e.get("title", ""))             # Retriever-titler er rene, ikke splitt
+            if not title or len(title) < 8:
+                continue
+            pts = _pubts(e)
+            if pts and now - pts > max_age * 86400:      # for gammel -> hopp over
+                n_old += 1; continue
+            if norm(title) in seen or any(_similar(title, k) for k in kept):
+                n_dupe += 1; continue
+            summary = _txt(e.get("summary", "")) or _txt(e.get("ret_dynteaser", ""))
+            src = e.get("ret_source") or e.get("author") or feed_title
+            seen.add(norm(title)); kept.append(title)
+            when = _dt.datetime.utcfromtimestamp(pts).strftime("%Y-%m-%d") if pts else "ingen dato"
+            out.append({"title": title, "summary": summary[:300],
+                        "source": src, "cat": "feed", "pubts": pts})
+            n_ok += 1
+            print(f"  RSS ok [{when}] {title[:80]}")
+        print(f"RSS «{feed_title or u}»: {raw} elementer, {n_ok} brukt, "
+              f"{n_old} for gamle, {n_dupe} duplikat.")
+    return out
+
 def fetch_news():
     if os.environ.get("MOCK_NEWS") == "1":
         return MOCK_ANIMAL, MOCK_GENERAL
@@ -141,8 +191,22 @@ def fetch_news():
         if norm(t) in seen:
             return True
         return any(_similar(t, k) for k in kept)
+
+    # Egne RSS-kilder først (PRIMÆRKILDE), så Google som supplement.
+    feed_items = fetch_rss_feeds(seen, kept, norm)
+    feed_only = os.environ.get("FEED_ONLY", "0") == "1"
+    if feed_items and feed_only:
+        topics = []                                           # ren feed-only
+        print("Kilde: kun RSS-feed (FEED_ONLY=1).")
+    elif feed_items:
+        topics = [t for t in TOPICS if t[2].startswith("en")]  # feed primær + kun EU/intl-supplement
+        print(f"Kilde: RSS-feed primær ({len(feed_items)} saker) + EU/intl-supplement fra Google.")
+    else:
+        topics = TOPICS                                        # ingen feed -> full Google som før
+        print("Kilde: ingen RSS-feed – bruker full Google-søk.")
+
     buckets = {"chip": [], "pet": [], "reg": []}
-    for cat, q, hl, gl, ceid, days, want in TOPICS:
+    for cat, q, hl, gl, ceid, days, want in topics:
         try:
             d = feedparser.parse(_gnews(q, hl, gl, ceid, days))
         except Exception:
@@ -164,8 +228,8 @@ def fetch_news():
             got += 1
             if got >= want + 3:            # hent litt ekstra som buffer for dedup
                 break
-    # Prioritert rekkefølge: chip/ID først, så kjæledyr, så regelverk.
-    animal = buckets["chip"] + buckets["pet"] + buckets["reg"]
+    # Prioritert rekkefølge: egne RSS-kilder først, så chip/ID, kjæledyr, regelverk.
+    animal = feed_items + buckets["chip"] + buckets["pet"] + buckets["reg"]
 
     # Finans/økonomi: hent bredt, deretter velg de mest omtalte (flest kilder).
     fin_pool = []
@@ -288,7 +352,7 @@ def build_script_llm(dato_str, animal, general, natural=False, weather=None, alr
     model = os.environ.get("ANTHROPIC_MODEL", "claude-3-5-haiku-latest")
     system = SYSTEM_PROMPT_NATURAL if natural else SYSTEM_PROMPT
     def fmt(items):
-        lab = {"chip":"[ID/CHIP-MERKING] ", "pet":"[KJÆLEDYR] ", "reg":"[REGELVERK] ", "finans":"[FINANS] "}
+        lab = {"feed":"[KILDE] ", "chip":"[ID/CHIP-MERKING] ", "pet":"[KJÆLEDYR] ", "reg":"[REGELVERK] ", "finans":"[FINANS] "}
         def cov(i): return f" [omtalt av ~{i['coverage']} kilder]" if i.get("coverage") else ""
         return "\n".join(f"- {lab.get(i.get('cat',''),'')}{i['title']}. {i['summary']}{cov(i)} (Kilde: {i.get('source','')})" for i in items)
     weather_line = f"\n\nVÆR I OSLO I DAG (nevn kort, kun én setning helt til slutt): {weather}" if weather else ""
