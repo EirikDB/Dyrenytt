@@ -317,7 +317,7 @@ def fetch_weather(lat=59.913, lon=10.752):   # Oslo sentrum
 # ---------------------------------------------------------------- manus
 SYSTEM_PROMPT = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
 To programledere: Kari (lysere stemme) og Tom (dypere stemme). Målgruppen hører på mens de løper eller pendler til jobb.
-Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
+Skriv en naturlig, vennlig dialog på norsk bokmål. Sikt på 7–10 minutter, omtrent 1600–2200 ord – ikke lever et kort sammendrag. Dekk ALLE de oppgitte dyre-/kjæledyrsakene som er relevante (ikke hopp over gode saker), og prioriter de ferskeste. Bruk omtrent 3–6 setninger per sak: bakgrunn, hva som er nytt, og hvorfor det er relevant – ikke bare korte enkeltsetninger. Nevn gjerne hvor saken kommer fra (kilden er oppgitt for hver sak), for eksempel «ifølge NRK» eller «melder Nettavisen».
 Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte finans-/økonominyheter (de mest omtalte på tvers av kilder i dag) og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
 PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
 Start med en kort intro med dagens dato, avslutt med en kort, vennlig outro. Hold en journalistisk NYHETSTONE: rapporter hva som har skjedd, hvem det gjelder, når og hvorfor det er relevant. Vær saklig og nøytral, som to nyhetsverter som diskuterer dagens saker. UNNGÅ moralisering, formaninger og lister med gode råd – dette er en nyhetspodkast, ikke en rådgivningsspalte. En kort faktaforklaring når noe er teknisk er fint, men la lytteren trekke egne slutninger.
@@ -337,7 +337,7 @@ Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
 # Naturlig variant – brukes med Gemini TTS, som uttaler ord riktig selv.
 SYSTEM_PROMPT_NATURAL = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
 To programledere: Kari og Tom. Målgruppen hører på mens de løper eller pendler til jobb.
-Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
+Skriv en naturlig, vennlig dialog på norsk bokmål. Sikt på 7–10 minutter, omtrent 1600–2200 ord – ikke lever et kort sammendrag. Dekk ALLE de oppgitte dyre-/kjæledyrsakene som er relevante (ikke hopp over gode saker), og prioriter de ferskeste. Bruk omtrent 3–6 setninger per sak: bakgrunn, hva som er nytt, og hvorfor det er relevant – ikke bare korte enkeltsetninger. Nevn gjerne hvor saken kommer fra (kilden er oppgitt for hver sak), for eksempel «ifølge NRK» eller «melder Nettavisen».
 Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte finans-/økonominyheter (de mest omtalte på tvers av kilder i dag) og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
 PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
 Start med en kort intro med dagens dato, avslutt med en kort, vennlig outro. Hold en journalistisk NYHETSTONE: rapporter hva som har skjedd, hvem det gjelder, når og hvorfor det er relevant. Vær saklig og nøytral, som to nyhetsverter som diskuterer dagens saker. UNNGÅ moralisering, formaninger og lister med gode råd – dette er en nyhetspodkast, ikke en rådgivningsspalte. En kort faktaforklaring når noe er teknisk er fint, men la lytteren trekke egne slutninger.
@@ -367,7 +367,7 @@ def build_script_llm(dato_str, animal, general, natural=False, weather=None, alr
             f"{weather_line}{already_line}\n\n"
             "Skriv episoden nå som JSON.")
     body = json.dumps({
-        "model": model, "max_tokens": 8000,
+        "model": model, "max_tokens": 12000,
         "system": system,
         "messages": [{"role":"user","content":user}],
     }).encode()
@@ -800,7 +800,7 @@ def main():
     # Historikk: dropp saker vi allerede har dekket (med mindre nyere publiseringsdato),
     # og gi Sonnet en liste over nylig dekkede overskrifter for semantisk filtrering.
     seen = load_seen()
-    animal = filter_unseen(animal, seen)[:8]
+    animal = filter_unseen(animal, seen)[:12]     # mer materiale -> lengre episode
     general = filter_unseen(general, seen)[:2]
     already = recent_titles(seen, now_ts, days=10)
     print(f"Etter historikk-filter: {len(animal)} dyre-saker, {len(general)} generelle "
