@@ -76,6 +76,15 @@ def _clean(title):
         title = base.strip(); source = source.strip()
     return title, source
 
+def _pubts(e):
+    import calendar
+    for k in ("published_parsed", "updated_parsed"):
+        v = e.get(k)
+        if v:
+            try: return calendar.timegm(v)
+            except Exception: pass
+    return 0
+
 def fetch_news():
     if os.environ.get("MOCK_NEWS") == "1":
         return MOCK_ANIMAL, MOCK_GENERAL
@@ -101,9 +110,10 @@ def fetch_news():
             if not src and isinstance(e.get("source"), dict):
                 src = e["source"].get("title", "")
             seen.add(k)
-            buckets[cat].append({"title": title, "summary": summary[:300], "source": src, "cat": cat})
+            buckets[cat].append({"title": title, "summary": summary[:300], "source": src,
+                                 "cat": cat, "pubts": _pubts(e)})
             got += 1
-            if got >= want:
+            if got >= want + 3:            # hent litt ekstra som buffer for dedup
                 break
     # Prioritert rekkefølge: chip/ID først, så kjæledyr, så regelverk.
     animal = buckets["chip"] + buckets["pet"] + buckets["reg"]
@@ -114,17 +124,18 @@ def fetch_news():
             d = feedparser.parse(_gnews(q, hl, gl, ceid, days))
         except Exception:
             continue
-        for e in d.entries[:5]:
+        for e in d.entries[:8]:
             title, tsrc = _clean(e.get("title", ""))
             if title and norm(title) not in seen:
                 seen.add(norm(title))
-                general.append({"title": title, "summary": _clean(e.get("summary", ""))[0][:200], "source": tsrc})
-            if len(general) >= 2:
+                general.append({"title": title, "summary": _clean(e.get("summary", ""))[0][:200],
+                                "source": tsrc, "pubts": _pubts(e)})
+            if len(general) >= 5:
                 break
 
     if not animal:                          # nødfallback
         return MOCK_ANIMAL, MOCK_GENERAL
-    return animal[:8], general[:2]
+    return animal, general                  # full pool; dedup/kapping skjer i main
 
 MOCK_ANIMAL = [
     {"title":"EU strammer inn krav til chipmerking av hund og katt","summary":"Nytt europeisk regelverk vil kreve obligatorisk ID-merking og registrering for bedre sporbarhet og oppfølging av dyrevelferd. Endringene ventes å påvirke også norske kjæledyreiere.","source":"European Commission","cat":"chip"},
@@ -216,7 +227,7 @@ Ikke bruk overskrifter, emojier eller punktlister.
 Returner KUN gyldig JSON: en liste av objekter {"speaker","text"}, der speaker er "K" eller "T".
 Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
 
-def build_script_llm(dato_str, animal, general, natural=False, weather=None):
+def build_script_llm(dato_str, animal, general, natural=False, weather=None, already=None):
     import urllib.request
     key = os.environ["ANTHROPIC_API_KEY"]
     model = os.environ.get("ANTHROPIC_MODEL", "claude-3-5-haiku-latest")
@@ -225,9 +236,15 @@ def build_script_llm(dato_str, animal, general, natural=False, weather=None):
         lab = {"chip":"[ID/CHIP-MERKING] ", "pet":"[KJÆLEDYR] ", "reg":"[REGELVERK] "}
         return "\n".join(f"- {lab.get(i.get('cat',''),'')}{i['title']}. {i['summary']} (Kilde: {i.get('source','')})" for i in items)
     weather_line = f"\n\nVÆR I OSLO I DAG (nevn kort, kun én setning helt til slutt): {weather}" if weather else ""
+    already_line = ""
+    if already:
+        liste = "\n".join(f"- {t}" for t in already[:40])
+        already_line = ("\n\nALLEREDE DEKKET I TIDLIGERE EPISODER (ikke gjenta disse med mindre det "
+                        "har kommet en KONKRET ny utvikling – da sier du eksplisitt hva som er nytt. "
+                        "Ellers hopp over og bruk andre saker):\n" + liste)
     user = (f"Dato: {dato_str}.\n\nDYREHELSE-/KJÆLEDYR-NYHETER:\n{fmt(animal)}\n\n"
             f"GENERELLE NYHETER (bruk 1–2 kort til slutt):\n{fmt(general)}"
-            f"{weather_line}\n\n"
+            f"{weather_line}{already_line}\n\n"
             "Skriv episoden nå som JSON.")
     body = json.dumps({
         "model": model, "max_tokens": 8000,
@@ -365,6 +382,45 @@ def synthesize(dialog, mp3_path, title):
         mp3_path], check=True)
     os.remove(master)
     return int(round(dur))
+
+# ---------------------------------------------------------------- historikk (unngå gjentakelser)
+SEEN_PATH = os.path.join(DOCS, "seen.json")
+SEEN_KEEP_DAYS = 45
+
+def _story_key(title):
+    return re.sub(r"[^a-zæøå0-9 ]", "", (title or "").lower())
+    # normalisert overskrift: liten forbokstav, uten tegnsetting
+
+def load_seen():
+    if os.path.exists(SEEN_PATH):
+        try: return json.load(open(SEEN_PATH, encoding="utf-8"))
+        except Exception: return {}
+    return {}
+
+def save_seen(seen, now_ts):
+    cutoff = now_ts - SEEN_KEEP_DAYS * 86400
+    seen = {k: v for k, v in seen.items() if v.get("covered_ts", 0) >= cutoff}
+    json.dump(seen, open(SEEN_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+def filter_unseen(items, seen):
+    """Behold sak hvis den ikke er dekket før, ELLER har en nyere publiseringsdato (oppdatert)."""
+    out = []
+    for it in items:
+        rec = seen.get(_story_key(it.get("title", "")))
+        if rec and it.get("pubts", 0) <= rec.get("pubts", 0):
+            continue                        # dekket før, ingenting nytt -> hopp over
+        out.append(it)
+    return out
+
+def recent_titles(seen, now_ts, days=10):
+    cutoff = now_ts - days * 86400
+    return [v["title"] for v in seen.values()
+            if v.get("covered_ts", 0) >= cutoff and v.get("title")]
+
+def record_covered(items, seen, now_ts):
+    for it in items:
+        seen[_story_key(it.get("title", ""))] = {
+            "title": it.get("title", ""), "pubts": it.get("pubts", 0), "covered_ts": now_ts}
 
 # ---------------------------------------------------------------- feed
 def load_state():
@@ -506,7 +562,7 @@ def build_audio_gemini(dialog, mp3_path, title):
 # ---------------------------------------------------------------- Google Cloud TTS (deterministisk)
 GTTS_SR  = 24000
 GV_KARI = os.environ.get("GOOGLE_VOICE_KARI", "nb-NO-Chirp3-HD-Kore")     # kvinne
-GV_TOM  = os.environ.get("GOOGLE_VOICE_TOM",  "nb-NO-Chirp3-HD-Schedar")   # mann
+GV_TOM  = os.environ.get("GOOGLE_VOICE_TOM",  "nb-NO-Chirp3-HD-Charon")   # mann
 
 def _speaker_runs(dialog, max_chars=2500):
     """Slå sammen påfølgende replikker fra samme person (én stemme per forespørsel)."""
@@ -585,9 +641,18 @@ def main():
     fname = f"dyrenytt-{date_id}.mp3"
     mp3_path = os.path.join(OUT, fname)
 
+    now_ts = int(datetime.now(timezone.utc).timestamp())
     animal, general = fetch_news()
     weather = fetch_weather()
-    print(f"Hentet {len(animal)} dyre-saker, {len(general)} generelle. Vær: {weather or 'utilgjengelig'}.")
+
+    # Historikk: dropp saker vi allerede har dekket (med mindre nyere publiseringsdato),
+    # og gi Sonnet en liste over nylig dekkede overskrifter for semantisk filtrering.
+    seen = load_seen()
+    animal = filter_unseen(animal, seen)[:8]
+    general = filter_unseen(general, seen)[:2]
+    already = recent_titles(seen, now_ts, days=10)
+    print(f"Etter historikk-filter: {len(animal)} dyre-saker, {len(general)} generelle "
+          f"({len(already)} tidligere overskrifter i minnet). Vær: {weather or 'utilgjengelig'}.")
 
     if os.environ.get("GOOGLE_TTS_API_KEY"):
         engine = "google"
@@ -598,7 +663,8 @@ def main():
 
     try:
         if os.environ.get("ANTHROPIC_API_KEY"):
-            dialog = build_script_llm(dato_str, animal, general, natural=(engine != "piper"), weather=weather)
+            dialog = build_script_llm(dato_str, animal, general, natural=(engine != "piper"),
+                                      weather=weather, already=already)
             print("Manus: LLM.")
         else:
             raise KeyError("ingen nøkkel")
@@ -637,9 +703,11 @@ def main():
         eps = eps[:KEEP]
         save_state(eps)
         build_feed(eps)
+        record_covered(animal + general, seen, now_ts)   # husk sakene til neste gang
+        save_seen(seen, now_ts)
         print("Publisert til feed.")
     else:
-        print("TESTMODUS – feeden er IKKE endret. Last ned lydfila fra kjøringens artefakter for å lytte.")
+        print("TESTMODUS – feeden og historikken er IKKE endret. Last ned lydfila fra kjøringens artefakter for å lytte.")
 
     # fortell workflow hvilken fil som ble laget
     gh_out = os.environ.get("GITHUB_OUTPUT")
