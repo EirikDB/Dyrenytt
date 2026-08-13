@@ -13,7 +13,7 @@ Miljøvariabler (settes av workflow):
   ANTHROPIC_MODEL  (valgfri) – default claude-3-5-haiku-latest
   MOCK_NEWS        "1" for å bruke innebygde testnyheter (lokal testing)
 """
-import os, sys, json, re, subprocess, tempfile, wave, tarfile, urllib.request, html
+import os, sys, json, re, subprocess, tempfile, wave, tarfile, urllib.request, html, difflib
 from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime
 
@@ -135,7 +135,12 @@ def fetch_news():
         return MOCK_ANIMAL, MOCK_GENERAL
     import feedparser
     seen = set()
+    kept = []                               # aksepterte overskrifter (for fuzzy-dedup)
     def norm(t): return re.sub(r"\s+", " ", t.lower()).strip()
+    def is_dup(t):
+        if norm(t) in seen:
+            return True
+        return any(_similar(t, k) for k in kept)
     buckets = {"chip": [], "pet": [], "reg": []}
     for cat, q, hl, gl, ceid, days, want in TOPICS:
         try:
@@ -147,14 +152,13 @@ def fetch_news():
             title, tsrc = _clean(e.get("title", ""))
             if not title or len(title) < 8:
                 continue
-            k = norm(title)
-            if k in seen:
+            if is_dup(title):
                 continue
             summary, _ = _clean(e.get("summary", ""))
             src = tsrc
             if not src and isinstance(e.get("source"), dict):
                 src = e["source"].get("title", "")
-            seen.add(k)
+            seen.add(norm(title)); kept.append(title)
             buckets[cat].append({"title": title, "summary": summary[:300], "source": src,
                                  "cat": cat, "pubts": _pubts(e)})
             got += 1
@@ -172,6 +176,8 @@ def fetch_news():
             continue
         for e in d.entries[:30]:
             title, tsrc = _clean(e.get("title", ""))
+            # NB: her IKKE fuzzy-dedup – _top_stories trenger flere kilder om samme sak
+            # for å måle dekning. Bare eksakt duplikat-sjekk.
             if not title or norm(title) in seen:
                 continue
             src = tsrc
@@ -441,6 +447,23 @@ def _story_key(title):
     return re.sub(r"[^a-zæøå0-9 ]", "", (title or "").lower())
     # normalisert overskrift: liten forbokstav, uten tegnsetting
 
+def _long_tokens(t):
+    return {w for w in re.findall(r"[a-zæøå]+", (t or "").lower()) if len(w) >= 5}
+
+def _numbers(t):
+    t2 = re.sub(r"(?<=\d)[.\s](?=\d)", "", t or "")   # "250.000"/"250 000" -> "250000"
+    return {n for n in re.findall(r"\d{3,}", t2)}
+
+def _similar(a, b):
+    """Nesten-like overskrifter (samme sak, ulik kilde/omskriving)."""
+    la, lb = _long_tokens(a), _long_tokens(b)
+    shared = len(la & lb)
+    if la and lb and shared >= 2:                 # deler minst to distinktive ord
+        return True
+    if _numbers(a) & _numbers(b) and shared >= 1:  # felles tall + minst ett felles ord
+        return True
+    return difflib.SequenceMatcher(None, _story_key(a), _story_key(b)).ratio() >= 0.80
+
 def load_seen():
     if os.path.exists(SEEN_PATH):
         try: return json.load(open(SEEN_PATH, encoding="utf-8"))
@@ -452,13 +475,23 @@ def save_seen(seen, now_ts):
     seen = {k: v for k, v in seen.items() if v.get("covered_ts", 0) >= cutoff}
     json.dump(seen, open(SEEN_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
+def _match_record(title, seen):
+    """Finn eksisterende post som er (nesten) samme sak – eksakt nøkkel eller fuzzy."""
+    rec = seen.get(_story_key(title))
+    if rec:
+        return _story_key(title), rec
+    for k, r in seen.items():
+        if _similar(title, r.get("title", "")):
+            return k, r
+    return None, None
+
 def filter_unseen(items, seen):
     """Behold sak hvis den ikke er dekket før, ELLER har en nyere publiseringsdato (oppdatert)."""
     out = []
     for it in items:
-        rec = seen.get(_story_key(it.get("title", "")))
+        _, rec = _match_record(it.get("title", ""), seen)
         if rec and it.get("pubts", 0) <= rec.get("pubts", 0):
-            continue                        # dekket før, ingenting nytt -> hopp over
+            continue                        # dekket før (også nesten-lik), ingenting nytt
         out.append(it)
     return out
 
@@ -469,8 +502,13 @@ def recent_titles(seen, now_ts, days=10):
 
 def record_covered(items, seen, now_ts):
     for it in items:
-        seen[_story_key(it.get("title", ""))] = {
-            "title": it.get("title", ""), "pubts": it.get("pubts", 0), "covered_ts": now_ts}
+        t = it.get("title", "")
+        key, rec = _match_record(t, seen)     # slå sammen med nesten-lik post om den finnes
+        if rec:
+            rec["pubts"] = max(rec.get("pubts", 0), it.get("pubts", 0))
+            rec["covered_ts"] = now_ts
+        else:
+            seen[_story_key(t)] = {"title": t, "pubts": it.get("pubts", 0), "covered_ts": now_ts}
 
 # ---------------------------------------------------------------- feed
 def load_state():
