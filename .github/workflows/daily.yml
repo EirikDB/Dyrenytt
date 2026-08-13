@@ -9,7 +9,7 @@ name: Dyrenytt daglig episode
 # eller Spotify. Vil du publisere en manuell kjøring, sett "publish" til true.
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "13 4 * * *"
   workflow_dispatch:
     inputs:
       publish:
@@ -74,6 +74,12 @@ jobs:
           KEEP_EPISODES: "30"
           PUBLISH: ${{ steps.mode.outputs.publish }}
           FEED_EMAIL: ${{ secrets.FEED_EMAIL }}
+          # Egne RSS-kilder (PRIMÆRKILDE for dyre-delen). URL-er i secret RSS_FEEDS,
+          # flere skilt med komma/linjeskift. Google brukes da bare som EU/intl-supplement.
+          RSS_FEEDS: ${{ secrets.RSS_FEEDS }}
+          RSS_MAX_AGE_DAYS: "5"
+          # FEED_ONLY=1 = kun feeden, ingen Google i det hele tatt for dyre-delen.
+          FEED_ONLY: "0"
           # Manus (tekst): Sonnet skriver dialogen ut fra dagens nyheter.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: claude-sonnet-5
