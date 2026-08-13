@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 13. august</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Opptil 250.000 hjemløse kattunger fødes hver sesong; 250 000 hjemløse kattunger født i Norge hver sesong; 250.000 hjemløse kattunger kan bli født hver sesong; Animal welfare</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Opptil 250.000 hjemløse kattunger fødes hver sesong; 250 000 hjemløse kattunger født i Norge hver sesong; 250.000 hjemløse kattunger kan bli født hver sesong; Animal welfare</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-13.mp3" length="5671808" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-13.mp3</guid>
+      <pubDate>Thu, 13 Aug 2026 07:56:15 +0200</pubDate>
+      <itunes:duration>5:54</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 12. august</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Opptil 250.000 hjemløse kattunger fødes hver sesong; 250 000 hjemløse kattunger født i Norge hver sesong; Denne skapte debatt på oppslagstavla. Er den lovlig?; Animal welfare</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Opptil 250.000 hjemløse kattunger fødes hver sesong; 250 000 hjemløse kattunger født i Norge hver sesong; Denne skapte debatt på oppslagstavla. Er den lovlig?; Animal welfare</itunes:summary>
