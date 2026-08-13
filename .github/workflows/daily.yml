@@ -9,7 +9,7 @@ name: Dyrenytt daglig episode
 # eller Spotify. Vil du publisere en manuell kjøring, sett "publish" til true.
 on:
   schedule:
-    - cron: "32 4 * * *"
+    - cron: "0 5 * * *"
   workflow_dispatch:
     inputs:
       publish:
@@ -130,7 +130,7 @@ jobs:
         run: |
           git config user.name "dyrenytt-bot"
           git config user.email "dyrenytt-bot@users.noreply.github.com"
-          git add docs/feed.xml docs/episodes.json
+          git add docs/feed.xml docs/episodes.json docs/seen.json
           if git diff --cached --quiet; then
             echo "Ingen endringer å committe."
           else
