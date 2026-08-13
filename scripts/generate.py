@@ -66,7 +66,52 @@ TOPICS = [
     ("reg", '(dyrevelferd OR Mattilsynet OR dyrehelse) (kjæledyr OR hund OR katt OR regelverk OR forskrift OR "ny lov" OR forbud OR krav)',
      "no", "NO", "NO:no", 14, 2),
 ]
-GENERAL_TOPICS = [("Norge nyheter", "no", "NO", "NO:no", 1)]
+# "Andre nyheter" = finans/økonomi. Vi henter bredt og velger sakene som er
+# omtalt av FLEST ulike kilder (mest oppmerksomhet i nyhetsbildet i dag).
+FINANCE_TOPICS = [
+    ("økonomi OR finans OR børs OR rente OR aksjer OR inflasjon OR \"Norges Bank\" OR "
+     "\"Oslo Børs\" OR krone OR oljepris OR boligmarked", "no", "NO", "NO:no", 1),
+]
+_FIN_STOP = set(("og i på for til av med en et den det som er var har blir ble kan skal å de "
+                 "dette disse mot etter over under ny nye nytt her nå om ved fra opp ned mer "
+                 "flere store stor liten mest slik saken sak norsk norske dette").split())
+
+def _fin_tokens(title):
+    return {w for w in re.findall(r"[a-zæøå0-9]+", (title or "").lower())
+            if len(w) >= 4 and w not in _FIN_STOP}
+
+def _top_stories(items, k=2, min_sources=2):
+    """Grupper finans-overskrifter på felles nøkkelord; ranger etter antall ULIKE kilder."""
+    from collections import defaultdict
+    tok2idx = defaultdict(set)
+    for i, it in enumerate(items):
+        for w in _fin_tokens(it.get("title", "")):
+            tok2idx[w].add(i)
+    def nsrc(idxs): return len({(items[i].get("source") or "?") for i in idxs})
+    ranked = sorted(tok2idx.items(), key=lambda kv: (nsrc(kv[1]), len(kv[1])), reverse=True)
+    used, stories = set(), []
+    for _, idxs in ranked:
+        idxs = [i for i in idxs if i not in used]
+        if len(idxs) < 2:
+            continue
+        sc = nsrc(idxs)
+        if sc < min_sources:
+            continue
+        rep = items[sorted(idxs)[0]]           # representativ overskrift
+        stories.append({"title": rep.get("title", ""), "summary": rep.get("summary", ""),
+                        "source": rep.get("source", ""), "coverage": sc,
+                        "cat": "finans", "pubts": rep.get("pubts", 0)})
+        used.update(idxs)
+        if len(stories) >= k:
+            break
+    if len(stories) < k:                       # fyll opp med ferskeste gjenværende saker
+        rest = sorted((i for i in range(len(items)) if i not in used),
+                      key=lambda i: items[i].get("pubts", 0), reverse=True)
+        for i in rest:
+            stories.append({**items[i], "coverage": items[i].get("coverage", 1), "cat": "finans"})
+            if len(stories) >= k:
+                break
+    return stories
 
 def _clean(title):
     title = html.unescape(re.sub("<[^>]+>", "", title or "")).strip()
@@ -118,20 +163,24 @@ def fetch_news():
     # Prioritert rekkefølge: chip/ID først, så kjæledyr, så regelverk.
     animal = buckets["chip"] + buckets["pet"] + buckets["reg"]
 
-    general = []
-    for q, hl, gl, ceid, days in GENERAL_TOPICS:
+    # Finans/økonomi: hent bredt, deretter velg de mest omtalte (flest kilder).
+    fin_pool = []
+    for q, hl, gl, ceid, days in FINANCE_TOPICS:
         try:
             d = feedparser.parse(_gnews(q, hl, gl, ceid, days))
         except Exception:
             continue
-        for e in d.entries[:8]:
+        for e in d.entries[:30]:
             title, tsrc = _clean(e.get("title", ""))
-            if title and norm(title) not in seen:
-                seen.add(norm(title))
-                general.append({"title": title, "summary": _clean(e.get("summary", ""))[0][:200],
-                                "source": tsrc, "pubts": _pubts(e)})
-            if len(general) >= 5:
-                break
+            if not title or norm(title) in seen:
+                continue
+            src = tsrc
+            if not src and isinstance(e.get("source"), dict):
+                src = e["source"].get("title", "")
+            seen.add(norm(title))
+            fin_pool.append({"title": title, "summary": _clean(e.get("summary", ""))[0][:200],
+                             "source": src, "pubts": _pubts(e)})
+    general = _top_stories(fin_pool, k=3)   # litt ekstra for historikk-filteret
 
     if not animal:                          # nødfallback
         return MOCK_ANIMAL, MOCK_GENERAL
@@ -144,8 +193,8 @@ MOCK_ANIMAL = [
     {"title":"Veterinærer advarer mot varmen for hund","summary":"Hunder svetter ikke og overopphetes lett på varme dager.","source":"NKK","cat":"pet"},
 ]
 MOCK_GENERAL = [
-    {"title":"Mye regn meldt på Vestlandet","summary":"Meteorologene varsler kraftig nedbør.","source":"NRK"},
-    {"title":"Signalfeil gir togtrøbbel i Oslo-området","summary":"Bane Nor melder om forsinkelser.","source":"NRK"},
+    {"title":"Norges Bank holder styringsrenten uendret","summary":"Sentralbanken lot renten stå, i tråd med forventningene i markedet.","source":"E24","cat":"finans","coverage":6},
+    {"title":"Oljeprisen faller etter svake nøkkeltall","summary":"Nordsjøolje ned flere prosent på bekymring for etterspørselen.","source":"DN","cat":"finans","coverage":4},
 ]
 
 # ---------------------------------------------------------------- vær (Oslo)
@@ -199,7 +248,7 @@ def fetch_weather(lat=59.913, lon=10.752):   # Oslo sentrum
 SYSTEM_PROMPT = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
 To programledere: Kari (lysere stemme) og Tom (dypere stemme). Målgruppen hører på mens de løper eller pendler til jobb.
 Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
-Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
+Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte finans-/økonominyheter (de mest omtalte på tvers av kilder i dag) og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
 PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
 Start med en kort intro med dagens dato, avslutt med en kort, vennlig outro. Hold en journalistisk NYHETSTONE: rapporter hva som har skjedd, hvem det gjelder, når og hvorfor det er relevant. Vær saklig og nøytral, som to nyhetsverter som diskuterer dagens saker. UNNGÅ moralisering, formaninger og lister med gode råd – dette er en nyhetspodkast, ikke en rådgivningsspalte. En kort faktaforklaring når noe er teknisk er fint, men la lytteren trekke egne slutninger.
 
@@ -219,7 +268,7 @@ Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
 SYSTEM_PROMPT_NATURAL = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
 To programledere: Kari og Tom. Målgruppen hører på mens de løper eller pendler til jobb.
 Skriv en naturlig, vennlig dialog på norsk bokmål, ca. 1500–1800 ord, som varer rundt 9–10 minutter.
-Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte generelle nyheter og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
+Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte finans-/økonominyheter (de mest omtalte på tvers av kilder i dag) og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
 PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
 Start med en kort intro med dagens dato, avslutt med en kort, vennlig outro. Hold en journalistisk NYHETSTONE: rapporter hva som har skjedd, hvem det gjelder, når og hvorfor det er relevant. Vær saklig og nøytral, som to nyhetsverter som diskuterer dagens saker. UNNGÅ moralisering, formaninger og lister med gode råd – dette er en nyhetspodkast, ikke en rådgivningsspalte. En kort faktaforklaring når noe er teknisk er fint, men la lytteren trekke egne slutninger.
 Skriv helt naturlig norsk – du trenger IKKE lydskrive ord eller unngå tall og forkortelser, stemmen uttaler dette riktig.
@@ -233,8 +282,9 @@ def build_script_llm(dato_str, animal, general, natural=False, weather=None, alr
     model = os.environ.get("ANTHROPIC_MODEL", "claude-3-5-haiku-latest")
     system = SYSTEM_PROMPT_NATURAL if natural else SYSTEM_PROMPT
     def fmt(items):
-        lab = {"chip":"[ID/CHIP-MERKING] ", "pet":"[KJÆLEDYR] ", "reg":"[REGELVERK] "}
-        return "\n".join(f"- {lab.get(i.get('cat',''),'')}{i['title']}. {i['summary']} (Kilde: {i.get('source','')})" for i in items)
+        lab = {"chip":"[ID/CHIP-MERKING] ", "pet":"[KJÆLEDYR] ", "reg":"[REGELVERK] ", "finans":"[FINANS] "}
+        def cov(i): return f" [omtalt av ~{i['coverage']} kilder]" if i.get("coverage") else ""
+        return "\n".join(f"- {lab.get(i.get('cat',''),'')}{i['title']}. {i['summary']}{cov(i)} (Kilde: {i.get('source','')})" for i in items)
     weather_line = f"\n\nVÆR I OSLO I DAG (nevn kort, kun én setning helt til slutt): {weather}" if weather else ""
     already_line = ""
     if already:
@@ -243,7 +293,7 @@ def build_script_llm(dato_str, animal, general, natural=False, weather=None, alr
                         "har kommet en KONKRET ny utvikling – da sier du eksplisitt hva som er nytt. "
                         "Ellers hopp over og bruk andre saker):\n" + liste)
     user = (f"Dato: {dato_str}.\n\nDYREHELSE-/KJÆLEDYR-NYHETER:\n{fmt(animal)}\n\n"
-            f"GENERELLE NYHETER (bruk 1–2 kort til slutt):\n{fmt(general)}"
+            f"FINANS-/ØKONOMINYHETER (de mest omtalte på tvers av kilder – bruk 1–2 kort til slutt):\n{fmt(general)}"
             f"{weather_line}{already_line}\n\n"
             "Skriv episoden nå som JSON.")
     body = json.dumps({
@@ -295,7 +345,7 @@ def build_script_template(dato_str, animal, general, weather=None):
         D.append(("SEG_"+s, f"{lead} {it['title']}." + (f" {summ}" if summ else "")))
         D.append((other, rnd.choice(REACTS) + " Da går vi videre."))
     if general:
-        D.append(("SEG_K", "Og helt til slutt, litt fra nyhetsbildet ellers, for det skjer jo mer i verden enn bare dyr."))
+        D.append(("SEG_K", "Og litt fra finans- og økonominyhetene, det som preger nyhetsbildet ellers i dag."))
         for it in general[:2]:
             summ = it.get("summary") or ""
             D.append(("T", f"{it['title']}." + (f" {summ}" if summ else "")))
