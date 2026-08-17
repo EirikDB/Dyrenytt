@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – mandag 17. august</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Kåret til «verdens styggeste hund»; Meldt savnet i november – nå er 18-åringen funnet død; Forskere: Smittevernet tar for lite hensyn til husdyr som går ute; Døde etter hundebitt: Eier pågrepet for drap</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Kåret til «verdens styggeste hund»; Meldt savnet i november – nå er 18-åringen funnet død; Forskere: Smittevernet tar for lite hensyn til husdyr som går ute; Døde etter hundebitt: Eier pågrepet for drap</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-17.mp3" length="6592639" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-17.mp3</guid>
+      <pubDate>Mon, 17 Aug 2026 06:57:04 +0200</pubDate>
+      <itunes:duration>6:52</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – søndag 16. august</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Volvo-en skal gjennom periodisk kontroll; – Folk trues på livet; Hunder kan forstå ansiktsuttrykkene våre; Aper har også kjæledyr</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Volvo-en skal gjennom periodisk kontroll; – Folk trues på livet; Hunder kan forstå ansiktsuttrykkene våre; Aper har også kjæledyr</itunes:summary>
