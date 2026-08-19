@@ -4,8 +4,6 @@ Dette repoet lager en ny podkast-episode helt automatisk hver hverdagsmorgen og 
 
 **Slik henger det sammen:** en planlagt GitHub Actions-jobb henter dagens nyheter (dyrehelse/kjæledyr + litt generelt), skriver et manus, lager lyden med den norske Piper-stemmen, legger MP3-en som en *release-asset*, og oppdaterer en **RSS-feed** som ligger på GitHub Pages. Spotify abonnerer på den feeden én gang, og viser nye episoder automatisk.
 
-> Merk: dette bruker et **offentlig** GitHub-repo, så feeden og lydfilene er offentlig tilgjengelige (samme premiss som Spotify uansett har). Vil du ha det helt internt/privat, må du bruke en betalt host som Transistor i stedet – si fra, så lager jeg en variant.
-
 ## Engangs-oppsett (ca. 10 minutter)
 
 ### 1. Opprett repoet
