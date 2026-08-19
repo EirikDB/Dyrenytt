@@ -66,11 +66,12 @@ TOPICS = [
     ("reg", '(dyrevelferd OR Mattilsynet OR dyrehelse) (kjæledyr OR hund OR katt OR regelverk OR forskrift OR "ny lov" OR forbud OR krav)',
      "no", "NO", "NO:no", 14, 2),
 ]
-# "Andre nyheter" = finans/økonomi. Vi henter bredt og velger sakene som er
-# omtalt av FLEST ulike kilder (mest oppmerksomhet i nyhetsbildet i dag).
-FINANCE_TOPICS = [
-    ("økonomi OR finans OR børs OR rente OR aksjer OR inflasjon OR \"Norges Bank\" OR "
-     "\"Oslo Børs\" OR krone OR oljepris OR boligmarked", "no", "NO", "NO:no", 1),
+# "Andre nyheter" = de 2–3 mest omtalte sakene siste døgn på tvers av kilder.
+# Bredt søk (siste 1 dag) som gir mange artikler fra ulike medier -> vi grupperer
+# på felles nøkkelord og velger sakene FLEST ulike kilder skriver om.
+TOPMOST_TOPICS = [
+    ("Norge OR regjeringen OR Stortinget OR politiet OR retten OR ulykke OR brann OR "
+     "værmelding OR streik OR strømpris OR økonomi OR verden", "no", "NO", "NO:no", 1),
 ]
 _FIN_STOP = set(("og i på for til av med en et den det som er var har blir ble kan skal å de "
                  "dette disse mot etter over under ny nye nytt her nå om ved fra opp ned mer "
@@ -81,7 +82,7 @@ def _fin_tokens(title):
             if len(w) >= 4 and w not in _FIN_STOP}
 
 def _top_stories(items, k=2, min_sources=2):
-    """Grupper finans-overskrifter på felles nøkkelord; ranger etter antall ULIKE kilder."""
+    """Grupper overskrifter på felles nøkkelord; ranger etter antall ULIKE kilder."""
     from collections import defaultdict
     tok2idx = defaultdict(set)
     for i, it in enumerate(items):
@@ -100,7 +101,7 @@ def _top_stories(items, k=2, min_sources=2):
         rep = items[sorted(idxs)[0]]           # representativ overskrift
         stories.append({"title": rep.get("title", ""), "summary": rep.get("summary", ""),
                         "source": rep.get("source", ""), "coverage": sc,
-                        "cat": "finans", "pubts": rep.get("pubts", 0)})
+                        "cat": "topp", "pubts": rep.get("pubts", 0)})
         used.update(idxs)
         if len(stories) >= k:
             break
@@ -108,7 +109,7 @@ def _top_stories(items, k=2, min_sources=2):
         rest = sorted((i for i in range(len(items)) if i not in used),
                       key=lambda i: items[i].get("pubts", 0), reverse=True)
         for i in rest:
-            stories.append({**items[i], "coverage": items[i].get("coverage", 1), "cat": "finans"})
+            stories.append({**items[i], "coverage": items[i].get("coverage", 1), "cat": "topp"})
             if len(stories) >= k:
                 break
     return stories
@@ -233,7 +234,7 @@ def fetch_news():
 
     # Finans/økonomi: hent bredt, deretter velg de mest omtalte (flest kilder).
     fin_pool = []
-    for q, hl, gl, ceid, days in FINANCE_TOPICS:
+    for q, hl, gl, ceid, days in TOPMOST_TOPICS:
         try:
             d = feedparser.parse(_gnews(q, hl, gl, ceid, days))
         except Exception:
@@ -263,8 +264,8 @@ MOCK_ANIMAL = [
     {"title":"Veterinærer advarer mot varmen for hund","summary":"Hunder svetter ikke og overopphetes lett på varme dager.","source":"NKK","cat":"pet"},
 ]
 MOCK_GENERAL = [
-    {"title":"Norges Bank holder styringsrenten uendret","summary":"Sentralbanken lot renten stå, i tråd med forventningene i markedet.","source":"E24","cat":"finans","coverage":6},
-    {"title":"Oljeprisen faller etter svake nøkkeltall","summary":"Nordsjøolje ned flere prosent på bekymring for etterspørselen.","source":"DN","cat":"finans","coverage":4},
+    {"title":"Uvær på Vestlandet – flere veier stengt","summary":"Kraftig regn skaper problemer flere steder.","source":"NRK","cat":"topp","coverage":6},
+    {"title":"Regjeringen legger fram nye tiltak","summary":"Statsministeren varslet endringer på pressekonferanse.","source":"VG","cat":"topp","coverage":5},
 ]
 
 # ---------------------------------------------------------------- vær (Oslo)
@@ -318,7 +319,8 @@ def fetch_weather(lat=59.913, lon=10.752):   # Oslo sentrum
 SYSTEM_PROMPT = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
 To programledere: Kari (lysere stemme) og Tom (dypere stemme). Målgruppen hører på mens de løper eller pendler til jobb.
 Skriv en naturlig, vennlig dialog på norsk bokmål. Sikt på 8–10 minutter, omtrent 1900–2400 ord – ikke lever et kort sammendrag. Dekk ALLE de oppgitte dyre-/kjæledyrsakene som er relevante (ikke hopp over gode saker), og prioriter de ferskeste. Bruk omtrent 3–6 setninger per sak: bakgrunn, hva som er nytt, og hvorfor det er relevant – ikke bare korte enkeltsetninger. Nevn gjerne hvor saken kommer fra (kilden er oppgitt for hver sak), for eksempel «ifølge NRK» eller «melder Nettavisen».
-Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte finans-/økonominyheter (de mest omtalte på tvers av kilder i dag) og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
+SUBSTANS-KRAV: Hver sak du tar med MÅ fortelle konkret hva som har skjedd – hva som ble funnet, vedtatt, oppdaget eller sagt, hvem det gjelder, hvor, og utfallet. Har du ikke nok konkret informasjon til å forklare hva saken faktisk handler om (for eksempel bare en kryptisk overskrift uten innhold, eller saker merket «TYNT KILDEGRUNNLAG»), skal du HOPPE OVER saken – ikke nevn den vagt. Si aldri noe som «et makabert funn ble gjort» uten å fortelle hva som ble funnet. Det er bedre med færre saker som gir mening enn mange vage.
+Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med de 2–3 mest omtalte nyhetssakene i Norge siste døgn (de sakene flest kilder skriver om) og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
 PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
 FAKTA (viktig): Det er per i dag IKKE lovpålagt eller obligatorisk ID-/chipmerking av kjæledyr – verken hund eller katt – i Norge. Omtal det aldri som et gjeldende krav. Hvis en sak handler om dette, gjør det tydelig at merking i dag er frivillig, og at obligatorisk merking eventuelt bare er et forslag eller noe som diskuteres/vurderes.
 Start med en kort intro med dagens dato, avslutt med en kort, vennlig outro. Hold en journalistisk NYHETSTONE: rapporter hva som har skjedd, hvem det gjelder, når og hvorfor det er relevant. Vær saklig og nøytral, som to nyhetsverter som diskuterer dagens saker. UNNGÅ moralisering, formaninger og lister med gode råd – dette er en nyhetspodkast, ikke en rådgivningsspalte. En kort faktaforklaring når noe er teknisk er fint, men la lytteren trekke egne slutninger.
@@ -339,7 +341,8 @@ Sett "seg": true på replikker som starter et nytt tema (gir lengre pause)."""
 SYSTEM_PROMPT_NATURAL = """Du er manusforfatter for en kort, daglig norsk podkast som heter «Dyrenytt».
 To programledere: Kari og Tom. Målgruppen hører på mens de løper eller pendler til jobb.
 Skriv en naturlig, vennlig dialog på norsk bokmål. Sikt på 8–10 minutter, omtrent 1900–2400 ord – ikke lever et kort sammendrag. Dekk ALLE de oppgitte dyre-/kjæledyrsakene som er relevante (ikke hopp over gode saker), og prioriter de ferskeste. Bruk omtrent 3–6 setninger per sak: bakgrunn, hva som er nytt, og hvorfor det er relevant – ikke bare korte enkeltsetninger. Nevn gjerne hvor saken kommer fra (kilden er oppgitt for hver sak), for eksempel «ifølge NRK» eller «melder Nettavisen».
-Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med 1–2 korte finans-/økonominyheter (de mest omtalte på tvers av kilder i dag) og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
+SUBSTANS-KRAV: Hver sak du tar med MÅ fortelle konkret hva som har skjedd – hva som ble funnet, vedtatt, oppdaget eller sagt, hvem det gjelder, hvor, og utfallet. Har du ikke nok konkret informasjon til å forklare hva saken faktisk handler om (for eksempel bare en kryptisk overskrift uten innhold, eller saker merket «TYNT KILDEGRUNNLAG»), skal du HOPPE OVER saken – ikke nevn den vagt. Si aldri noe som «et makabert funn ble gjort» uten å fortelle hva som ble funnet. Det er bedre med færre saker som gir mening enn mange vage.
+Hoveddelen skal handle om dyrehelse og kjæledyr; avslutt med de 2–3 mest omtalte nyhetssakene i Norge siste døgn (de sakene flest kilder skriver om) og en kort værmelding for Oslo i dag (kun én setning helt til slutt).
 PRIORITER saker om ID-merking og chipmerking av kjæledyr, og nytt regelverk – også fra EU og utlandet – samt sporbarhet og dyrevelferd. Dette er kjerneinteressen for lytterne. Ta gjerne med chip- og dyrevelferdsnyheter fra utlandet, og forklar hva EU-regler kan bety for norske kjæledyreiere. Gi mindre plass til produksjonsdyr, vilt og skadedyr med mindre saken er stor. Saker merket [ID/CHIP-MERKING] og [REGELVERK] i listen skal løftes fram først. IKKE nevn hvem som lager eller står bak podkasten.
 FAKTA (viktig): Det er per i dag IKKE lovpålagt eller obligatorisk ID-/chipmerking av kjæledyr – verken hund eller katt – i Norge. Omtal det aldri som et gjeldende krav. Hvis en sak handler om dette, gjør det tydelig at merking i dag er frivillig, og at obligatorisk merking eventuelt bare er et forslag eller noe som diskuteres/vurderes.
 Start med en kort intro med dagens dato, avslutt med en kort, vennlig outro. Hold en journalistisk NYHETSTONE: rapporter hva som har skjedd, hvem det gjelder, når og hvorfor det er relevant. Vær saklig og nøytral, som to nyhetsverter som diskuterer dagens saker. UNNGÅ moralisering, formaninger og lister med gode råd – dette er en nyhetspodkast, ikke en rådgivningsspalte. En kort faktaforklaring når noe er teknisk er fint, men la lytteren trekke egne slutninger.
@@ -354,9 +357,10 @@ def build_script_llm(dato_str, animal, general, natural=False, weather=None, alr
     model = os.environ.get("ANTHROPIC_MODEL", "claude-3-5-haiku-latest")
     system = SYSTEM_PROMPT_NATURAL if natural else SYSTEM_PROMPT
     def fmt(items):
-        lab = {"feed":"[KILDE] ", "chip":"[ID/CHIP-MERKING] ", "pet":"[KJÆLEDYR] ", "reg":"[REGELVERK] ", "finans":"[FINANS] "}
+        lab = {"feed":"[KILDE] ", "chip":"[ID/CHIP-MERKING] ", "pet":"[KJÆLEDYR] ", "reg":"[REGELVERK] ", "topp":"[MEST OMTALT] "}
         def cov(i): return f" [omtalt av ~{i['coverage']} kilder]" if i.get("coverage") else ""
-        return "\n".join(f"- {lab.get(i.get('cat',''),'')}{i['title']}. {i['summary']}{cov(i)} (Kilde: {i.get('source','')})" for i in items)
+        def thin(i): return " [TYNT KILDEGRUNNLAG]" if len((i.get("summary") or "").strip()) < 60 else ""
+        return "\n".join(f"- {lab.get(i.get('cat',''),'')}{i['title']}. {i['summary']}{cov(i)}{thin(i)} (Kilde: {i.get('source','')})" for i in items)
     weather_line = f"\n\nVÆR I OSLO I DAG (nevn kort, kun én setning helt til slutt): {weather}" if weather else ""
     already_line = ""
     if already:
@@ -365,7 +369,7 @@ def build_script_llm(dato_str, animal, general, natural=False, weather=None, alr
                         "har kommet en KONKRET ny utvikling – da sier du eksplisitt hva som er nytt. "
                         "Ellers hopp over og bruk andre saker):\n" + liste)
     user = (f"Dato: {dato_str}.\n\nDYREHELSE-/KJÆLEDYR-NYHETER:\n{fmt(animal)}\n\n"
-            f"FINANS-/ØKONOMINYHETER (de mest omtalte på tvers av kilder – bruk 1–2 kort til slutt):\n{fmt(general)}"
+            f"MEST OMTALTE NYHETSSAKER SISTE DØGN (på tvers av kilder – ta med de 2–3 viktigste til slutt):\n{fmt(general)}"
             f"{weather_line}{already_line}\n\n"
             "Skriv episoden nå som JSON.")
     body = json.dumps({
@@ -417,7 +421,7 @@ def build_script_template(dato_str, animal, general, weather=None):
         D.append(("SEG_"+s, f"{lead} {it['title']}." + (f" {summ}" if summ else "")))
         D.append((other, rnd.choice(REACTS) + " Da går vi videre."))
     if general:
-        D.append(("SEG_K", "Og litt fra finans- og økonominyhetene, det som preger nyhetsbildet ellers i dag."))
+        D.append(("SEG_K", "Og litt om de mest omtalte nyhetssakene ellers i landet det siste døgnet."))
         for it in general[:2]:
             summ = it.get("summary") or ""
             D.append(("T", f"{it['title']}." + (f" {summ}" if summ else "")))
@@ -508,6 +512,9 @@ def synthesize(dialog, mp3_path, title):
 # ---------------------------------------------------------------- historikk (unngå gjentakelser)
 SEEN_PATH = os.path.join(DOCS, "seen.json")
 SEEN_KEEP_DAYS = 45
+# En sak som er dekket suppresses i så mange dager – UANSETT om det kommer nye
+# artikler med nyere dato om samme hendelse. Hindrer at samme sak gjentas.
+SEEN_SUPPRESS_DAYS = int(os.environ.get("SEEN_SUPPRESS_DAYS", "14"))
 
 def _story_key(title):
     return re.sub(r"[^a-zæøå0-9 ]", "", (title or "").lower())
@@ -551,13 +558,16 @@ def _match_record(title, seen):
             return k, r
     return None, None
 
-def filter_unseen(items, seen):
-    """Behold sak hvis den ikke er dekket før, ELLER har en nyere publiseringsdato (oppdatert)."""
+def filter_unseen(items, seen, now_ts):
+    """Hopp over saker som er dekket i løpet av de siste SEEN_SUPPRESS_DAYS dagene –
+    uansett om det har kommet nyere artikler om samme hendelse (fanger også nesten-like)."""
     out = []
     for it in items:
         _, rec = _match_record(it.get("title", ""), seen)
-        if rec and it.get("pubts", 0) <= rec.get("pubts", 0):
-            continue                        # dekket før (også nesten-lik), ingenting nytt
+        if rec:
+            age_days = (now_ts - rec.get("covered_ts", 0)) / 86400.0
+            if age_days <= SEEN_SUPPRESS_DAYS:
+                continue                    # dekket nylig -> hopp over
         out.append(it)
     return out
 
@@ -802,8 +812,8 @@ def main():
     # Historikk: dropp saker vi allerede har dekket (med mindre nyere publiseringsdato),
     # og gi Sonnet en liste over nylig dekkede overskrifter for semantisk filtrering.
     seen = load_seen()
-    animal = filter_unseen(animal, seen)[:12]     # mer materiale -> lengre episode
-    general = filter_unseen(general, seen)[:2]
+    animal = filter_unseen(animal, seen, now_ts)[:12]     # mer materiale -> lengre episode
+    general = filter_unseen(general, seen, now_ts)[:3]
     already = recent_titles(seen, now_ts, days=10)
     print(f"Etter historikk-filter: {len(animal)} dyre-saker, {len(general)} generelle "
           f"({len(already)} tidligere overskrifter i minnet). Vær: {weather or 'utilgjengelig'}.")
