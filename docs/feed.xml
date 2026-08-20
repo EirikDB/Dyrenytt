@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 20. august</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Kristiansunder kan bli «årets måkevenn»; – Det er døde dyr overalt her; Tre kviger satt fast i iskald elv – redningsaksjonen varte i sju timer; Vær-Sjur</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Kristiansunder kan bli «årets måkevenn»; – Det er døde dyr overalt her; Tre kviger satt fast i iskald elv – redningsaksjonen varte i sju timer; Vær-Sjur</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-20.mp3" length="6480896" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-20.mp3</guid>
+      <pubDate>Thu, 20 Aug 2026 06:52:14 +0200</pubDate>
+      <itunes:duration>6:45</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 19. august</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Et møte i Åsermarka; Ny dokumentar gransker Isabel Raad, Cristian Brennhovd og Sara Emilie; Vanskelig å hjelpe Støre nå; Dette er hennes hemmelige kjæreste</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Et møte i Åsermarka; Ny dokumentar gransker Isabel Raad, Cristian Brennhovd og Sara Emilie; Vanskelig å hjelpe Støre nå; Dette er hennes hemmelige kjæreste</itunes:summary>
