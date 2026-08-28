@@ -77,7 +77,7 @@ jobs:
           # Egne RSS-kilder (PRIMÆRKILDE for dyre-delen). URL-er i secret RSS_FEEDS,
           # flere skilt med komma/linjeskift. Google brukes da bare som EU/intl-supplement.
           RSS_FEEDS: ${{ secrets.RSS_FEEDS }}
-          RSS_MAX_AGE_DAYS: "5"
+          RSS_MAX_AGE_DAYS: "7"
           # FEED_ONLY=1 = kun feeden, ingen Google i det hele tatt for dyre-delen.
           FEED_ONLY: "0"
           # Manus (tekst): Sonnet skriver dialogen ut fra dagens nyheter.
