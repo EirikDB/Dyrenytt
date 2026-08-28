@@ -9,7 +9,7 @@ name: Dyrenytt daglig episode
 # eller Spotify. Vil du publisere en manuell kjøring, sett "publish" til true.
 on:
   schedule:
-    - cron: "13 4 * * *"
+    - cron: "0 5 * * *"
   workflow_dispatch:
     inputs:
       publish:
@@ -83,10 +83,19 @@ jobs:
           # Manus (tekst): Sonnet skriver dialogen ut fra dagens nyheter.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: claude-sonnet-5
-          # Stemme (lyd) – prioritetsrekkefølge:
-          #   1) GOOGLE_TTS_API_KEY  -> Google Cloud TTS, faste/deterministiske norske stemmer (anbefalt).
-          #   2) GEMINI_API_KEY      -> Gemini TTS (generativ; stemmene kan variere litt).
-          #   3) ingen               -> gratis Piper-stemme.
+          # Stemme (lyd) – TTS_ENGINE overstyrer; ellers prioritet:
+          #   eleven (ELEVENLABS_API_KEY) > google (GOOGLE_TTS_API_KEY) > gemini > piper.
+          # Sett TTS_ENGINE til eleven/google/gemini/piper for å velge eksplisitt (tomt = auto).
+          TTS_ENGINE: "eleven"
+          # ElevenLabs – faste, deterministiske stemmer (norsk via eleven_multilingual_v2).
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          # Stemmer (voice-IDer fra ElevenLabs – ikke hemmelig, limt inn direkte):
+          ELEVEN_VOICE_KARI: "uNsWM1StCcpydKYOjKyu"   # Mia Starset (kvinne)
+          ELEVEN_VOICE_TOM: "580zXINOKYzlp5JwzW2H"    # Henrik (mann)
+          # Språk LÅST til norsk (krever flash/v3-modell; multilingual_v2 støtter ikke språklås).
+          # Dialekt = stemmens egen (Mia/Henrik).
+          ELEVEN_MODEL: "eleven_flash_v2_5"
+          ELEVEN_LANGUAGE: "no"
           GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
           # (valgfritt) bytt stemmer: GOOGLE_VOICE_KARI / GOOGLE_VOICE_TOM
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
