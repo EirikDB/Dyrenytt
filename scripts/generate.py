@@ -796,6 +796,69 @@ def build_audio_gcloud(dialog, mp3_path, title):
     os.remove(wav)
     return int(round(dur))
 
+# ---------------------------------------------------------------- ElevenLabs (deterministisk)
+EL_SR    = 24000
+EL_MODEL = os.environ.get("ELEVEN_MODEL", "eleven_multilingual_v2")
+EL_KARI  = (os.environ.get("ELEVEN_VOICE_KARI") or "21m00Tcm4TlvDq8ikWAM")   # Rachel (kvinne)
+EL_TOM   = (os.environ.get("ELEVEN_VOICE_TOM")  or "pNInz6obpgDQGcFmaJgB")   # Adam (mann)
+# Valgfri språklås (ISO 639-1, f.eks. "no"). Støttes IKKE av multilingual_v2 –
+# bruk eleven_flash_v2_5 eller eleven_v3 hvis du vil tvinge språket.
+EL_LANG  = (os.environ.get("ELEVEN_LANGUAGE") or "").strip()
+
+def _eleven_tts(text, voice_id, timeout=120, attempts=3):
+    """Deterministisk: samme voice_id gir samme stemme hver gang. Returnerer PCM (24k, 16-bit mono)."""
+    import urllib.request, urllib.error, time
+    key = os.environ["ELEVENLABS_API_KEY"]
+    url = (f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
+           f"?output_format=pcm_24000")
+    payload = {"text": text, "model_id": EL_MODEL,
+               "voice_settings": {"stability": 0.5, "similarity_boost": 0.75}}
+    if EL_LANG and "multilingual" not in EL_MODEL:   # språklås (ikke støttet av multilingual_v2)
+        payload["language_code"] = EL_LANG
+    body = json.dumps(payload).encode()
+    last = None
+    for a in range(attempts):
+        try:
+            req = urllib.request.Request(url, data=body, method="POST", headers={
+                "xi-api-key": key, "content-type": "application/json", "accept": "audio/pcm"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()                       # rå PCM-bytes
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "ignore")[:400]
+            last = f"HTTP {e.code}: {detail}"
+            if e.code in (400, 401, 403, 404, 422):
+                break
+        except Exception as e:
+            last = f"{type(e).__name__}: {e}"
+        if a < attempts - 1:
+            time.sleep(4 * (a + 1))
+    raise RuntimeError(last or "ukjent ElevenLabs-feil")
+
+def build_audio_eleven(dialog, mp3_path, title):
+    runs = _speaker_runs(dialog)
+    print(f"  ElevenLabs: {len(runs)} replikker (Kari={EL_KARI}, Tom={EL_TOM}) – deterministisk...")
+    pcm = bytearray()
+    sil     = b"\x00\x00" * int(EL_SR * 0.30)
+    sil_seg = b"\x00\x00" * int(EL_SR * 0.60)
+    for i, (s, text, seg) in enumerate(runs):
+        voice = EL_KARI if s == "K" else EL_TOM
+        data = _eleven_tts(text, voice)
+        if pcm: pcm += (sil_seg if seg else sil)
+        pcm += data
+        print(f"  replikk {i+1}/{len(runs)} ({'Kari' if s=='K' else 'Tom'}) ok")
+    wav = os.path.join(OUT, "eleven.wav")
+    with wave.open(wav, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(EL_SR); w.writeframes(bytes(pcm))
+    dur = len(pcm) / 2 / EL_SR
+    fo = max(0.1, round(dur - 0.5, 2))
+    subprocess.run(["ffmpeg","-y","-loglevel","error","-i",wav,
+        "-af",f"afade=t=in:st=0:d=0.3,afade=t=out:st={fo}:d=0.5",
+        "-codec:a","libmp3lame","-b:a","128k",
+        "-metadata",f"title={title}","-metadata","artist=Dyrenytt","-metadata","album=Dyrenytt",
+        mp3_path], check=True)
+    os.remove(wav)
+    return int(round(dur))
+
 # ---------------------------------------------------------------- main
 def main():
     now = datetime.now(TZ)
@@ -818,7 +881,13 @@ def main():
     print(f"Etter historikk-filter: {len(animal)} dyre-saker, {len(general)} generelle "
           f"({len(already)} tidligere overskrifter i minnet). Vær: {weather or 'utilgjengelig'}.")
 
-    if os.environ.get("GOOGLE_TTS_API_KEY"):
+    # Motorvalg: TTS_ENGINE overstyrer; ellers prioritet eleven > google > gemini > piper.
+    override = (os.environ.get("TTS_ENGINE") or "").strip().lower()
+    if override in ("eleven", "elevenlabs", "google", "gemini", "piper"):
+        engine = "eleven" if override == "elevenlabs" else override
+    elif os.environ.get("ELEVENLABS_API_KEY"):
+        engine = "eleven"
+    elif os.environ.get("GOOGLE_TTS_API_KEY"):
         engine = "google"
     elif os.environ.get("GEMINI_API_KEY"):
         engine = "gemini"
@@ -836,7 +905,14 @@ def main():
         print(f"Bruker mal-manus ({e}).")
         dialog = build_script_template(dato_str, animal, general, weather=weather)
 
-    if engine == "google":
+    if engine == "eleven":
+        try:
+            dur = build_audio_eleven(dialog, mp3_path, title)
+            print("Lyd: ElevenLabs (deterministisk).")
+        except Exception as e:
+            print(f"ElevenLabs feilet ({e}) – faller tilbake til Piper.")
+            dur = synthesize(dialog, mp3_path, title)
+    elif engine == "google":
         try:
             dur = build_audio_gcloud(dialog, mp3_path, title)
             print("Lyd: Google Cloud TTS (deterministisk).")
