@@ -9,7 +9,7 @@ name: Dyrenytt daglig episode
 # eller Spotify. Vil du publisere en manuell kjøring, sett "publish" til true.
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "23 3 * * *"
   workflow_dispatch:
     inputs:
       publish:
