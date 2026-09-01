@@ -1,15 +1,21 @@
 name: Dyrenytt daglig episode
 
-# Planlagt: hver dag kl. 05:00 UTC = 07:00 norsk sommertid (06:00 vintertid).
-# Cron er ALLTID i UTC og følger ikke sommertid/vintertid. Vil du treffe 07:00
-# hele året, sett "0 6 * * *" etter at vintertiden starter i slutten av oktober.
+# Flere planlagte forsøk om morgenen (UTC) fordi GitHubs cron er upålitelig og
+# ofte forsinker/hopper kjøringer. Den første som lander lager dagens episode; de
+# andre ser at den finnes og avslutter. Cron følger ikke sommertid – juster ved behov.
 #
 # Manuell kjøring (Actions -> Run workflow) er som standard en TESTKJØRING:
 # den lager en lydfil du kan laste ned under kjøringen, men rører IKKE feeden
 # eller Spotify. Vil du publisere en manuell kjøring, sett "publish" til true.
 on:
   schedule:
-    - cron: "23 3 * * *"
+    # GitHubs cron er «best effort» og hopper/forsinker ofte kjøringer. Derfor flere
+    # forsøk om morgenen (UTC). Den FØRSTE som lander lager episoden; resten oppdager at
+    # dagens episode alt finnes og avslutter uten å bruke API-kall (se "skip" under).
+    - cron: "23 0 * * *"   # 02:23 norsk sommertid (første forsøk)
+    - cron: "23 1 * * *"   # 03:23
+    - cron: "23 2 * * *"   # 04:23
+    - cron: "23 3 * * *"   # 05:23
   workflow_dispatch:
     inputs:
       publish:
@@ -41,6 +47,17 @@ jobs:
             echo "publish=0" >> "$GITHUB_OUTPUT"
             echo "Modus: TEST (ingen publisering)"
           fi
+          # Hopp over hvis dagens episode ALLEREDE finnes (kun for planlagte kjøringer),
+          # slik at ekstra/forsinkede cron-treff ikke lager en ny episode eller koster API-kall.
+          skip=0
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f docs/episodes.json ]; then
+            today=$(TZ='Europe/Oslo' date +%F)
+            if jq -e --arg d "$today" 'any(.[]; .date==$d)' docs/episodes.json >/dev/null 2>&1; then
+              skip=1
+              echo "Dagens episode ($today) finnes allerede – hopper over denne kjøringen."
+            fi
+          fi
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
 
       - name: Sett opp Python
         uses: actions/setup-python@v5
@@ -68,6 +85,7 @@ jobs:
 
       - name: Generer episode
         id: gen
+        if: steps.mode.outputs.skip != '1'
         env:
           SITE_BASE: ${{ steps.site.outputs.base }}
           RELEASE_TAG: episodes
@@ -105,7 +123,7 @@ jobs:
 
       # ---- Testmodus: legg lydfila som nedlastbar artefakt, ikke i feeden ----
       - name: Last opp testfil (kun testmodus)
-        if: steps.mode.outputs.publish != '1'
+        if: steps.mode.outputs.publish != '1' && steps.mode.outputs.skip != '1'
         uses: actions/upload-artifact@v4
         with:
           name: dyrenytt-testepisode
@@ -114,7 +132,7 @@ jobs:
 
       # ---- Publiseringsmodus: legg ut lyd + oppdater feed ----
       - name: Sørg for at release finnes
-        if: steps.mode.outputs.publish == '1'
+        if: steps.mode.outputs.publish == '1' && steps.mode.outputs.skip != '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -122,13 +140,13 @@ jobs:
             gh release create episodes --title "Episoder" --notes "Lydfiler for Dyrenytt" --latest=false
 
       - name: Last opp lydfil til release
-        if: steps.mode.outputs.publish == '1'
+        if: steps.mode.outputs.publish == '1' && steps.mode.outputs.skip != '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release upload episodes "${{ steps.gen.outputs.mp3_path }}" --clobber
 
       - name: Rydd bort gamle lydfiler
-        if: steps.mode.outputs.publish == '1'
+        if: steps.mode.outputs.publish == '1' && steps.mode.outputs.skip != '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -141,7 +159,7 @@ jobs:
           done
 
       - name: Publiser feed til Pages (commit docs/)
-        if: steps.mode.outputs.publish == '1'
+        if: steps.mode.outputs.publish == '1' && steps.mode.outputs.skip != '1'
         run: |
           git config user.name "dyrenytt-bot"
           git config user.email "dyrenytt-bot@users.noreply.github.com"
