@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 10. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Den store forskningsprisen i veterinærmedisin 2026 tildeles Ingrid Ljungvall og Jens Häggström; «Gutten og udyret» av Arne Svingen; Slik jakter du sikrere med løshunden; Drømmen om Dalsbygda</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Den store forskningsprisen i veterinærmedisin 2026 tildeles Ingrid Ljungvall og Jens Häggström; «Gutten og udyret» av Arne Svingen; Slik jakter du sikrere med løshunden; Drømmen om Dalsbygda</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-10.mp3" length="5348099" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-10.mp3</guid>
+      <pubDate>Thu, 10 Sep 2026 06:53:57 +0200</pubDate>
+      <itunes:duration>5:34</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 9. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Dette er viktig å huske på om du kjører på vilt; Minneord: Oh Thore; USA fortsatt tause: - Helt spesielt; Jubeltall for fjellreven – største kull siden 2018</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Dette er viktig å huske på om du kjører på vilt; Minneord: Oh Thore; USA fortsatt tause: - Helt spesielt; Jubeltall for fjellreven – største kull siden 2018</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-12.mp3</guid>
       <pubDate>Wed, 12 Aug 2026 08:18:32 +0200</pubDate>
       <itunes:duration>5:27</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – tirsdag 11. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Status for krepsepestutbrotet i Drammensvassdraget - Veterinærinstituttet; Status for utbruddet av krepsepest i Drammensvassdraget - NTB Kommunikasjon; Laksesykdom påvist – fem kommuner får restriksjoner - ht.no; Denne skapte debatt på oppslagstavla. Er den lovlig? - altaposten.no</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Status for krepsepestutbrotet i Drammensvassdraget - Veterinærinstituttet; Status for utbruddet av krepsepest i Drammensvassdraget - NTB Kommunikasjon; Laksesykdom påvist – fem kommuner får restriksjoner - ht.no; Denne skapte debatt på oppslagstavla. Er den lovlig? - altaposten.no</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-11.mp3" length="2552185" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-11.mp3</guid>
-      <pubDate>Tue, 11 Aug 2026 20:59:12 +0200</pubDate>
-      <itunes:duration>2:39</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
