@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 11. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Solfylt helgestart og ny utstilling i Narvik; Forbrytere som oss; 80 forskningsprosjekter får støtte til kommersialisering; – Holdt på å falle av stolen</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Solfylt helgestart og ny utstilling i Narvik; Forbrytere som oss; 80 forskningsprosjekter får støtte til kommersialisering; – Holdt på å falle av stolen</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-11.mp3" length="5554306" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-11.mp3</guid>
+      <pubDate>Fri, 11 Sep 2026 06:50:48 +0200</pubDate>
+      <itunes:duration>5:47</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 10. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Den store forskningsprisen i veterinærmedisin 2026 tildeles Ingrid Ljungvall og Jens Häggström; «Gutten og udyret» av Arne Svingen; Slik jakter du sikrere med løshunden; Drømmen om Dalsbygda</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Den store forskningsprisen i veterinærmedisin 2026 tildeles Ingrid Ljungvall og Jens Häggström; «Gutten og udyret» av Arne Svingen; Slik jakter du sikrere med løshunden; Drømmen om Dalsbygda</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-13.mp3</guid>
       <pubDate>Thu, 13 Aug 2026 16:00:10 +0200</pubDate>
       <itunes:duration>5:56</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 12. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Opptil 250.000 hjemløse kattunger fødes hver sesong; 250 000 hjemløse kattunger født i Norge hver sesong; Denne skapte debatt på oppslagstavla. Er den lovlig?; Animal welfare</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Opptil 250.000 hjemløse kattunger fødes hver sesong; 250 000 hjemløse kattunger født i Norge hver sesong; Denne skapte debatt på oppslagstavla. Er den lovlig?; Animal welfare</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-12.mp3" length="5227519" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-12.mp3</guid>
-      <pubDate>Wed, 12 Aug 2026 08:18:32 +0200</pubDate>
-      <itunes:duration>5:27</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
