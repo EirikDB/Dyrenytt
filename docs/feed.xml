@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – søndag 13. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Torsdag er Andreas på plass i ny butikk:– Dette blir veldig bra; I dag er det bare å feste løse gjenstander; Fra vikingtidens hevn til dagens nordområder: Inviterer til samtaledag i Gjesvær kirke; Ti timer i bil for å lære bort kunsten å gjete sau</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Torsdag er Andreas på plass i ny butikk:– Dette blir veldig bra; I dag er det bare å feste løse gjenstander; Fra vikingtidens hevn til dagens nordområder: Inviterer til samtaledag i Gjesvær kirke; Ti timer i bil for å lære bort kunsten å gjete sau</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-13.mp3" length="6834563" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-13.mp3</guid>
+      <pubDate>Sun, 13 Sep 2026 06:57:36 +0200</pubDate>
+      <itunes:duration>7:07</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – lørdag 12. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Sykkelfestival, geologiens dag og en ny flott høstdag; Ga Wilma et nytt hjem: – Veldig omsorgsfull; Europol avslører nettverk som driver svart handel med hester; Prinsesse Astrids hunder: - Betyr alt for meg!</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Sykkelfestival, geologiens dag og en ny flott høstdag; Ga Wilma et nytt hjem: – Veldig omsorgsfull; Europol avslører nettverk som driver svart handel med hester; Prinsesse Astrids hunder: - Betyr alt for meg!</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-15.mp3</guid>
       <pubDate>Sat, 15 Aug 2026 06:46:36 +0200</pubDate>
       <itunes:duration>7:18</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – fredag 14. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Velkomstdag for nye veterinær og dyrepleierstudenter i Bodø!; Krig med eit økonomisk bakteppe; – Kva om himmelen er som undersida av magen på ein stor, kvit hund?; 200 griser døde – grisebonde dømt</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Velkomstdag for nye veterinær og dyrepleierstudenter i Bodø!; Krig med eit økonomisk bakteppe; – Kva om himmelen er som undersida av magen på ein stor, kvit hund?; 200 griser døde – grisebonde dømt</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-14.mp3" length="6412159" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-14.mp3</guid>
-      <pubDate>Fri, 14 Aug 2026 07:45:31 +0200</pubDate>
-      <itunes:duration>6:41</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

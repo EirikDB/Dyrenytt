@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-09-13",
+    "file": "dyrenytt-2026-09-13.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-13.mp3",
+    "title": "Dyrenytt – søndag 13. september",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Torsdag er Andreas på plass i ny butikk:– Dette blir veldig bra; I dag er det bare å feste løse gjenstander; Fra vikingtidens hevn til dagens nordområder: Inviterer til samtaledag i Gjesvær kirke; Ti timer i bil for å lære bort kunsten å gjete sau",
+    "duration": 427,
+    "size": 6834563,
+    "pubdate": "Sun, 13 Sep 2026 06:57:36 +0200"
+  },
+  {
     "date": "2026-09-12",
     "file": "dyrenytt-2026-09-12.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-12.mp3",
@@ -288,15 +298,5 @@
     "duration": 438,
     "size": 7010048,
     "pubdate": "Sat, 15 Aug 2026 06:46:36 +0200"
-  },
-  {
-    "date": "2026-08-14",
-    "file": "dyrenytt-2026-08-14.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-14.mp3",
-    "title": "Dyrenytt – fredag 14. august",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Velkomstdag for nye veterinær og dyrepleierstudenter i Bodø!; Krig med eit økonomisk bakteppe; – Kva om himmelen er som undersida av magen på ein stor, kvit hund?; 200 griser døde – grisebonde dømt",
-    "duration": 401,
-    "size": 6412159,
-    "pubdate": "Fri, 14 Aug 2026 07:45:31 +0200"
   }
 ]
