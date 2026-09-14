@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – mandag 14. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Beklaget før seremoni: – Det har vært en «crazy» dag; Klar tale om bandtvang: – Skulle vore mykje lengre; Tydelig trend hos begravelsesbyrået i Ski: Flere dropper det tradisjonelle symbolet; Stuntånden svæver over Møhlenpris Bergen Dramatikkfestival 2026</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Beklaget før seremoni: – Det har vært en «crazy» dag; Klar tale om bandtvang: – Skulle vore mykje lengre; Tydelig trend hos begravelsesbyrået i Ski: Flere dropper det tradisjonelle symbolet; Stuntånden svæver over Møhlenpris Bergen Dramatikkfestival 2026</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-14.mp3" length="4789378" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-14.mp3</guid>
+      <pubDate>Mon, 14 Sep 2026 07:07:15 +0200</pubDate>
+      <itunes:duration>4:59</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – søndag 13. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Torsdag er Andreas på plass i ny butikk:– Dette blir veldig bra; I dag er det bare å feste løse gjenstander; Fra vikingtidens hevn til dagens nordområder: Inviterer til samtaledag i Gjesvær kirke; Ti timer i bil for å lære bort kunsten å gjete sau</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Torsdag er Andreas på plass i ny butikk:– Dette blir veldig bra; I dag er det bare å feste løse gjenstander; Fra vikingtidens hevn til dagens nordområder: Inviterer til samtaledag i Gjesvær kirke; Ti timer i bil for å lære bort kunsten å gjete sau</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-16.mp3</guid>
       <pubDate>Sun, 16 Aug 2026 06:49:20 +0200</pubDate>
       <itunes:duration>8:48</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – lørdag 15. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Den tannfattige åttitallsnostalgien I The End of Oak Street har irriterende kvaliteter.; Hva er det ideelle kjæledyret for deg? Fødselsdatoen din kan avsløre det; Bruker 300.000 på hund, nå har den fått navn; Du klarer dette, mitt kjære Colombia!</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Den tannfattige åttitallsnostalgien I The End of Oak Street har irriterende kvaliteter.; Hva er det ideelle kjæledyret for deg? Fødselsdatoen din kan avsløre det; Bruker 300.000 på hund, nå har den fått navn; Du klarer dette, mitt kjære Colombia!</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-15.mp3" length="7010048" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-15.mp3</guid>
-      <pubDate>Sat, 15 Aug 2026 06:46:36 +0200</pubDate>
-      <itunes:duration>7:18</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

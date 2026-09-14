@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-09-14",
+    "file": "dyrenytt-2026-09-14.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-14.mp3",
+    "title": "Dyrenytt – mandag 14. september",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Beklaget før seremoni: – Det har vært en «crazy» dag; Klar tale om bandtvang: – Skulle vore mykje lengre; Tydelig trend hos begravelsesbyrået i Ski: Flere dropper det tradisjonelle symbolet; Stuntånden svæver over Møhlenpris Bergen Dramatikkfestival 2026",
+    "duration": 299,
+    "size": 4789378,
+    "pubdate": "Mon, 14 Sep 2026 07:07:15 +0200"
+  },
+  {
     "date": "2026-09-13",
     "file": "dyrenytt-2026-09-13.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-13.mp3",
@@ -288,15 +298,5 @@
     "duration": 528,
     "size": 8443520,
     "pubdate": "Sun, 16 Aug 2026 06:49:20 +0200"
-  },
-  {
-    "date": "2026-08-15",
-    "file": "dyrenytt-2026-08-15.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-15.mp3",
-    "title": "Dyrenytt – lørdag 15. august",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Den tannfattige åttitallsnostalgien I The End of Oak Street har irriterende kvaliteter.; Hva er det ideelle kjæledyret for deg? Fødselsdatoen din kan avsløre det; Bruker 300.000 på hund, nå har den fått navn; Du klarer dette, mitt kjære Colombia!",
-    "duration": 438,
-    "size": 7010048,
-    "pubdate": "Sat, 15 Aug 2026 06:46:36 +0200"
   }
 ]
