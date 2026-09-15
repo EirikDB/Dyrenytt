@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-09-15",
+    "file": "dyrenytt-2026-09-15.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-15.mp3",
+    "title": "Dyrenytt – tirsdag 15. september",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: 16 jerver felt i starten av jaktperioden; - Kan potensielt være skadelig; Hund i bilen: Risikerer å miste lappen; Bedriftskatten Pushild aukar trivselen",
+    "duration": 567,
+    "size": 9078275,
+    "pubdate": "Tue, 15 Sep 2026 07:02:34 +0200"
+  },
+  {
     "date": "2026-09-14",
     "file": "dyrenytt-2026-09-14.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-14.mp3",
@@ -288,15 +298,5 @@
     "duration": 412,
     "size": 6592639,
     "pubdate": "Mon, 17 Aug 2026 06:57:04 +0200"
-  },
-  {
-    "date": "2026-08-16",
-    "file": "dyrenytt-2026-08-16.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-16.mp3",
-    "title": "Dyrenytt – søndag 16. august",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Volvo-en skal gjennom periodisk kontroll; – Folk trues på livet; Hunder kan forstå ansiktsuttrykkene våre; Aper har også kjæledyr",
-    "duration": 528,
-    "size": 8443520,
-    "pubdate": "Sun, 16 Aug 2026 06:49:20 +0200"
   }
 ]

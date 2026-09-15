@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 15. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: 16 jerver felt i starten av jaktperioden; - Kan potensielt være skadelig; Hund i bilen: Risikerer å miste lappen; Bedriftskatten Pushild aukar trivselen</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: 16 jerver felt i starten av jaktperioden; - Kan potensielt være skadelig; Hund i bilen: Risikerer å miste lappen; Bedriftskatten Pushild aukar trivselen</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-15.mp3" length="9078275" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-15.mp3</guid>
+      <pubDate>Tue, 15 Sep 2026 07:02:34 +0200</pubDate>
+      <itunes:duration>9:27</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 14. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Beklaget før seremoni: – Det har vært en «crazy» dag; Klar tale om bandtvang: – Skulle vore mykje lengre; Tydelig trend hos begravelsesbyrået i Ski: Flere dropper det tradisjonelle symbolet; Stuntånden svæver over Møhlenpris Bergen Dramatikkfestival 2026</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Beklaget før seremoni: – Det har vært en «crazy» dag; Klar tale om bandtvang: – Skulle vore mykje lengre; Tydelig trend hos begravelsesbyrået i Ski: Flere dropper det tradisjonelle symbolet; Stuntånden svæver over Møhlenpris Bergen Dramatikkfestival 2026</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-17.mp3</guid>
       <pubDate>Mon, 17 Aug 2026 06:57:04 +0200</pubDate>
       <itunes:duration>6:52</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 16. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Volvo-en skal gjennom periodisk kontroll; – Folk trues på livet; Hunder kan forstå ansiktsuttrykkene våre; Aper har også kjæledyr</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Volvo-en skal gjennom periodisk kontroll; – Folk trues på livet; Hunder kan forstå ansiktsuttrykkene våre; Aper har også kjæledyr</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-16.mp3" length="8443520" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-16.mp3</guid>
-      <pubDate>Sun, 16 Aug 2026 06:49:20 +0200</pubDate>
-      <itunes:duration>8:48</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
