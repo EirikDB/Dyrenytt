@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-09-17",
+    "file": "dyrenytt-2026-09-17.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-17.mp3",
+    "title": "Dyrenytt – torsdag 17. september",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Fin omvisning på Slottet; Obamas hund er død: – Vil savne henne fryktelig; Vindskeiv økofabel; Store forskjeller: – Kan ikke sammenlignes",
+    "duration": 292,
+    "size": 4674563,
+    "pubdate": "Thu, 17 Sep 2026 07:00:43 +0200"
+  },
+  {
     "date": "2026-09-16",
     "file": "dyrenytt-2026-09-16.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-16.mp3",
@@ -288,15 +298,5 @@
     "duration": 387,
     "size": 6195967,
     "pubdate": "Wed, 19 Aug 2026 06:52:14 +0200"
-  },
-  {
-    "date": "2026-08-18",
-    "file": "dyrenytt-2026-08-18.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-18.mp3",
-    "title": "Dyrenytt – tirsdag 18. august",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Dyreprint og krom preger høstens interiørtrender; Markedet for dyreidentifikasjon kan nå 12 milliarder dollar innen 2033; Tar V70-en gjennom EU-kontroll; Mange må finne nytt et hjem til hunden. For Geir Ove blir det ekstra tøft",
-    "duration": 355,
-    "size": 5676032,
-    "pubdate": "Tue, 18 Aug 2026 06:50:20 +0200"
   }
 ]
