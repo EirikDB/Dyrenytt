@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 18. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: NOAH og sauesanking; Hva gjør noe fengende?; Dyreklinikkar tør ikkje vere med i vaktordning: Hund døydde medan vakta stod tom; Jubileumsfeiring i Gjesvær kirke</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: NOAH og sauesanking; Hva gjør noe fengende?; Dyreklinikkar tør ikkje vere med i vaktordning: Hund døydde medan vakta stod tom; Jubileumsfeiring i Gjesvær kirke</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-18.mp3" length="6710530" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-18.mp3</guid>
+      <pubDate>Fri, 18 Sep 2026 06:53:49 +0200</pubDate>
+      <itunes:duration>6:59</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 17. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Fin omvisning på Slottet; Obamas hund er død: – Vil savne henne fryktelig; Vindskeiv økofabel; Store forskjeller: – Kan ikke sammenlignes</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Fin omvisning på Slottet; Obamas hund er død: – Vil savne henne fryktelig; Vindskeiv økofabel; Store forskjeller: – Kan ikke sammenlignes</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-20.mp3</guid>
       <pubDate>Thu, 20 Aug 2026 06:52:14 +0200</pubDate>
       <itunes:duration>6:45</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 19. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Et møte i Åsermarka; Ny dokumentar gransker Isabel Raad, Cristian Brennhovd og Sara Emilie; Vanskelig å hjelpe Støre nå; Dette er hennes hemmelige kjæreste</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Et møte i Åsermarka; Ny dokumentar gransker Isabel Raad, Cristian Brennhovd og Sara Emilie; Vanskelig å hjelpe Støre nå; Dette er hennes hemmelige kjæreste</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-19.mp3" length="6195967" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-19.mp3</guid>
-      <pubDate>Wed, 19 Aug 2026 06:52:14 +0200</pubDate>
-      <itunes:duration>6:27</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
