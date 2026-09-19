@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 19. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: – 30 meter fra husveggen vår; Det fins noen ekstremt giftige sopper i norsk natur. Hvorfor det?; NRK tester Grændsen; Min karriere – så langt: Ophelia Alickaj</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: – 30 meter fra husveggen vår; Det fins noen ekstremt giftige sopper i norsk natur. Hvorfor det?; NRK tester Grændsen; Min karriere – så langt: Ophelia Alickaj</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-19.mp3" length="6302339" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-19.mp3</guid>
+      <pubDate>Sat, 19 Sep 2026 06:45:26 +0200</pubDate>
+      <itunes:duration>6:34</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 18. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: NOAH og sauesanking; Hva gjør noe fengende?; Dyreklinikkar tør ikkje vere med i vaktordning: Hund døydde medan vakta stod tom; Jubileumsfeiring i Gjesvær kirke</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: NOAH og sauesanking; Hva gjør noe fengende?; Dyreklinikkar tør ikkje vere med i vaktordning: Hund døydde medan vakta stod tom; Jubileumsfeiring i Gjesvær kirke</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-21.mp3</guid>
       <pubDate>Fri, 21 Aug 2026 06:53:46 +0200</pubDate>
       <itunes:duration>6:35</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 20. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Kristiansunder kan bli «årets måkevenn»; – Det er døde dyr overalt her; Tre kviger satt fast i iskald elv – redningsaksjonen varte i sju timer; Vær-Sjur</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Kristiansunder kan bli «årets måkevenn»; – Det er døde dyr overalt her; Tre kviger satt fast i iskald elv – redningsaksjonen varte i sju timer; Vær-Sjur</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-20.mp3" length="6480896" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-20.mp3</guid>
-      <pubDate>Thu, 20 Aug 2026 06:52:14 +0200</pubDate>
-      <itunes:duration>6:45</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
