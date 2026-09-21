@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – mandag 21. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Eigen frykt blei til skrekkserie; Tidlig oppdagelse av kreft kan redde hundens liv; Etterretningstopper: Russland kan teste Nato innen få måneder; 94 elever på Kolvereid skulle få sving på bygda</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Eigen frykt blei til skrekkserie; Tidlig oppdagelse av kreft kan redde hundens liv; Etterretningstopper: Russland kan teste Nato innen få måneder; 94 elever på Kolvereid skulle få sving på bygda</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-21.mp3" length="5369602" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-21.mp3</guid>
+      <pubDate>Mon, 21 Sep 2026 07:07:35 +0200</pubDate>
+      <itunes:duration>5:36</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – søndag 20. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Smultring-suksessen vokser: Raymond har funnet en måte å ta unna julerushet; Bråk om «bølle-bavianer» i Cape Town; Det var ikke noe å diskutere. Ingen av oss tenkte: La oss først høre mauren sin side av saken; Mann savnet etter tur i fjellet i Ullensvang</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Smultring-suksessen vokser: Raymond har funnet en måte å ta unna julerushet; Bråk om «bølle-bavianer» i Cape Town; Det var ikke noe å diskutere. Ingen av oss tenkte: La oss først høre mauren sin side av saken; Mann savnet etter tur i fjellet i Ullensvang</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-23.mp3</guid>
       <pubDate>Sun, 23 Aug 2026 06:51:19 +0200</pubDate>
       <itunes:duration>5:56</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – lørdag 22. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Ferie i Japan: Dette bør aldri pakkes i bagasjen; Risiko for smitte på beite ofte oversett; Jo, gi dyrene en egen etat!; Snåsaprøven avlyst etter hendelse med rein: – Et tragisk uhell</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Ferie i Japan: Dette bør aldri pakkes i bagasjen; Risiko for smitte på beite ofte oversett; Jo, gi dyrene en egen etat!; Snåsaprøven avlyst etter hendelse med rein: – Et tragisk uhell</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-22.mp3" length="8743424" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-22.mp3</guid>
-      <pubDate>Sat, 22 Aug 2026 06:48:06 +0200</pubDate>
-      <itunes:duration>9:06</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
