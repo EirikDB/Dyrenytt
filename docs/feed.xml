@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 22. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Drivstoffprisene: – Bruker 500 kroner hver dag; 75 katter funnet i Paris-leilighet; Leteaksjon etter savnet dame i 50-årene; Svindlere kopierer ansiktet ditt: – Utfordrende å oppdage</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Drivstoffprisene: – Bruker 500 kroner hver dag; 75 katter funnet i Paris-leilighet; Leteaksjon etter savnet dame i 50-årene; Svindlere kopierer ansiktet ditt: – Utfordrende å oppdage</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-22.mp3" length="6844163" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-22.mp3</guid>
+      <pubDate>Tue, 22 Sep 2026 07:08:59 +0200</pubDate>
+      <itunes:duration>7:08</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 21. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Eigen frykt blei til skrekkserie; Tidlig oppdagelse av kreft kan redde hundens liv; Etterretningstopper: Russland kan teste Nato innen få måneder; 94 elever på Kolvereid skulle få sving på bygda</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Eigen frykt blei til skrekkserie; Tidlig oppdagelse av kreft kan redde hundens liv; Etterretningstopper: Russland kan teste Nato innen få måneder; 94 elever på Kolvereid skulle få sving på bygda</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-24.mp3</guid>
       <pubDate>Mon, 24 Aug 2026 07:00:05 +0200</pubDate>
       <itunes:duration>6:56</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 23. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Drømmehuset eller katta i sekken?; Hundemamma Mummi døde etter fødselen; Hamstere, hunder, ømhet; Kaos på Flesland: – Tror jeg må sove på gulvet</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Drømmehuset eller katta i sekken?; Hundemamma Mummi døde etter fødselen; Hamstere, hunder, ømhet; Kaos på Flesland: – Tror jeg må sove på gulvet</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-23.mp3" length="5699840" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-23.mp3</guid>
-      <pubDate>Sun, 23 Aug 2026 06:51:19 +0200</pubDate>
-      <itunes:duration>5:56</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
