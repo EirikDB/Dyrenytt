@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-09-23",
+    "file": "dyrenytt-2026-09-23.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-23.mp3",
+    "title": "Dyrenytt – onsdag 23. september",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: 14 sauer døde etter hundeangrep; Kriminelt comeback for nylonstrømpebuksa; Ukjent fortid: – Plassert i garasjen; Nattens viktigste nyheter",
+    "duration": 314,
+    "size": 5032066,
+    "pubdate": "Wed, 23 Sep 2026 06:53:30 +0200"
+  },
+  {
     "date": "2026-09-22",
     "file": "dyrenytt-2026-09-22.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-22.mp3",
@@ -288,15 +298,5 @@
     "duration": 429,
     "size": 6863360,
     "pubdate": "Tue, 25 Aug 2026 06:52:55 +0200"
-  },
-  {
-    "date": "2026-08-24",
-    "file": "dyrenytt-2026-08-24.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-24.mp3",
-    "title": "Dyrenytt – mandag 24. august",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Katt påkjørt i Kristiansund; Vetle opnar ny fôrfilial i Skafså; Mattilsynet og dyrevelferd sett fra nord; Sperres farvel er Haugstads seier",
-    "duration": 416,
-    "size": 6660223,
-    "pubdate": "Mon, 24 Aug 2026 07:00:05 +0200"
   }
 ]

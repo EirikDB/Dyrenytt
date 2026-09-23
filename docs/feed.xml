@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – onsdag 23. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: 14 sauer døde etter hundeangrep; Kriminelt comeback for nylonstrømpebuksa; Ukjent fortid: – Plassert i garasjen; Nattens viktigste nyheter</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: 14 sauer døde etter hundeangrep; Kriminelt comeback for nylonstrømpebuksa; Ukjent fortid: – Plassert i garasjen; Nattens viktigste nyheter</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-23.mp3" length="5032066" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-23.mp3</guid>
+      <pubDate>Wed, 23 Sep 2026 06:53:30 +0200</pubDate>
+      <itunes:duration>5:14</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – tirsdag 22. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Drivstoffprisene: – Bruker 500 kroner hver dag; 75 katter funnet i Paris-leilighet; Leteaksjon etter savnet dame i 50-årene; Svindlere kopierer ansiktet ditt: – Utfordrende å oppdage</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Drivstoffprisene: – Bruker 500 kroner hver dag; 75 katter funnet i Paris-leilighet; Leteaksjon etter savnet dame i 50-årene; Svindlere kopierer ansiktet ditt: – Utfordrende å oppdage</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-25.mp3</guid>
       <pubDate>Tue, 25 Aug 2026 06:52:55 +0200</pubDate>
       <itunes:duration>7:09</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – mandag 24. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Katt påkjørt i Kristiansund; Vetle opnar ny fôrfilial i Skafså; Mattilsynet og dyrevelferd sett fra nord; Sperres farvel er Haugstads seier</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Katt påkjørt i Kristiansund; Vetle opnar ny fôrfilial i Skafså; Mattilsynet og dyrevelferd sett fra nord; Sperres farvel er Haugstads seier</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-24.mp3" length="6660223" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-24.mp3</guid>
-      <pubDate>Mon, 24 Aug 2026 07:00:05 +0200</pubDate>
-      <itunes:duration>6:56</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
