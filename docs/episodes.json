@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-09-24",
+    "file": "dyrenytt-2026-09-24.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-24.mp3",
+    "title": "Dyrenytt – torsdag 24. september",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Skal være avfyrt skudd mot bolig i Ullensaker – nabo varslet politiet; Hvis Milo, Luna eller Pus kunne snakke, ville de sagt takk; Avslører: – Jeg har blitt «pappa»; Nattefred i fare",
+    "duration": 389,
+    "size": 6220931,
+    "pubdate": "Thu, 24 Sep 2026 07:02:49 +0200"
+  },
+  {
     "date": "2026-09-23",
     "file": "dyrenytt-2026-09-23.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-23.mp3",
@@ -288,15 +298,5 @@
     "duration": 316,
     "size": 5065087,
     "pubdate": "Wed, 26 Aug 2026 06:54:25 +0200"
-  },
-  {
-    "date": "2026-08-25",
-    "file": "dyrenytt-2026-08-25.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-25.mp3",
-    "title": "Dyrenytt – tirsdag 25. august",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Takk for marsjen!; Miljøstrid om Aker-dominert krillfiske; Rasekatt savnet på Jaren; Dramatisk da hund forvillet seg ut på E18",
-    "duration": 429,
-    "size": 6863360,
-    "pubdate": "Tue, 25 Aug 2026 06:52:55 +0200"
   }
 ]

@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 24. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Skal være avfyrt skudd mot bolig i Ullensaker – nabo varslet politiet; Hvis Milo, Luna eller Pus kunne snakke, ville de sagt takk; Avslører: – Jeg har blitt «pappa»; Nattefred i fare</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Skal være avfyrt skudd mot bolig i Ullensaker – nabo varslet politiet; Hvis Milo, Luna eller Pus kunne snakke, ville de sagt takk; Avslører: – Jeg har blitt «pappa»; Nattefred i fare</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-24.mp3" length="6220931" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-24.mp3</guid>
+      <pubDate>Thu, 24 Sep 2026 07:02:49 +0200</pubDate>
+      <itunes:duration>6:29</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 23. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: 14 sauer døde etter hundeangrep; Kriminelt comeback for nylonstrømpebuksa; Ukjent fortid: – Plassert i garasjen; Nattens viktigste nyheter</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: 14 sauer døde etter hundeangrep; Kriminelt comeback for nylonstrømpebuksa; Ukjent fortid: – Plassert i garasjen; Nattens viktigste nyheter</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-26.mp3</guid>
       <pubDate>Wed, 26 Aug 2026 06:54:25 +0200</pubDate>
       <itunes:duration>5:16</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – tirsdag 25. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Takk for marsjen!; Miljøstrid om Aker-dominert krillfiske; Rasekatt savnet på Jaren; Dramatisk da hund forvillet seg ut på E18</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Takk for marsjen!; Miljøstrid om Aker-dominert krillfiske; Rasekatt savnet på Jaren; Dramatisk da hund forvillet seg ut på E18</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-25.mp3" length="6863360" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-25.mp3</guid>
-      <pubDate>Tue, 25 Aug 2026 06:52:55 +0200</pubDate>
-      <itunes:duration>7:09</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
