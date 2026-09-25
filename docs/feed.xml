@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 25. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Sola-gründer Mikal: Slik får du maksimalt ut av varmepumpen din!; Hytteslipp: Planlegg hytteturer i 2027; Har aldri opplevd lignende: – Dypt tragisk; Fyrer løs: – Bare legg deg flat</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Sola-gründer Mikal: Slik får du maksimalt ut av varmepumpen din!; Hytteslipp: Planlegg hytteturer i 2027; Har aldri opplevd lignende: – Dypt tragisk; Fyrer løs: – Bare legg deg flat</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-25.mp3" length="5882242" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-25.mp3</guid>
+      <pubDate>Fri, 25 Sep 2026 07:06:02 +0200</pubDate>
+      <itunes:duration>6:08</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 24. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Skal være avfyrt skudd mot bolig i Ullensaker – nabo varslet politiet; Hvis Milo, Luna eller Pus kunne snakke, ville de sagt takk; Avslører: – Jeg har blitt «pappa»; Nattefred i fare</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Skal være avfyrt skudd mot bolig i Ullensaker – nabo varslet politiet; Hvis Milo, Luna eller Pus kunne snakke, ville de sagt takk; Avslører: – Jeg har blitt «pappa»; Nattefred i fare</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-27.mp3</guid>
       <pubDate>Thu, 27 Aug 2026 17:15:19 +0200</pubDate>
       <itunes:duration>6:45</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 26. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Opplevde alle hundeeiers mareritt: – Det kjæreste vi hadde; Etter årevis med blokkering: EU-lov tvinger Volkswagen til å åpne bildata for Home Assistant; - Etter hvert som man blir eldre klarer man kanskje å tilgi mer; Ramsalte røverhistorier og sørlandsviser inntar Spira: – Passer godt i en kystby</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Opplevde alle hundeeiers mareritt: – Det kjæreste vi hadde; Etter årevis med blokkering: EU-lov tvinger Volkswagen til å åpne bildata for Home Assistant; - Etter hvert som man blir eldre klarer man kanskje å tilgi mer; Ramsalte røverhistorier og sørlandsviser inntar Spira: – Passer godt i en kystby</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-26.mp3" length="5065087" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-26.mp3</guid>
-      <pubDate>Wed, 26 Aug 2026 06:54:25 +0200</pubDate>
-      <itunes:duration>5:16</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
