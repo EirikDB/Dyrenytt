@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 26. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Trygve (70) har fått dødsdommen: Nå fører Renate hjerteprosjektet videre; Mann bet hund under pågripelse; En likestilt orden; Testet barns evner etter dataspill og puslespill – dette fant forskerne ut</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Trygve (70) har fått dødsdommen: Nå fører Renate hjerteprosjektet videre; Mann bet hund under pågripelse; En likestilt orden; Testet barns evner etter dataspill og puslespill – dette fant forskerne ut</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-26.mp3" length="5677571" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-26.mp3</guid>
+      <pubDate>Sat, 26 Sep 2026 07:09:37 +0200</pubDate>
+      <itunes:duration>5:55</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 25. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Sola-gründer Mikal: Slik får du maksimalt ut av varmepumpen din!; Hytteslipp: Planlegg hytteturer i 2027; Har aldri opplevd lignende: – Dypt tragisk; Fyrer løs: – Bare legg deg flat</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Sola-gründer Mikal: Slik får du maksimalt ut av varmepumpen din!; Hytteslipp: Planlegg hytteturer i 2027; Har aldri opplevd lignende: – Dypt tragisk; Fyrer løs: – Bare legg deg flat</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-28.mp3</guid>
       <pubDate>Fri, 28 Aug 2026 14:10:32 +0200</pubDate>
       <itunes:duration>7:00</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 27. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Bjørnejakta i Reisadalen: – Vanskelig når vi ikke har hund; Norge jakter nye EM-medaljer i Belgia; TEST: Google Nest Cam Outdoor (med ledning, 2. gen.); Næringsnotiser på Nordmøre</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Bjørnejakta i Reisadalen: – Vanskelig når vi ikke har hund; Norge jakter nye EM-medaljer i Belgia; TEST: Google Nest Cam Outdoor (med ledning, 2. gen.); Næringsnotiser på Nordmøre</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-27.mp3" length="6475520" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-27.mp3</guid>
-      <pubDate>Thu, 27 Aug 2026 17:15:19 +0200</pubDate>
-      <itunes:duration>6:45</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
