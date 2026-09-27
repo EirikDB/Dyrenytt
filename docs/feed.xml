@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – søndag 27. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Turid fant sitt fristed på småbruket; Medisinen som gir bivirkninger vi ønsker oss; - Noen av oss er ruinert; Kan gjøre reisen langt dyrere</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Turid fant sitt fristed på småbruket; Medisinen som gir bivirkninger vi ønsker oss; - Noen av oss er ruinert; Kan gjøre reisen langt dyrere</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-27.mp3" length="6887171" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-27.mp3</guid>
+      <pubDate>Sun, 27 Sep 2026 07:26:57 +0200</pubDate>
+      <itunes:duration>7:10</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – lørdag 26. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Trygve (70) har fått dødsdommen: Nå fører Renate hjerteprosjektet videre; Mann bet hund under pågripelse; En likestilt orden; Testet barns evner etter dataspill og puslespill – dette fant forskerne ut</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Trygve (70) har fått dødsdommen: Nå fører Renate hjerteprosjektet videre; Mann bet hund under pågripelse; En likestilt orden; Testet barns evner etter dataspill og puslespill – dette fant forskerne ut</itunes:summary>
@@ -302,16 +312,6 @@
       <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-29.mp3" length="6727808" type="audio/mpeg"/>
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-29.mp3</guid>
       <pubDate>Sat, 29 Aug 2026 13:32:16 +0200</pubDate>
-      <itunes:duration>7:00</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – fredag 28. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Det er vi som sitter med dyrene!; Hund bringer blomst til kongen; Klart for hyling, klemming, flørting, synging, skåling, latter og vennetreff på Verket; Kong Harald gjorde grunnmuren sterkere</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Det er vi som sitter med dyrene!; Hund bringer blomst til kongen; Klart for hyling, klemming, flørting, synging, skåling, latter og vennetreff på Verket; Kong Harald gjorde grunnmuren sterkere</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-28.mp3" length="6724735" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-28.mp3</guid>
-      <pubDate>Fri, 28 Aug 2026 14:10:32 +0200</pubDate>
       <itunes:duration>7:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
