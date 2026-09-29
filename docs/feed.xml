@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 29. september</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: «Fjellhytta»-vinnerne om fremtiden: – Kanskje vi bør begynne å snakke om det; Brochmann bommer, mener arkitekturhistoriker: – Å gi modernismen skylda er meningsløst; Sosiale opptak: – En følelse av ydmykelse da jeg dro; – Lever et annet liv</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: «Fjellhytta»-vinnerne om fremtiden: – Kanskje vi bør begynne å snakke om det; Brochmann bommer, mener arkitekturhistoriker: – Å gi modernismen skylda er meningsløst; Sosiale opptak: – En følelse av ydmykelse da jeg dro; – Lever et annet liv</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-29.mp3" length="7153667" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-29.mp3</guid>
+      <pubDate>Tue, 29 Sep 2026 07:52:19 +0200</pubDate>
+      <itunes:duration>7:27</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 28. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Marianne våknet til lyden av flammer - nå foregår søk med hund; Klart det var kjærlighetssorg; Pike med katt II (1912).; Etter kneskaden: Tuva gir bort valpepengene</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Marianne våknet til lyden av flammer - nå foregår søk med hund; Klart det var kjærlighetssorg; Pike med katt II (1912).; Etter kneskaden: Tuva gir bort valpepengene</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-31.mp3</guid>
       <pubDate>Mon, 31 Aug 2026 12:43:24 +0200</pubDate>
       <itunes:duration>6:28</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 30. august</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Hvem vil vi møte når det brenner?; Her skjulte han penger og kokain; Xiaomis nye robotstøvsuger skyller moppen med rennende vann: Kinapris rundt 3.250 kroner; Stine skulle ta MR av hodet. Da fant legen noe uventet</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hvem vil vi møte når det brenner?; Her skjulte han penger og kokain; Xiaomis nye robotstøvsuger skyller moppen med rennende vann: Kinapris rundt 3.250 kroner; Stine skulle ta MR av hodet. Da fant legen noe uventet</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-30.mp3" length="5248256" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-30.mp3</guid>
-      <pubDate>Sun, 30 Aug 2026 12:25:05 +0200</pubDate>
-      <itunes:duration>5:28</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

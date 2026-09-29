@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-09-29",
+    "file": "dyrenytt-2026-09-29.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-29.mp3",
+    "title": "Dyrenytt – tirsdag 29. september",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: «Fjellhytta»-vinnerne om fremtiden: – Kanskje vi bør begynne å snakke om det; Brochmann bommer, mener arkitekturhistoriker: – Å gi modernismen skylda er meningsløst; Sosiale opptak: – En følelse av ydmykelse da jeg dro; – Lever et annet liv",
+    "duration": 447,
+    "size": 7153667,
+    "pubdate": "Tue, 29 Sep 2026 07:52:19 +0200"
+  },
+  {
     "date": "2026-09-28",
     "file": "dyrenytt-2026-09-28.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-28.mp3",
@@ -288,15 +298,5 @@
     "duration": 388,
     "size": 6210175,
     "pubdate": "Mon, 31 Aug 2026 12:43:24 +0200"
-  },
-  {
-    "date": "2026-08-30",
-    "file": "dyrenytt-2026-08-30.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-30.mp3",
-    "title": "Dyrenytt – søndag 30. august",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Hvem vil vi møte når det brenner?; Her skjulte han penger og kokain; Xiaomis nye robotstøvsuger skyller moppen med rennende vann: Kinapris rundt 3.250 kroner; Stine skulle ta MR av hodet. Da fant legen noe uventet",
-    "duration": 328,
-    "size": 5248256,
-    "pubdate": "Sun, 30 Aug 2026 12:25:05 +0200"
   }
 ]
