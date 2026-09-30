@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-09-30",
+    "file": "dyrenytt-2026-09-30.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-30.mp3",
+    "title": "Dyrenytt – onsdag 30. september",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Er kjælerotter, labrotter og villrotter same dyr?; Sykdom ødela ferien for flest nordmenn; Pangstart for jaktlaget til Vegard under årets elgjakt; Søndeledplanene nekter å dø – vil kreve vanvittig mange millioner for å få prosjektet på beina",
+    "duration": 388,
+    "size": 6212482,
+    "pubdate": "Wed, 30 Sep 2026 07:43:10 +0200"
+  },
+  {
     "date": "2026-09-29",
     "file": "dyrenytt-2026-09-29.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-29.mp3",
@@ -288,15 +298,5 @@
     "duration": 339,
     "size": 5422978,
     "pubdate": "Tue, 01 Sep 2026 09:01:23 +0200"
-  },
-  {
-    "date": "2026-08-31",
-    "file": "dyrenytt-2026-08-31.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-08-31.mp3",
-    "title": "Dyrenytt – mandag 31. august",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Søker ettersøksekvipasje; Kan man få lopper fra hunden eller katten sin?; Fryktar konsekvensar av mindre bosshenting; Nå har vi allerede hatt et «soulslike»-spill der man spiller som en dinosaur, og i et nytt «soulslike»-spill får man spille som en hund",
-    "duration": 388,
-    "size": 6210175,
-    "pubdate": "Mon, 31 Aug 2026 12:43:24 +0200"
   }
 ]
