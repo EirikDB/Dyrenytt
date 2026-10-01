@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 1. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Inga Strümke får Akademikerprisen; Statistikk vs. saldoen på lønnskontoen; Bjeffende droner gjeter reinen til vinterbeitet; Raser mot det norske klesmerkets pelsgrep: – Forkastelig</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Inga Strümke får Akademikerprisen; Statistikk vs. saldoen på lønnskontoen; Bjeffende droner gjeter reinen til vinterbeitet; Raser mot det norske klesmerkets pelsgrep: – Forkastelig</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-01.mp3" length="6745856" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-01.mp3</guid>
+      <pubDate>Thu, 01 Oct 2026 08:10:14 +0200</pubDate>
+      <itunes:duration>7:02</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 30. september</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Er kjælerotter, labrotter og villrotter same dyr?; Sykdom ødela ferien for flest nordmenn; Pangstart for jaktlaget til Vegard under årets elgjakt; Søndeledplanene nekter å dø – vil kreve vanvittig mange millioner for å få prosjektet på beina</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Er kjælerotter, labrotter og villrotter same dyr?; Sykdom ødela ferien for flest nordmenn; Pangstart for jaktlaget til Vegard under årets elgjakt; Søndeledplanene nekter å dø – vil kreve vanvittig mange millioner for å få prosjektet på beina</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-02.mp3</guid>
       <pubDate>Wed, 02 Sep 2026 06:45:34 +0200</pubDate>
       <itunes:duration>4:52</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – tirsdag 1. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Fra i dag kan du ta farvel med kong Harald; Markedet for dyreidentifikasjon mot 12 milliarder dollar innen 2033; Nordnes sjøbad eller Nordnes filmstudio?; Publikum har fotoforbud i Slottskapellet</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Fra i dag kan du ta farvel med kong Harald; Markedet for dyreidentifikasjon mot 12 milliarder dollar innen 2033; Nordnes sjøbad eller Nordnes filmstudio?; Publikum har fotoforbud i Slottskapellet</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-01.mp3" length="5422978" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-01.mp3</guid>
-      <pubDate>Tue, 01 Sep 2026 09:01:23 +0200</pubDate>
-      <itunes:duration>5:39</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

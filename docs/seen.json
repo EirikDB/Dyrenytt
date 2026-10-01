@@ -64,61 +64,6 @@
   "pubts": 1787052824,
   "covered_ts": 1787115134
  },
- "forskere smittevernet tar for lite hensyn til husdyr som går ute": {
-  "title": "Forskere: Smittevernet tar for lite hensyn til husdyr som går ute",
-  "pubts": 1786917682,
-  "covered_ts": 1786942624
- },
- "reddet fra en grusom skjebne vant kåring": {
-  "title": "Reddet fra en grusom skjebne: Vant kåring",
-  "pubts": 1786907042,
-  "covered_ts": 1786942624
- },
- "nekter å dekke konflikten på avstand": {
-  "title": "Nekter å dekke konflikten på avstand",
-  "pubts": 1786904070,
-  "covered_ts": 1786942624
- },
- "asta 21 reiste 45 mil for å lære livet som bonde": {
-  "title": "Asta (21) reiste 45 mil for å lære livet som bonde",
-  "pubts": 1786899600,
-  "covered_ts": 1786942624
- },
- "trusselsituasjon med kniv  kontroll på to personer": {
-  "title": "Trusselsituasjon med kniv: – Kontroll på to personer",
-  "pubts": 1786898780,
-  "covered_ts": 1786942624
- },
- "matt henter oslohundene hjemme og tar dem med i marka  mange hunder mangler det i hverdagen": {
-  "title": "Matt henter Oslo-hundene hjemme og tar dem med i marka: – Mange hunder mangler det i hverdagen",
-  "pubts": 1786897342,
-  "covered_ts": 1786942624
- },
- "bil truffet av stein på størrelse med vaskemaskin": {
-  "title": "Bil truffet av stein «på størrelse med vaskemaskin»",
-  "pubts": 1786895458,
-  "covered_ts": 1786942624
- },
- "bil truffet av kjempestein i tunnel  har vært heldige": {
-  "title": "Bil truffet av kjempestein i tunnel: – Har vært heldige",
-  "pubts": 1786893588,
-  "covered_ts": 1786942624
- },
- "tok en annens katt  ville ikke innrømme det": {
-  "title": "Tok en annens katt – ville ikke innrømme det",
-  "pubts": 1786893227,
-  "covered_ts": 1786942624
- },
- "økonomi ved samlivsbrudd": {
-  "title": "Økonomi ved samlivsbrudd",
-  "pubts": 1786941942,
-  "covered_ts": 1786942624
- },
- "oslo børs med toppnotering  prisene kan tyde på at en nedtur nærmer seg ": {
-  "title": "Oslo Børs med toppnotering – prisene kan tyde på at en nedtur nærmer seg (+)",
-  "pubts": 1786885320,
-  "covered_ts": 1786942624
- },
  "dyreprint og krom preger høstens interiørtrender": {
   "title": "Dyreprint og krom preger høstens interiørtrender",
   "pubts": 1787026449,
@@ -1401,8 +1346,8 @@
  },
  "ulykker og hendelser brann  to boliger totalskadd i rekkehusbrann": {
   "title": "Ulykker og hendelser, Brann | To boliger totalskadd i rekkehusbrann",
-  "pubts": 1788343617,
-  "covered_ts": 1788410479
+  "pubts": 1790833465,
+  "covered_ts": 1790835014
  },
  "mann skutt i brystet i tønsberg  ringte selv etter ambulanse": {
   "title": "Mann skutt i brystet i Tønsberg – ringte selv etter ambulanse",
@@ -3573,5 +3518,105 @@
   "title": "Datasenter-gründer flyttet til USA: – Må sitte på utsiden av Norge. Dessverre (+)",
   "pubts": 1790726940,
   "covered_ts": 1790746990
+ },
+ "inga strmke får akademikerprisen": {
+  "title": "Inga Strümke får Akademikerprisen",
+  "pubts": 1790831799,
+  "covered_ts": 1790835014
+ },
+ "statistikk vs saldoen på lønnskontoen": {
+  "title": "Statistikk vs. saldoen på lønnskontoen",
+  "pubts": 1790823600,
+  "covered_ts": 1790835014
+ },
+ "bjeffende droner gjeter reinen til vinterbeitet": {
+  "title": "Bjeffende droner gjeter reinen til vinterbeitet",
+  "pubts": 1790806406,
+  "covered_ts": 1790835014
+ },
+ "raser mot det norske klesmerkets pelsgrep  forkastelig": {
+  "title": "Raser mot det norske klesmerkets pelsgrep: – Forkastelig",
+  "pubts": 1790802774,
+  "covered_ts": 1790835014
+ },
+ "når stavanger slår paris i jakten på moteskatter": {
+  "title": "Når Stavanger slår Paris i jakten på moteskatter",
+  "pubts": 1790796823,
+  "covered_ts": 1790835014
+ },
+ "vart og varmt om vennskap": {
+  "title": "Vart og varmt om vennskap",
+  "pubts": 1790794977,
+  "covered_ts": 1790835014
+ },
+ "når alarmen går er de klare frivillig læring og kompetanse som redder liv": {
+  "title": "Når alarmen går, er de klare: frivillig læring og kompetanse som redder liv",
+  "pubts": 1790792828,
+  "covered_ts": 1790835014
+ },
+ "ett hundeår er ikke sju menneskeår  slik eldes hunden egentlig": {
+  "title": "Ett hundeår er ikke sju menneskeår – slik eldes hunden egentlig",
+  "pubts": 1790791674,
+  "covered_ts": 1790835014
+ },
+ "hund og eier sammen igjen": {
+  "title": "Hund og eier sammen igjen",
+  "pubts": 1790785752,
+  "covered_ts": 1790835014
+ },
+ "veterinær fire vanlige feil nye dyreeiere gjør": {
+  "title": "Veterinær: Fire vanlige feil nye dyreeiere gjør",
+  "pubts": 1790773836,
+  "covered_ts": 1790835014
+ },
+ "professor innrømmer bruk av ki i ny bok": {
+  "title": "Professor innrømmer bruk av KI i ny bok",
+  "pubts": 1790773507,
+  "covered_ts": 1790835014
+ },
+ "samsung galaxy smarttag3 gjør det enklere å holde oversikt over det som betyr noe": {
+  "title": "Samsung Galaxy SmartTag3 gjør det enklere å holde oversikt over det som betyr noe",
+  "pubts": 1790771090,
+  "covered_ts": 1790835014
+ },
+ "sirkulær ressursutnyttelse i praksis": {
+  "title": "Sirkulær ressursutnyttelse i praksis",
+  "pubts": 1790763407,
+  "covered_ts": 1790835014
+ },
+ "ligner på lite annet": {
+  "title": "Ligner på lite annet",
+  "pubts": 1790754472,
+  "covered_ts": 1790835014
+ },
+ "kongelig favoritt i kritikkstorm": {
+  "title": "Kongelig favoritt i kritikkstorm",
+  "pubts": 1790754431,
+  "covered_ts": 1790835014
+ },
+ "mange pasienter spør ryggeksperten om hvilken stol de skal velge for å sitte godt svaret kan overraske deg": {
+  "title": "Mange pasienter spør ryggeksperten om hvilken stol de skal velge for å sitte godt. Svaret kan overraske deg",
+  "pubts": 1790750880,
+  "covered_ts": 1790835014
+ },
+ "kan den siste som går slukke lyset etter oss": {
+  "title": "Kan den siste som går slukke lyset etter oss?",
+  "pubts": 1790750826,
+  "covered_ts": 1790835014
+ },
+ "dog trainers switch methods due to empathy and education": {
+  "title": "Dog Trainers Switch Methods Due to Empathy and Education",
+  "pubts": 1790807203,
+  "covered_ts": 1790835014
+ },
+ "reaktordrevne skip kan komme til norge lenge før kjernekraft på land": {
+  "title": "Reaktordrevne skip kan komme til Norge lenge før kjernekraft på land",
+  "pubts": 1790827475,
+  "covered_ts": 1790835014
+ },
+ "fotballpresidenten med oppløftende brannmelding": {
+  "title": "Fotballpresidenten med oppløftende Brann-melding",
+  "pubts": 1790832590,
+  "covered_ts": 1790835014
  }
 }
