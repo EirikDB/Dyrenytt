@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 2. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: En katastrofefilm for en ny (ende)tid; «Jeg er jo ikke spiritist, men …»; Fosse summa summarum; Profilert slakter ut mot hundemat-påstander</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: En katastrofefilm for en ny (ende)tid; «Jeg er jo ikke spiritist, men …»; Fosse summa summarum; Profilert slakter ut mot hundemat-påstander</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-02.mp3" length="5969791" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-02.mp3</guid>
+      <pubDate>Fri, 02 Oct 2026 07:52:06 +0200</pubDate>
+      <itunes:duration>6:13</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 1. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Inga Strümke får Akademikerprisen; Statistikk vs. saldoen på lønnskontoen; Bjeffende droner gjeter reinen til vinterbeitet; Raser mot det norske klesmerkets pelsgrep: – Forkastelig</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Inga Strümke får Akademikerprisen; Statistikk vs. saldoen på lønnskontoen; Bjeffende droner gjeter reinen til vinterbeitet; Raser mot det norske klesmerkets pelsgrep: – Forkastelig</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-03.mp3</guid>
       <pubDate>Thu, 03 Sep 2026 06:41:19 +0200</pubDate>
       <itunes:duration>7:45</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 2. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Då Anne Elisabeth døydde, hadde ho vore småbarnsmor i 50 år. Kyrkja gav henne ståande applaus.; Hundenekt: Vil sparke ansatt; Sto timevis i kø: - Sterk opplevelse; Hocus Pocus</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Då Anne Elisabeth døydde, hadde ho vore småbarnsmor i 50 år. Kyrkja gav henne ståande applaus.; Hundenekt: Vil sparke ansatt; Sto timevis i kø: - Sterk opplevelse; Hocus Pocus</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-02.mp3" length="4668417" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-02.mp3</guid>
-      <pubDate>Wed, 02 Sep 2026 06:45:34 +0200</pubDate>
-      <itunes:duration>4:52</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-02",
+    "file": "dyrenytt-2026-10-02.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-02.mp3",
+    "title": "Dyrenytt – fredag 2. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: En katastrofefilm for en ny (ende)tid; «Jeg er jo ikke spiritist, men …»; Fosse summa summarum; Profilert slakter ut mot hundemat-påstander",
+    "duration": 373,
+    "size": 5969791,
+    "pubdate": "Fri, 02 Oct 2026 07:52:06 +0200"
+  },
+  {
     "date": "2026-10-01",
     "file": "dyrenytt-2026-10-01.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-01.mp3",
@@ -288,15 +298,5 @@
     "duration": 465,
     "size": 7434754,
     "pubdate": "Thu, 03 Sep 2026 06:41:19 +0200"
-  },
-  {
-    "date": "2026-09-02",
-    "file": "dyrenytt-2026-09-02.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-02.mp3",
-    "title": "Dyrenytt – onsdag 2. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Då Anne Elisabeth døydde, hadde ho vore småbarnsmor i 50 år. Kyrkja gav henne ståande applaus.; Hundenekt: Vil sparke ansatt; Sto timevis i kø: - Sterk opplevelse; Hocus Pocus",
-    "duration": 292,
-    "size": 4668417,
-    "pubdate": "Wed, 02 Sep 2026 06:45:34 +0200"
   }
 ]
