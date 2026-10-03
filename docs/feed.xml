@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 3. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Døde hvaler skylles på land i Argentina; Denne skapningen vil helst ikke være et insekt; Ansiktsmasker kan true din digitale sikkerhet; Frisparkperle ikke nok: – En vill variant</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Døde hvaler skylles på land i Argentina; Denne skapningen vil helst ikke være et insekt; Ansiktsmasker kan true din digitale sikkerhet; Frisparkperle ikke nok: – En vill variant</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-03.mp3" length="7636352" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-03.mp3</guid>
+      <pubDate>Sat, 03 Oct 2026 07:27:49 +0200</pubDate>
+      <itunes:duration>7:57</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 2. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: En katastrofefilm for en ny (ende)tid; «Jeg er jo ikke spiritist, men …»; Fosse summa summarum; Profilert slakter ut mot hundemat-påstander</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: En katastrofefilm for en ny (ende)tid; «Jeg er jo ikke spiritist, men …»; Fosse summa summarum; Profilert slakter ut mot hundemat-påstander</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-04.mp3</guid>
       <pubDate>Fri, 04 Sep 2026 06:43:32 +0200</pubDate>
       <itunes:duration>6:43</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 3. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Trump om Hormuzstredet: – Skal vi kalle det «Trump Strait»?; Har du stankelbein i stua? Slik takler du høstens ufarlige gjester; Mikrobiolog: Så ofte bør du vaske sengetøyet ditt; Netflix med ny koreansk thrillerhit: – En mesterklasse i psykologisk spenning</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Trump om Hormuzstredet: – Skal vi kalle det «Trump Strait»?; Har du stankelbein i stua? Slik takler du høstens ufarlige gjester; Mikrobiolog: Så ofte bør du vaske sengetøyet ditt; Netflix med ny koreansk thrillerhit: – En mesterklasse i psykologisk spenning</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-03.mp3" length="7434754" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-03.mp3</guid>
-      <pubDate>Thu, 03 Sep 2026 06:41:19 +0200</pubDate>
-      <itunes:duration>7:45</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
