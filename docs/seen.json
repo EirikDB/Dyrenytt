@@ -64,76 +64,6 @@
   "pubts": 1789664995,
   "covered_ts": 1789707229
  },
- " det er døde dyr overalt her": {
-  "title": "– Det er døde dyr overalt her",
-  "pubts": 1787176534,
-  "covered_ts": 1787201534
- },
- "tre kviger satt fast i iskald elv  redningsaksjonen varte i sju timer": {
-  "title": "Tre kviger satt fast i iskald elv – redningsaksjonen varte i sju timer",
-  "pubts": 1787165179,
-  "covered_ts": 1787201534
- },
- "værsjur": {
-  "title": "Vær-Sjur",
-  "pubts": 1787160363,
-  "covered_ts": 1787201534
- },
- "stenger dørene  ikke klart å få omsetningen vi trenger": {
-  "title": "Stenger dørene: – Ikke klart å få omsetningen vi trenger",
-  "pubts": 1787151660,
-  "covered_ts": 1787201534
- },
- "vil du godta at vi samler inn data om bruk av nettsiden": {
-  "title": "Vil du godta at vi samler inn data om bruk av nettsiden?",
-  "pubts": 1787144699,
-  "covered_ts": 1787201534
- },
- "progesteronpreparater til produksjonsdyr skal kun gis direkte av veterinær": {
-  "title": "Progesteronpreparater til produksjonsdyr skal kun gis direkte av veterinær",
-  "pubts": 1787143062,
-  "covered_ts": 1787201534
- },
- "rådhuset holder stengt": {
-  "title": "Rådhuset holder stengt",
-  "pubts": 1787138683,
-  "covered_ts": 1787201534
- },
- "gangstiar på utsida av autoverna": {
-  "title": "Gangstiar på utsida av autoverna",
-  "pubts": 1787129582,
-  "covered_ts": 1787201534
- },
- "trenger firbeinte blodgivere": {
-  "title": "Trenger firbeinte blodgivere",
-  "pubts": 1787128714,
-  "covered_ts": 1787201534
- },
- "superhunden charlie": {
-  "title": "Superhunden Charlie",
-  "pubts": 1787127444,
-  "covered_ts": 1787201534
- },
- "allierte velges de tas ikke for gitt": {
-  "title": "Allierte velges, de tas ikke for gitt",
-  "pubts": 1787126438,
-  "covered_ts": 1787201534
- },
- "jordskjelv registrert i nordnorge": {
-  "title": "Jordskjelv registrert i Nord-Norge",
-  "pubts": 1787200322,
-  "covered_ts": 1787201534
- },
- "conference leagueplayoff paok thessaloniki  brann": {
-  "title": "Conference League-playoff: PAOK Thessaloniki - Brann",
-  "pubts": 1787192185,
-  "covered_ts": 1787201534
- },
- "norgesprissmell for regjeringen": {
-  "title": "Norgespris-smell for regjeringen",
-  "pubts": 1787158411,
-  "covered_ts": 1787201534
- },
  "større forskjell mellom villaks og oppdrettslaks enn forskere trodde": {
   "title": "Større forskjell mellom villaks og oppdrettslaks enn forskere trodde",
   "pubts": 1787263355,
@@ -1881,8 +1811,8 @@
  },
  "prinsesse astrids hunder  betyr alt for meg": {
   "title": "Prinsesse Astrids hunder: - Betyr alt for meg!",
-  "pubts": 1789150236,
-  "covered_ts": 1789188259
+  "pubts": 1791046850,
+  "covered_ts": 1791093781
  },
  "mellombels bortfall av kommunal veterinærvakt for smådyr": {
   "title": "Mellombels bortfall av kommunal veterinærvakt for smådyr",
@@ -3663,5 +3593,65 @@
   "title": "Det 171. storting er åpnet",
   "pubts": 1790942871,
   "covered_ts": 1791005269
+ },
+ "brann i hus i vadsø": {
+  "title": "Brann i hus i Vadsø",
+  "pubts": 1791060760,
+  "covered_ts": 1791093781
+ },
+ "boligbrann i vadsø": {
+  "title": "Boligbrann i Vadsø",
+  "pubts": 1791059553,
+  "covered_ts": 1791093781
+ },
+ "mistet sønnen i villmarka  nå gir de barn nye eventyr": {
+  "title": "Mistet sønnen i villmarka – nå gir de barn nye eventyr",
+  "pubts": 1791059005,
+  "covered_ts": 1791093781
+ },
+ "oxford economics betrakter bergen i fugleperspektiv": {
+  "title": "Oxford Economics betrakter Bergen i fugleperspektiv",
+  "pubts": 1791044950,
+  "covered_ts": 1791093781
+ },
+ "heidi reisvang om oppveksten  de skjermet meg for noen detaljer": {
+  "title": "Heidi Reisvang om oppveksten: – De skjermet meg for noen detaljer",
+  "pubts": 1791034893,
+  "covered_ts": 1791093781
+ },
+ "gratis høstferieaktiviteter på ljosbakken gård for unger 69 år": {
+  "title": "Gratis høstferieaktiviteter på Ljosbakken gård for unger 6-9 år!",
+  "pubts": 1791015346,
+  "covered_ts": 1791093781
+ },
+ "søker firbent venn": {
+  "title": "Søker firbent venn",
+  "pubts": 1791011626,
+  "covered_ts": 1791093781
+ },
+ "eu rules bring compulsory microchipping for cats and tougher welfare standards": {
+  "title": "EU rules bring compulsory microchipping for cats and tougher welfare standards",
+  "pubts": 1791012770,
+  "covered_ts": 1791093781
+ },
+ "fresh demands to protect public after bbc panorama xl bully scrutiny": {
+  "title": "Fresh demands to protect public after BBC Panorama XL bully scrutiny",
+  "pubts": 1791066049,
+  "covered_ts": 1791093781
+ },
+ "whats in your cats food new investigation finds lead and other toxins": {
+  "title": "What’s in your cat’s food? New investigation finds lead and other toxins",
+  "pubts": 1790931644,
+  "covered_ts": 1791093781
+ },
+ "after pet deaths singapore orders closer supervision by groomers and rolls out first dog trainer welfare code": {
+  "title": "After pet deaths, Singapore orders closer supervision by groomers and rolls out first dog trainer welfare code",
+  "pubts": 1791008449,
+  "covered_ts": 1791093781
+ },
+ "nyheter nannestad  stakk fra bilulykken  så fikk politiet en melding": {
+  "title": "Nyheter, Nannestad | Stakk fra bilulykken – så fikk politiet en melding",
+  "pubts": 1791093083,
+  "covered_ts": 1791093781
  }
 }

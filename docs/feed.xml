@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – søndag 4. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Brann i hus i Vadsø; Boligbrann i Vadsø; Mistet sønnen i villmarka – nå gir de barn nye eventyr; Balder grøsser litt over gjenferdet Knut med Robek-ljåen, gleder seg over hønsehauk på kuryggen i Tolga og minnes prinsesse Astrids hund «Wilma»</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Brann i hus i Vadsø; Boligbrann i Vadsø; Mistet sønnen i villmarka – nå gir de barn nye eventyr; Balder grøsser litt over gjenferdet Knut med Robek-ljåen, gleder seg over hønsehauk på kuryggen i Tolga og minnes prinsesse Astrids hund «Wilma»</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-04.mp3" length="4913024" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-04.mp3</guid>
+      <pubDate>Sun, 04 Oct 2026 08:03:01 +0200</pubDate>
+      <itunes:duration>5:07</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – lørdag 3. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Døde hvaler skylles på land i Argentina; Denne skapningen vil helst ikke være et insekt; Ansiktsmasker kan true din digitale sikkerhet; Frisparkperle ikke nok: – En vill variant</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Døde hvaler skylles på land i Argentina; Denne skapningen vil helst ikke være et insekt; Ansiktsmasker kan true din digitale sikkerhet; Frisparkperle ikke nok: – En vill variant</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-05.mp3</guid>
       <pubDate>Sat, 05 Sep 2026 06:39:39 +0200</pubDate>
       <itunes:duration>6:21</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – fredag 4. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Næringslivsloggen: Håbuer satser som anleggsgartnere; – Hvordan i all verden kan folk gjøre noe sånt?; Anna hadde mistet håpet for katten sin. Så ringte telefonen: – Trodde det var en spøk; Disse deltar i Hver gang vi møtes 2027</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Næringslivsloggen: Håbuer satser som anleggsgartnere; – Hvordan i all verden kan folk gjøre noe sånt?; Anna hadde mistet håpet for katten sin. Så ringte telefonen: – Trodde det var en spøk; Disse deltar i Hver gang vi møtes 2027</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-04.mp3" length="6447489" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-04.mp3</guid>
-      <pubDate>Fri, 04 Sep 2026 06:43:32 +0200</pubDate>
-      <itunes:duration>6:43</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
