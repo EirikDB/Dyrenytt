@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-05",
+    "file": "dyrenytt-2026-10-05.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-05.mp3",
+    "title": "Dyrenytt – mandag 5. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Politiet måtte bruke gassmasker da de tok seg inn i boligen: – Store deler av inventar var dekket i møkk; Reiser du med hund eller katt? Nye EØS-regler er på vei; Konkurs for hundeklinikken: «Helsen må komme først»; Merete (50) fyrte av siste salve i Hvalertunnelen – nå leder hun Ap",
+    "duration": 480,
+    "size": 7682815,
+    "pubdate": "Mon, 05 Oct 2026 07:53:23 +0200"
+  },
+  {
     "date": "2026-10-04",
     "file": "dyrenytt-2026-10-04.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-04.mp3",
@@ -288,15 +298,5 @@
     "duration": 476,
     "size": 7613314,
     "pubdate": "Sun, 06 Sep 2026 06:49:36 +0200"
-  },
-  {
-    "date": "2026-09-05",
-    "file": "dyrenytt-2026-09-05.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-05.mp3",
-    "title": "Dyrenytt – lørdag 5. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: – Dette er min favoritt!; Ingrid (25) og Thomas (26) kapret småbruksdrømmen: – Vi ser enormt mye potensial her; Vi vet ikke om krabben lider. Så hvorfor tar vi sjansen?; – Vi trenger spesielt folk som kan gå i fjellet",
-    "duration": 381,
-    "size": 6095746,
-    "pubdate": "Sat, 05 Sep 2026 06:39:39 +0200"
   }
 ]
