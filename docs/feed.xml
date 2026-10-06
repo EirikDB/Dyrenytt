@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 6. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Tre bygg nedbrent på gård i Vinje – ukjent antall fjærkre omkom; Stor brann på gård i Vinje; Har tatovert kjærlighetserklæring; Vinje: Storbrann på gård</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Tre bygg nedbrent på gård i Vinje – ukjent antall fjærkre omkom; Stor brann på gård i Vinje; Har tatovert kjærlighetserklæring; Vinje: Storbrann på gård</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-06.mp3" length="5730560" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-06.mp3</guid>
+      <pubDate>Tue, 06 Oct 2026 08:32:58 +0200</pubDate>
+      <itunes:duration>5:58</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 5. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Politiet måtte bruke gassmasker da de tok seg inn i boligen: – Store deler av inventar var dekket i møkk; Reiser du med hund eller katt? Nye EØS-regler er på vei; Konkurs for hundeklinikken: «Helsen må komme først»; Merete (50) fyrte av siste salve i Hvalertunnelen – nå leder hun Ap</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Politiet måtte bruke gassmasker da de tok seg inn i boligen: – Store deler av inventar var dekket i møkk; Reiser du med hund eller katt? Nye EØS-regler er på vei; Konkurs for hundeklinikken: «Helsen må komme først»; Merete (50) fyrte av siste salve i Hvalertunnelen – nå leder hun Ap</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-07.mp3</guid>
       <pubDate>Mon, 07 Sep 2026 06:54:15 +0200</pubDate>
       <itunes:duration>4:25</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 6. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Jervekorridoren må gjenetableres – og utvides; Fjorden fremstår som døende; Vilde Lindhjem (30): – Asperger og ADHD er et pluss for kreativiteten; Reagerer: - Farlige holdninger</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Jervekorridoren må gjenetableres – og utvides; Fjorden fremstår som døende; Vilde Lindhjem (30): – Asperger og ADHD er et pluss for kreativiteten; Reagerer: - Farlige holdninger</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-06.mp3" length="7613314" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-06.mp3</guid>
-      <pubDate>Sun, 06 Sep 2026 06:49:36 +0200</pubDate>
-      <itunes:duration>7:56</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
