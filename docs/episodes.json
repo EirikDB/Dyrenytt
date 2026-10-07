@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-07",
+    "file": "dyrenytt-2026-10-07.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-07.mp3",
+    "title": "Dyrenytt – onsdag 7. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Disse jobbene er ledige i Nome akkurat nå; Test av Porsche Cayenne Turbo:Helt hinsides!; Tvinger Mattilsynet til å legge fram «skjulte» tall; «Alle» holder pusten før én bestemt dato",
+    "duration": 306,
+    "size": 4893823,
+    "pubdate": "Wed, 07 Oct 2026 08:10:52 +0200"
+  },
+  {
     "date": "2026-10-06",
     "file": "dyrenytt-2026-10-06.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-06.mp3",
@@ -288,15 +298,5 @@
     "duration": 410,
     "size": 6554242,
     "pubdate": "Tue, 08 Sep 2026 06:50:03 +0200"
-  },
-  {
-    "date": "2026-09-07",
-    "file": "dyrenytt-2026-09-07.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-07.mp3",
-    "title": "Dyrenytt – mandag 7. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Tegnet kongen i 1991 – nå er hun tilbake med datteren; Kripos advarer om nytt fenomen; Vi er ikke forberedt; Planlegger bryllup etter kreften",
-    "duration": 265,
-    "size": 4249473,
-    "pubdate": "Mon, 07 Sep 2026 06:54:15 +0200"
   }
 ]

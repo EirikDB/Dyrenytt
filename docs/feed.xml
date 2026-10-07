@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – onsdag 7. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Disse jobbene er ledige i Nome akkurat nå; Test av Porsche Cayenne Turbo:Helt hinsides!; Tvinger Mattilsynet til å legge fram «skjulte» tall; «Alle» holder pusten før én bestemt dato</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Disse jobbene er ledige i Nome akkurat nå; Test av Porsche Cayenne Turbo:Helt hinsides!; Tvinger Mattilsynet til å legge fram «skjulte» tall; «Alle» holder pusten før én bestemt dato</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-07.mp3" length="4893823" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-07.mp3</guid>
+      <pubDate>Wed, 07 Oct 2026 08:10:52 +0200</pubDate>
+      <itunes:duration>5:06</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – tirsdag 6. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Tre bygg nedbrent på gård i Vinje – ukjent antall fjærkre omkom; Stor brann på gård i Vinje; Har tatovert kjærlighetserklæring; Vinje: Storbrann på gård</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Tre bygg nedbrent på gård i Vinje – ukjent antall fjærkre omkom; Stor brann på gård i Vinje; Har tatovert kjærlighetserklæring; Vinje: Storbrann på gård</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-08.mp3</guid>
       <pubDate>Tue, 08 Sep 2026 06:50:03 +0200</pubDate>
       <itunes:duration>6:50</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – mandag 7. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Tegnet kongen i 1991 – nå er hun tilbake med datteren; Kripos advarer om nytt fenomen; Vi er ikke forberedt; Planlegger bryllup etter kreften</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Tegnet kongen i 1991 – nå er hun tilbake med datteren; Kripos advarer om nytt fenomen; Vi er ikke forberedt; Planlegger bryllup etter kreften</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-07.mp3" length="4249473" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-07.mp3</guid>
-      <pubDate>Mon, 07 Sep 2026 06:54:15 +0200</pubDate>
-      <itunes:duration>4:25</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
