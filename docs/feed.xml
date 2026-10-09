@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 9. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Det er deilig å være dyr i Danmark; Sánchez' sjansespill; Spredning; Hundeeier varslet Konkurransetilsynet om ulovlig prissamarbeid</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Det er deilig å være dyr i Danmark; Sánchez' sjansespill; Spredning; Hundeeier varslet Konkurransetilsynet om ulovlig prissamarbeid</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-09.mp3" length="7538815" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-09.mp3</guid>
+      <pubDate>Fri, 09 Oct 2026 08:20:38 +0200</pubDate>
+      <itunes:duration>7:51</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 8. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Elitens stil?; Uføre Ingrid (60) får 83 kroner i skattelette: – Hjelper ingenting; Utlover dusør for tips om partert katt; Regjeringen kutter subsidiering av selfangst – NOAH jubler</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Elitens stil?; Uføre Ingrid (60) får 83 kroner i skattelette: – Hjelper ingenting; Utlover dusør for tips om partert katt; Regjeringen kutter subsidiering av selfangst – NOAH jubler</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-10.mp3</guid>
       <pubDate>Thu, 10 Sep 2026 06:53:57 +0200</pubDate>
       <itunes:duration>5:34</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 9. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Dette er viktig å huske på om du kjører på vilt; Minneord: Oh Thore; USA fortsatt tause: - Helt spesielt; Jubeltall for fjellreven – største kull siden 2018</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Dette er viktig å huske på om du kjører på vilt; Minneord: Oh Thore; USA fortsatt tause: - Helt spesielt; Jubeltall for fjellreven – største kull siden 2018</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-09.mp3" length="5445249" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-09.mp3</guid>
-      <pubDate>Wed, 09 Sep 2026 06:52:46 +0200</pubDate>
-      <itunes:duration>5:40</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
