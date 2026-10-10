@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-10",
+    "file": "dyrenytt-2026-10-10.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-10.mp3",
+    "title": "Dyrenytt – lørdag 10. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Katter partert i Bærum: Suzie sitt hode var det eneste som lå igjen; Aurora (11) og Kaja (9) er med på ukentlig tur: – Det er så hyggelig med hund; Trusselsituasjon i Hamar: Mann pågrepet; Det finnes bøker som teller og bøker som ikke teller, eller?",
+    "duration": 314,
+    "size": 5029377,
+    "pubdate": "Sat, 10 Oct 2026 08:02:52 +0200"
+  },
+  {
     "date": "2026-10-09",
     "file": "dyrenytt-2026-10-09.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-09.mp3",
@@ -288,15 +298,5 @@
     "duration": 347,
     "size": 5554306,
     "pubdate": "Fri, 11 Sep 2026 06:50:48 +0200"
-  },
-  {
-    "date": "2026-09-10",
-    "file": "dyrenytt-2026-09-10.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-10.mp3",
-    "title": "Dyrenytt – torsdag 10. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Den store forskningsprisen i veterinærmedisin 2026 tildeles Ingrid Ljungvall og Jens Häggström; «Gutten og udyret» av Arne Svingen; Slik jakter du sikrere med løshunden; Drømmen om Dalsbygda",
-    "duration": 334,
-    "size": 5348099,
-    "pubdate": "Thu, 10 Sep 2026 06:53:57 +0200"
   }
 ]

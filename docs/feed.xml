@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 10. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Katter partert i Bærum: Suzie sitt hode var det eneste som lå igjen; Aurora (11) og Kaja (9) er med på ukentlig tur: – Det er så hyggelig med hund; Trusselsituasjon i Hamar: Mann pågrepet; Det finnes bøker som teller og bøker som ikke teller, eller?</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Katter partert i Bærum: Suzie sitt hode var det eneste som lå igjen; Aurora (11) og Kaja (9) er med på ukentlig tur: – Det er så hyggelig med hund; Trusselsituasjon i Hamar: Mann pågrepet; Det finnes bøker som teller og bøker som ikke teller, eller?</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-10.mp3" length="5029377" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-10.mp3</guid>
+      <pubDate>Sat, 10 Oct 2026 08:02:52 +0200</pubDate>
+      <itunes:duration>5:14</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 9. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Det er deilig å være dyr i Danmark; Sánchez' sjansespill; Spredning; Hundeeier varslet Konkurransetilsynet om ulovlig prissamarbeid</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Det er deilig å være dyr i Danmark; Sánchez' sjansespill; Spredning; Hundeeier varslet Konkurransetilsynet om ulovlig prissamarbeid</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-11.mp3</guid>
       <pubDate>Fri, 11 Sep 2026 06:50:48 +0200</pubDate>
       <itunes:duration>5:47</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 10. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Den store forskningsprisen i veterinærmedisin 2026 tildeles Ingrid Ljungvall og Jens Häggström; «Gutten og udyret» av Arne Svingen; Slik jakter du sikrere med løshunden; Drømmen om Dalsbygda</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Den store forskningsprisen i veterinærmedisin 2026 tildeles Ingrid Ljungvall og Jens Häggström; «Gutten og udyret» av Arne Svingen; Slik jakter du sikrere med løshunden; Drømmen om Dalsbygda</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-10.mp3" length="5348099" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-10.mp3</guid>
-      <pubDate>Thu, 10 Sep 2026 06:53:57 +0200</pubDate>
-      <itunes:duration>5:34</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
