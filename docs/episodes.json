@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-11",
+    "file": "dyrenytt-2026-10-11.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-11.mp3",
+    "title": "Dyrenytt – søndag 11. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Sendte en melding på Instagram. Nå er de gift.; Europris tilbakekaller kattemat – sjekk om du har denne hjemme; Dette sier politiet om aksjonen; Bønder: Hundeangrep mot sau aukar",
+    "duration": 376,
+    "size": 6021633,
+    "pubdate": "Sun, 11 Oct 2026 08:00:04 +0200"
+  },
+  {
     "date": "2026-10-10",
     "file": "dyrenytt-2026-10-10.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-10.mp3",
@@ -288,15 +298,5 @@
     "duration": 401,
     "size": 6422531,
     "pubdate": "Sat, 12 Sep 2026 06:44:19 +0200"
-  },
-  {
-    "date": "2026-09-11",
-    "file": "dyrenytt-2026-09-11.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-11.mp3",
-    "title": "Dyrenytt – fredag 11. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Solfylt helgestart og ny utstilling i Narvik; Forbrytere som oss; 80 forskningsprosjekter får støtte til kommersialisering; – Holdt på å falle av stolen",
-    "duration": 347,
-    "size": 5554306,
-    "pubdate": "Fri, 11 Sep 2026 06:50:48 +0200"
   }
 ]
