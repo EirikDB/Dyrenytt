@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-12",
+    "file": "dyrenytt-2026-10-12.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-12.mp3",
+    "title": "Dyrenytt – mandag 12. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Hvis sivilisasjonen kollapser, ring Kim Sølve; Flyktet til Asker: – Hvorfor må jeg dra til fronten bare for å dø?; Katten Larry tilbake etter helsedrama; Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk",
+    "duration": 293,
+    "size": 4685696,
+    "pubdate": "Mon, 12 Oct 2026 08:10:55 +0200"
+  },
+  {
     "date": "2026-10-11",
     "file": "dyrenytt-2026-10-11.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-11.mp3",
@@ -288,15 +298,5 @@
     "duration": 427,
     "size": 6834563,
     "pubdate": "Sun, 13 Sep 2026 06:57:36 +0200"
-  },
-  {
-    "date": "2026-09-12",
-    "file": "dyrenytt-2026-09-12.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-12.mp3",
-    "title": "Dyrenytt – lørdag 12. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Sykkelfestival, geologiens dag og en ny flott høstdag; Ga Wilma et nytt hjem: – Veldig omsorgsfull; Europol avslører nettverk som driver svart handel med hester; Prinsesse Astrids hunder: - Betyr alt for meg!",
-    "duration": 401,
-    "size": 6422531,
-    "pubdate": "Sat, 12 Sep 2026 06:44:19 +0200"
   }
 ]

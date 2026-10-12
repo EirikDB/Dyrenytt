@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – mandag 12. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Hvis sivilisasjonen kollapser, ring Kim Sølve; Flyktet til Asker: – Hvorfor må jeg dra til fronten bare for å dø?; Katten Larry tilbake etter helsedrama; Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hvis sivilisasjonen kollapser, ring Kim Sølve; Flyktet til Asker: – Hvorfor må jeg dra til fronten bare for å dø?; Katten Larry tilbake etter helsedrama; Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-12.mp3" length="4685696" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-12.mp3</guid>
+      <pubDate>Mon, 12 Oct 2026 08:10:55 +0200</pubDate>
+      <itunes:duration>4:53</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – søndag 11. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Sendte en melding på Instagram. Nå er de gift.; Europris tilbakekaller kattemat – sjekk om du har denne hjemme; Dette sier politiet om aksjonen; Bønder: Hundeangrep mot sau aukar</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Sendte en melding på Instagram. Nå er de gift.; Europris tilbakekaller kattemat – sjekk om du har denne hjemme; Dette sier politiet om aksjonen; Bønder: Hundeangrep mot sau aukar</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-13.mp3</guid>
       <pubDate>Sun, 13 Sep 2026 06:57:36 +0200</pubDate>
       <itunes:duration>7:07</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – lørdag 12. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Sykkelfestival, geologiens dag og en ny flott høstdag; Ga Wilma et nytt hjem: – Veldig omsorgsfull; Europol avslører nettverk som driver svart handel med hester; Prinsesse Astrids hunder: - Betyr alt for meg!</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Sykkelfestival, geologiens dag og en ny flott høstdag; Ga Wilma et nytt hjem: – Veldig omsorgsfull; Europol avslører nettverk som driver svart handel med hester; Prinsesse Astrids hunder: - Betyr alt for meg!</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-12.mp3" length="6422531" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-12.mp3</guid>
-      <pubDate>Sat, 12 Sep 2026 06:44:19 +0200</pubDate>
-      <itunes:duration>6:41</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
