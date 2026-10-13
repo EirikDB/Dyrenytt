@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 13. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: 111 påkjørt i oktober i fjor: - Nå må refleksen fram; Dyrlegens klare beskjed til katteeiere: – Har du ikke råd til dette, bør du ikke skaffe deg dyr; Ekspert om Trumps utspill: – Et brudd på loven; Arrangerte «valpeyoga» for landslaget: – En suksess</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: 111 påkjørt i oktober i fjor: - Nå må refleksen fram; Dyrlegens klare beskjed til katteeiere: – Har du ikke råd til dette, bør du ikke skaffe deg dyr; Ekspert om Trumps utspill: – Et brudd på loven; Arrangerte «valpeyoga» for landslaget: – En suksess</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-13.mp3" length="7876353" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-13.mp3</guid>
+      <pubDate>Tue, 13 Oct 2026 08:54:18 +0200</pubDate>
+      <itunes:duration>8:12</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 12. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Hvis sivilisasjonen kollapser, ring Kim Sølve; Flyktet til Asker: – Hvorfor må jeg dra til fronten bare for å dø?; Katten Larry tilbake etter helsedrama; Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hvis sivilisasjonen kollapser, ring Kim Sølve; Flyktet til Asker: – Hvorfor må jeg dra til fronten bare for å dø?; Katten Larry tilbake etter helsedrama; Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-14.mp3</guid>
       <pubDate>Mon, 14 Sep 2026 07:07:15 +0200</pubDate>
       <itunes:duration>4:59</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 13. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Torsdag er Andreas på plass i ny butikk:– Dette blir veldig bra; I dag er det bare å feste løse gjenstander; Fra vikingtidens hevn til dagens nordområder: Inviterer til samtaledag i Gjesvær kirke; Ti timer i bil for å lære bort kunsten å gjete sau</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Torsdag er Andreas på plass i ny butikk:– Dette blir veldig bra; I dag er det bare å feste løse gjenstander; Fra vikingtidens hevn til dagens nordområder: Inviterer til samtaledag i Gjesvær kirke; Ti timer i bil for å lære bort kunsten å gjete sau</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-13.mp3" length="6834563" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-13.mp3</guid>
-      <pubDate>Sun, 13 Sep 2026 06:57:36 +0200</pubDate>
-      <itunes:duration>7:07</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
