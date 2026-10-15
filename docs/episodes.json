@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-15",
+    "file": "dyrenytt-2026-10-15.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-15.mp3",
+    "title": "Dyrenytt – torsdag 15. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Faren havnet i fengsel – i dag er hun et Hollywood-ikon; Gulating lagmannsrett - Dom: LG-2026-31025; Storutrykning til Strandgaten: Pekt ut som synderen; Verdensmester Petter Landfald ble Norgesmester for første gang",
+    "duration": 354,
+    "size": 5665665,
+    "pubdate": "Thu, 15 Oct 2026 06:51:59 +0200"
+  },
+  {
     "date": "2026-10-14",
     "file": "dyrenytt-2026-10-14.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-14.mp3",
@@ -288,15 +298,5 @@
     "duration": 403,
     "size": 6449026,
     "pubdate": "Wed, 16 Sep 2026 06:58:01 +0200"
-  },
-  {
-    "date": "2026-09-15",
-    "file": "dyrenytt-2026-09-15.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-15.mp3",
-    "title": "Dyrenytt – tirsdag 15. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: 16 jerver felt i starten av jaktperioden; - Kan potensielt være skadelig; Hund i bilen: Risikerer å miste lappen; Bedriftskatten Pushild aukar trivselen",
-    "duration": 567,
-    "size": 9078275,
-    "pubdate": "Tue, 15 Sep 2026 07:02:34 +0200"
   }
 ]

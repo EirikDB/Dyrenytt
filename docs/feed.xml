@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 15. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Faren havnet i fengsel – i dag er hun et Hollywood-ikon; Gulating lagmannsrett - Dom: LG-2026-31025; Storutrykning til Strandgaten: Pekt ut som synderen; Verdensmester Petter Landfald ble Norgesmester for første gang</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Faren havnet i fengsel – i dag er hun et Hollywood-ikon; Gulating lagmannsrett - Dom: LG-2026-31025; Storutrykning til Strandgaten: Pekt ut som synderen; Verdensmester Petter Landfald ble Norgesmester for første gang</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-15.mp3" length="5665665" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-15.mp3</guid>
+      <pubDate>Thu, 15 Oct 2026 06:51:59 +0200</pubDate>
+      <itunes:duration>5:54</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 14. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: På torsdag bør du bruke fem minutter på dette før du går ut; Birger vil få barn med en ukjent kvinne; Suzie (1) ble halshogd – kattedrapene øker i omfang; TABU: Hvor mange menn må lide i stillhet før vi endelig begynner å lytte?</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: På torsdag bør du bruke fem minutter på dette før du går ut; Birger vil få barn med en ukjent kvinne; Suzie (1) ble halshogd – kattedrapene øker i omfang; TABU: Hvor mange menn må lide i stillhet før vi endelig begynner å lytte?</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-16.mp3</guid>
       <pubDate>Wed, 16 Sep 2026 06:58:01 +0200</pubDate>
       <itunes:duration>6:43</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – tirsdag 15. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: 16 jerver felt i starten av jaktperioden; - Kan potensielt være skadelig; Hund i bilen: Risikerer å miste lappen; Bedriftskatten Pushild aukar trivselen</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: 16 jerver felt i starten av jaktperioden; - Kan potensielt være skadelig; Hund i bilen: Risikerer å miste lappen; Bedriftskatten Pushild aukar trivselen</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-15.mp3" length="9078275" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-15.mp3</guid>
-      <pubDate>Tue, 15 Sep 2026 07:02:34 +0200</pubDate>
-      <itunes:duration>9:27</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
