@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 16. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Fryktar invasjon av nye flått-typar; Nå returnerer de: – Vi skal farge himmelen gul; Oppsiktsvekkende forvandling: Da vekta bikket 125 kilo, tok John Harald Log grep; Tatt med giftslanger og øgler i kofferten</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Fryktar invasjon av nye flått-typar; Nå returnerer de: – Vi skal farge himmelen gul; Oppsiktsvekkende forvandling: Da vekta bikket 125 kilo, tok John Harald Log grep; Tatt med giftslanger og øgler i kofferten</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-16.mp3" length="5220224" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-16.mp3</guid>
+      <pubDate>Fri, 16 Oct 2026 06:43:13 +0200</pubDate>
+      <itunes:duration>5:26</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 15. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Faren havnet i fengsel – i dag er hun et Hollywood-ikon; Gulating lagmannsrett - Dom: LG-2026-31025; Storutrykning til Strandgaten: Pekt ut som synderen; Verdensmester Petter Landfald ble Norgesmester for første gang</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Faren havnet i fengsel – i dag er hun et Hollywood-ikon; Gulating lagmannsrett - Dom: LG-2026-31025; Storutrykning til Strandgaten: Pekt ut som synderen; Verdensmester Petter Landfald ble Norgesmester for første gang</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-17.mp3</guid>
       <pubDate>Thu, 17 Sep 2026 07:00:43 +0200</pubDate>
       <itunes:duration>4:52</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 16. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: I fjor tok Eivind et avgjørende valg: – Jeg tror og håper at det er bedre; Slangeolje spessial; Utsatt for høyball-bedrageri: – Grusom situasjon å stå i; Sjøutsikt eller populært byggefelt? Dette får du for 12.000 kroner</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: I fjor tok Eivind et avgjørende valg: – Jeg tror og håper at det er bedre; Slangeolje spessial; Utsatt for høyball-bedrageri: – Grusom situasjon å stå i; Sjøutsikt eller populært byggefelt? Dette får du for 12.000 kroner</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-16.mp3" length="6449026" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-16.mp3</guid>
-      <pubDate>Wed, 16 Sep 2026 06:58:01 +0200</pubDate>
-      <itunes:duration>6:43</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-16",
+    "file": "dyrenytt-2026-10-16.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-16.mp3",
+    "title": "Dyrenytt – fredag 16. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Fryktar invasjon av nye flått-typar; Nå returnerer de: – Vi skal farge himmelen gul; Oppsiktsvekkende forvandling: Da vekta bikket 125 kilo, tok John Harald Log grep; Tatt med giftslanger og øgler i kofferten",
+    "duration": 326,
+    "size": 5220224,
+    "pubdate": "Fri, 16 Oct 2026 06:43:13 +0200"
+  },
+  {
     "date": "2026-10-15",
     "file": "dyrenytt-2026-10-15.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-15.mp3",
@@ -288,15 +298,5 @@
     "duration": 292,
     "size": 4674563,
     "pubdate": "Thu, 17 Sep 2026 07:00:43 +0200"
-  },
-  {
-    "date": "2026-09-16",
-    "file": "dyrenytt-2026-09-16.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-16.mp3",
-    "title": "Dyrenytt – onsdag 16. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: I fjor tok Eivind et avgjørende valg: – Jeg tror og håper at det er bedre; Slangeolje spessial; Utsatt for høyball-bedrageri: – Grusom situasjon å stå i; Sjøutsikt eller populært byggefelt? Dette får du for 12.000 kroner",
-    "duration": 403,
-    "size": 6449026,
-    "pubdate": "Wed, 16 Sep 2026 06:58:01 +0200"
   }
 ]
