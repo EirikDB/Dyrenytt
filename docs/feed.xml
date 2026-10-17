@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 17. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Interessen for klubben har økt kraftig – nå har de tatt stor investering: – Vi skal være en aktiv klubb; Advarer hundeeiere: Konsekvenser for helsen; 25 år siden Barnestafetten: – Ina ble verken veterinær eller boende på gård, men livet ble et skikkelig eventyr; Vi har blitt så ærlige at vi har nådd barndommen</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Interessen for klubben har økt kraftig – nå har de tatt stor investering: – Vi skal være en aktiv klubb; Advarer hundeeiere: Konsekvenser for helsen; 25 år siden Barnestafetten: – Ina ble verken veterinær eller boende på gård, men livet ble et skikkelig eventyr; Vi har blitt så ærlige at vi har nådd barndommen</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-17.mp3" length="5458305" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-17.mp3</guid>
+      <pubDate>Sat, 17 Oct 2026 06:40:09 +0200</pubDate>
+      <itunes:duration>5:41</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 16. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Fryktar invasjon av nye flått-typar; Nå returnerer de: – Vi skal farge himmelen gul; Oppsiktsvekkende forvandling: Da vekta bikket 125 kilo, tok John Harald Log grep; Tatt med giftslanger og øgler i kofferten</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Fryktar invasjon av nye flått-typar; Nå returnerer de: – Vi skal farge himmelen gul; Oppsiktsvekkende forvandling: Da vekta bikket 125 kilo, tok John Harald Log grep; Tatt med giftslanger og øgler i kofferten</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-18.mp3</guid>
       <pubDate>Fri, 18 Sep 2026 06:53:49 +0200</pubDate>
       <itunes:duration>6:59</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 17. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Fin omvisning på Slottet; Obamas hund er død: – Vil savne henne fryktelig; Vindskeiv økofabel; Store forskjeller: – Kan ikke sammenlignes</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Fin omvisning på Slottet; Obamas hund er død: – Vil savne henne fryktelig; Vindskeiv økofabel; Store forskjeller: – Kan ikke sammenlignes</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-17.mp3" length="4674563" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-17.mp3</guid>
-      <pubDate>Thu, 17 Sep 2026 07:00:43 +0200</pubDate>
-      <itunes:duration>4:52</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

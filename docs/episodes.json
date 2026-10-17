@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-17",
+    "file": "dyrenytt-2026-10-17.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-17.mp3",
+    "title": "Dyrenytt – lørdag 17. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Interessen for klubben har økt kraftig – nå har de tatt stor investering: – Vi skal være en aktiv klubb; Advarer hundeeiere: Konsekvenser for helsen; 25 år siden Barnestafetten: – Ina ble verken veterinær eller boende på gård, men livet ble et skikkelig eventyr; Vi har blitt så ærlige at vi har nådd barndommen",
+    "duration": 341,
+    "size": 5458305,
+    "pubdate": "Sat, 17 Oct 2026 06:40:09 +0200"
+  },
+  {
     "date": "2026-10-16",
     "file": "dyrenytt-2026-10-16.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-16.mp3",
@@ -288,15 +298,5 @@
     "duration": 419,
     "size": 6710530,
     "pubdate": "Fri, 18 Sep 2026 06:53:49 +0200"
-  },
-  {
-    "date": "2026-09-17",
-    "file": "dyrenytt-2026-09-17.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-17.mp3",
-    "title": "Dyrenytt – torsdag 17. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Fin omvisning på Slottet; Obamas hund er død: – Vil savne henne fryktelig; Vindskeiv økofabel; Store forskjeller: – Kan ikke sammenlignes",
-    "duration": 292,
-    "size": 4674563,
-    "pubdate": "Thu, 17 Sep 2026 07:00:43 +0200"
   }
 ]
