@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-18",
+    "file": "dyrenytt-2026-10-18.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-18.mp3",
+    "title": "Dyrenytt – søndag 18. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Gutter fra «Black Bloc» til TV 2: – Vi skal knuse alt; Jørgen overtok gården og åpnet utsalg i garasjen: – Mye som skal læres på nytt; Bilulykke på kommunegrensa: – Store materielle skader; – Vil kommunen dekke eventuelle veterinærregninger, skader på barn eller ødelagte sko?",
+    "duration": 384,
+    "size": 6146433,
+    "pubdate": "Sun, 18 Oct 2026 06:45:39 +0200"
+  },
+  {
     "date": "2026-10-17",
     "file": "dyrenytt-2026-10-17.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-17.mp3",
@@ -288,15 +298,5 @@
     "duration": 394,
     "size": 6302339,
     "pubdate": "Sat, 19 Sep 2026 06:45:26 +0200"
-  },
-  {
-    "date": "2026-09-18",
-    "file": "dyrenytt-2026-09-18.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-18.mp3",
-    "title": "Dyrenytt – fredag 18. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: NOAH og sauesanking; Hva gjør noe fengende?; Dyreklinikkar tør ikkje vere med i vaktordning: Hund døydde medan vakta stod tom; Jubileumsfeiring i Gjesvær kirke",
-    "duration": 419,
-    "size": 6710530,
-    "pubdate": "Fri, 18 Sep 2026 06:53:49 +0200"
   }
 ]
