@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-19",
+    "file": "dyrenytt-2026-10-19.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-19.mp3",
+    "title": "Dyrenytt – mandag 19. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Miljøgifter funnet i kattemat – norsk kjæledyrfôr overvåkes ikke; Tuva-Emilie (18) kjøpte Torshovs kanskje minste leilighet: – En syk pris; Jaguarer slaktes for «medisin» – levende unger selges som luksusdyr; Holdt fanget i 88 dager",
+    "duration": 559,
+    "size": 8947328,
+    "pubdate": "Mon, 19 Oct 2026 06:53:48 +0200"
+  },
+  {
     "date": "2026-10-18",
     "file": "dyrenytt-2026-10-18.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-18.mp3",
@@ -288,15 +298,5 @@
     "duration": 482,
     "size": 7720067,
     "pubdate": "Sun, 20 Sep 2026 07:01:35 +0200"
-  },
-  {
-    "date": "2026-09-19",
-    "file": "dyrenytt-2026-09-19.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-19.mp3",
-    "title": "Dyrenytt – lørdag 19. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: – 30 meter fra husveggen vår; Det fins noen ekstremt giftige sopper i norsk natur. Hvorfor det?; NRK tester Grændsen; Min karriere – så langt: Ophelia Alickaj",
-    "duration": 394,
-    "size": 6302339,
-    "pubdate": "Sat, 19 Sep 2026 06:45:26 +0200"
   }
 ]

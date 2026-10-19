@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – mandag 19. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Miljøgifter funnet i kattemat – norsk kjæledyrfôr overvåkes ikke; Tuva-Emilie (18) kjøpte Torshovs kanskje minste leilighet: – En syk pris; Jaguarer slaktes for «medisin» – levende unger selges som luksusdyr; Holdt fanget i 88 dager</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Miljøgifter funnet i kattemat – norsk kjæledyrfôr overvåkes ikke; Tuva-Emilie (18) kjøpte Torshovs kanskje minste leilighet: – En syk pris; Jaguarer slaktes for «medisin» – levende unger selges som luksusdyr; Holdt fanget i 88 dager</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-19.mp3" length="8947328" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-19.mp3</guid>
+      <pubDate>Mon, 19 Oct 2026 06:53:48 +0200</pubDate>
+      <itunes:duration>9:19</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – søndag 18. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Gutter fra «Black Bloc» til TV 2: – Vi skal knuse alt; Jørgen overtok gården og åpnet utsalg i garasjen: – Mye som skal læres på nytt; Bilulykke på kommunegrensa: – Store materielle skader; – Vil kommunen dekke eventuelle veterinærregninger, skader på barn eller ødelagte sko?</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Gutter fra «Black Bloc» til TV 2: – Vi skal knuse alt; Jørgen overtok gården og åpnet utsalg i garasjen: – Mye som skal læres på nytt; Bilulykke på kommunegrensa: – Store materielle skader; – Vil kommunen dekke eventuelle veterinærregninger, skader på barn eller ødelagte sko?</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-20.mp3</guid>
       <pubDate>Sun, 20 Sep 2026 07:01:35 +0200</pubDate>
       <itunes:duration>8:02</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – lørdag 19. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: – 30 meter fra husveggen vår; Det fins noen ekstremt giftige sopper i norsk natur. Hvorfor det?; NRK tester Grændsen; Min karriere – så langt: Ophelia Alickaj</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: – 30 meter fra husveggen vår; Det fins noen ekstremt giftige sopper i norsk natur. Hvorfor det?; NRK tester Grændsen; Min karriere – så langt: Ophelia Alickaj</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-19.mp3" length="6302339" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-19.mp3</guid>
-      <pubDate>Sat, 19 Sep 2026 06:45:26 +0200</pubDate>
-      <itunes:duration>6:34</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
