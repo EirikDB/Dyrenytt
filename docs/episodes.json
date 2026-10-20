@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-20",
+    "file": "dyrenytt-2026-10-20.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-20.mp3",
+    "title": "Dyrenytt – tirsdag 20. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Mener KSL er dyrt og unødvendig: Vil heller ha veterinærer; Ekstremværet «Adam» herjet i Spania: – Alt flyter; Farvel til språket; Har du brukt den samme refleksen i flere år? Den kan gi falsk trygghet",
+    "duration": 325,
+    "size": 5205633,
+    "pubdate": "Tue, 20 Oct 2026 07:00:49 +0200"
+  },
+  {
     "date": "2026-10-19",
     "file": "dyrenytt-2026-10-19.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-19.mp3",
@@ -288,15 +298,5 @@
     "duration": 336,
     "size": 5369602,
     "pubdate": "Mon, 21 Sep 2026 07:07:35 +0200"
-  },
-  {
-    "date": "2026-09-20",
-    "file": "dyrenytt-2026-09-20.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-20.mp3",
-    "title": "Dyrenytt – søndag 20. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Smultring-suksessen vokser: Raymond har funnet en måte å ta unna julerushet; Bråk om «bølle-bavianer» i Cape Town; Det var ikke noe å diskutere. Ingen av oss tenkte: La oss først høre mauren sin side av saken; Mann savnet etter tur i fjellet i Ullensvang",
-    "duration": 482,
-    "size": 7720067,
-    "pubdate": "Sun, 20 Sep 2026 07:01:35 +0200"
   }
 ]

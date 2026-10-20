@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 20. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Mener KSL er dyrt og unødvendig: Vil heller ha veterinærer; Ekstremværet «Adam» herjet i Spania: – Alt flyter; Farvel til språket; Har du brukt den samme refleksen i flere år? Den kan gi falsk trygghet</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Mener KSL er dyrt og unødvendig: Vil heller ha veterinærer; Ekstremværet «Adam» herjet i Spania: – Alt flyter; Farvel til språket; Har du brukt den samme refleksen i flere år? Den kan gi falsk trygghet</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-20.mp3" length="5205633" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-20.mp3</guid>
+      <pubDate>Tue, 20 Oct 2026 07:00:49 +0200</pubDate>
+      <itunes:duration>5:25</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 19. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Miljøgifter funnet i kattemat – norsk kjæledyrfôr overvåkes ikke; Tuva-Emilie (18) kjøpte Torshovs kanskje minste leilighet: – En syk pris; Jaguarer slaktes for «medisin» – levende unger selges som luksusdyr; Holdt fanget i 88 dager</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Miljøgifter funnet i kattemat – norsk kjæledyrfôr overvåkes ikke; Tuva-Emilie (18) kjøpte Torshovs kanskje minste leilighet: – En syk pris; Jaguarer slaktes for «medisin» – levende unger selges som luksusdyr; Holdt fanget i 88 dager</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-21.mp3</guid>
       <pubDate>Mon, 21 Sep 2026 07:07:35 +0200</pubDate>
       <itunes:duration>5:36</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 20. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Smultring-suksessen vokser: Raymond har funnet en måte å ta unna julerushet; Bråk om «bølle-bavianer» i Cape Town; Det var ikke noe å diskutere. Ingen av oss tenkte: La oss først høre mauren sin side av saken; Mann savnet etter tur i fjellet i Ullensvang</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Smultring-suksessen vokser: Raymond har funnet en måte å ta unna julerushet; Bråk om «bølle-bavianer» i Cape Town; Det var ikke noe å diskutere. Ingen av oss tenkte: La oss først høre mauren sin side av saken; Mann savnet etter tur i fjellet i Ullensvang</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-20.mp3" length="7720067" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-20.mp3</guid>
-      <pubDate>Sun, 20 Sep 2026 07:01:35 +0200</pubDate>
-      <itunes:duration>8:02</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
