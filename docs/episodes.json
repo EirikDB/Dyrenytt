@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-21",
+    "file": "dyrenytt-2026-10-21.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-21.mp3",
+    "title": "Dyrenytt – onsdag 21. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Hvem eier egentlig Albanias fremtid?; Maren blar opp for sykehushundene: – Alt du trenger å gjøre er å dukke opp på lørdag; 320 hunder og katter påkjørt – nå kommer advarselen til norske dyreeiere; Derfor bør du banke på panseret før du starter bilen i høst",
+    "duration": 351,
+    "size": 5612288,
+    "pubdate": "Wed, 21 Oct 2026 07:00:15 +0200"
+  },
+  {
     "date": "2026-10-20",
     "file": "dyrenytt-2026-10-20.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-20.mp3",
@@ -288,15 +298,5 @@
     "duration": 428,
     "size": 6844163,
     "pubdate": "Tue, 22 Sep 2026 07:08:59 +0200"
-  },
-  {
-    "date": "2026-09-21",
-    "file": "dyrenytt-2026-09-21.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-21.mp3",
-    "title": "Dyrenytt – mandag 21. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Eigen frykt blei til skrekkserie; Tidlig oppdagelse av kreft kan redde hundens liv; Etterretningstopper: Russland kan teste Nato innen få måneder; 94 elever på Kolvereid skulle få sving på bygda",
-    "duration": 336,
-    "size": 5369602,
-    "pubdate": "Mon, 21 Sep 2026 07:07:35 +0200"
   }
 ]

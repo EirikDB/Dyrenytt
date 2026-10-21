@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – onsdag 21. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Hvem eier egentlig Albanias fremtid?; Maren blar opp for sykehushundene: – Alt du trenger å gjøre er å dukke opp på lørdag; 320 hunder og katter påkjørt – nå kommer advarselen til norske dyreeiere; Derfor bør du banke på panseret før du starter bilen i høst</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hvem eier egentlig Albanias fremtid?; Maren blar opp for sykehushundene: – Alt du trenger å gjøre er å dukke opp på lørdag; 320 hunder og katter påkjørt – nå kommer advarselen til norske dyreeiere; Derfor bør du banke på panseret før du starter bilen i høst</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-21.mp3" length="5612288" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-21.mp3</guid>
+      <pubDate>Wed, 21 Oct 2026 07:00:15 +0200</pubDate>
+      <itunes:duration>5:51</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – tirsdag 20. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Mener KSL er dyrt og unødvendig: Vil heller ha veterinærer; Ekstremværet «Adam» herjet i Spania: – Alt flyter; Farvel til språket; Har du brukt den samme refleksen i flere år? Den kan gi falsk trygghet</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Mener KSL er dyrt og unødvendig: Vil heller ha veterinærer; Ekstremværet «Adam» herjet i Spania: – Alt flyter; Farvel til språket; Har du brukt den samme refleksen i flere år? Den kan gi falsk trygghet</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-22.mp3</guid>
       <pubDate>Tue, 22 Sep 2026 07:08:59 +0200</pubDate>
       <itunes:duration>7:08</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – mandag 21. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Eigen frykt blei til skrekkserie; Tidlig oppdagelse av kreft kan redde hundens liv; Etterretningstopper: Russland kan teste Nato innen få måneder; 94 elever på Kolvereid skulle få sving på bygda</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Eigen frykt blei til skrekkserie; Tidlig oppdagelse av kreft kan redde hundens liv; Etterretningstopper: Russland kan teste Nato innen få måneder; 94 elever på Kolvereid skulle få sving på bygda</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-21.mp3" length="5369602" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-21.mp3</guid>
-      <pubDate>Mon, 21 Sep 2026 07:07:35 +0200</pubDate>
-      <itunes:duration>5:36</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
