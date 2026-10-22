@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 22. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Dette vil tenåringer ha til bursdagen; – Latter, spenning og sjalu katt; Svensk debatt om pensjonerte politihunder – POD ønsker ikke endring; Android får nytt vern mot svindel-SMS – slik gjør du telefonen klar</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Dette vil tenåringer ha til bursdagen; – Latter, spenning og sjalu katt; Svensk debatt om pensjonerte politihunder – POD ønsker ikke endring; Android får nytt vern mot svindel-SMS – slik gjør du telefonen klar</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-22.mp3" length="5523585" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-22.mp3</guid>
+      <pubDate>Thu, 22 Oct 2026 07:02:40 +0200</pubDate>
+      <itunes:duration>5:45</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 21. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Hvem eier egentlig Albanias fremtid?; Maren blar opp for sykehushundene: – Alt du trenger å gjøre er å dukke opp på lørdag; 320 hunder og katter påkjørt – nå kommer advarselen til norske dyreeiere; Derfor bør du banke på panseret før du starter bilen i høst</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hvem eier egentlig Albanias fremtid?; Maren blar opp for sykehushundene: – Alt du trenger å gjøre er å dukke opp på lørdag; 320 hunder og katter påkjørt – nå kommer advarselen til norske dyreeiere; Derfor bør du banke på panseret før du starter bilen i høst</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-23.mp3</guid>
       <pubDate>Wed, 23 Sep 2026 06:53:30 +0200</pubDate>
       <itunes:duration>5:14</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – tirsdag 22. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Drivstoffprisene: – Bruker 500 kroner hver dag; 75 katter funnet i Paris-leilighet; Leteaksjon etter savnet dame i 50-årene; Svindlere kopierer ansiktet ditt: – Utfordrende å oppdage</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Drivstoffprisene: – Bruker 500 kroner hver dag; 75 katter funnet i Paris-leilighet; Leteaksjon etter savnet dame i 50-årene; Svindlere kopierer ansiktet ditt: – Utfordrende å oppdage</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-22.mp3" length="6844163" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-22.mp3</guid>
-      <pubDate>Tue, 22 Sep 2026 07:08:59 +0200</pubDate>
-      <itunes:duration>7:08</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

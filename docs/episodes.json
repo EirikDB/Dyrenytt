@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-22",
+    "file": "dyrenytt-2026-10-22.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-22.mp3",
+    "title": "Dyrenytt – torsdag 22. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Dette vil tenåringer ha til bursdagen; – Latter, spenning og sjalu katt; Svensk debatt om pensjonerte politihunder – POD ønsker ikke endring; Android får nytt vern mot svindel-SMS – slik gjør du telefonen klar",
+    "duration": 345,
+    "size": 5523585,
+    "pubdate": "Thu, 22 Oct 2026 07:02:40 +0200"
+  },
+  {
     "date": "2026-10-21",
     "file": "dyrenytt-2026-10-21.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-21.mp3",
@@ -288,15 +298,5 @@
     "duration": 314,
     "size": 5032066,
     "pubdate": "Wed, 23 Sep 2026 06:53:30 +0200"
-  },
-  {
-    "date": "2026-09-22",
-    "file": "dyrenytt-2026-09-22.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-22.mp3",
-    "title": "Dyrenytt – tirsdag 22. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Drivstoffprisene: – Bruker 500 kroner hver dag; 75 katter funnet i Paris-leilighet; Leteaksjon etter savnet dame i 50-årene; Svindlere kopierer ansiktet ditt: – Utfordrende å oppdage",
-    "duration": 428,
-    "size": 6844163,
-    "pubdate": "Tue, 22 Sep 2026 07:08:59 +0200"
   }
 ]
