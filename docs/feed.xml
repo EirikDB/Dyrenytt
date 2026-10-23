@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 23. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Ukas kviss; Full krasj i høsttåken; Oppdal: Mann angrepet av flere okser; Ber om hjelp etter funn av parterte katter</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Ukas kviss; Full krasj i høsttåken; Oppdal: Mann angrepet av flere okser; Ber om hjelp etter funn av parterte katter</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-23.mp3" length="7361792" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-23.mp3</guid>
+      <pubDate>Fri, 23 Oct 2026 07:02:53 +0200</pubDate>
+      <itunes:duration>7:40</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 22. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Dette vil tenåringer ha til bursdagen; – Latter, spenning og sjalu katt; Svensk debatt om pensjonerte politihunder – POD ønsker ikke endring; Android får nytt vern mot svindel-SMS – slik gjør du telefonen klar</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Dette vil tenåringer ha til bursdagen; – Latter, spenning og sjalu katt; Svensk debatt om pensjonerte politihunder – POD ønsker ikke endring; Android får nytt vern mot svindel-SMS – slik gjør du telefonen klar</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-24.mp3</guid>
       <pubDate>Thu, 24 Sep 2026 07:02:49 +0200</pubDate>
       <itunes:duration>6:29</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 23. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: 14 sauer døde etter hundeangrep; Kriminelt comeback for nylonstrømpebuksa; Ukjent fortid: – Plassert i garasjen; Nattens viktigste nyheter</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: 14 sauer døde etter hundeangrep; Kriminelt comeback for nylonstrømpebuksa; Ukjent fortid: – Plassert i garasjen; Nattens viktigste nyheter</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-23.mp3" length="5032066" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-23.mp3</guid>
-      <pubDate>Wed, 23 Sep 2026 06:53:30 +0200</pubDate>
-      <itunes:duration>5:14</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
