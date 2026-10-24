@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-24",
+    "file": "dyrenytt-2026-10-24.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-24.mp3",
+    "title": "Dyrenytt – lørdag 24. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Strikkesuksess for firbeinte: – Sjølv store hundar treng genserar; Lufter hunder for å donere penger: – Vil bidra til at flere innlagte barn på sykehus får besøk av hunder; Å vera brannkonstabel er ikkje berre ein jobb, det er ein livsstil; Oksene til Stig har ikke baller",
+    "duration": 479,
+    "size": 7659393,
+    "pubdate": "Sat, 24 Oct 2026 06:48:00 +0200"
+  },
+  {
     "date": "2026-10-23",
     "file": "dyrenytt-2026-10-23.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-23.mp3",
@@ -288,15 +298,5 @@
     "duration": 368,
     "size": 5882242,
     "pubdate": "Fri, 25 Sep 2026 07:06:02 +0200"
-  },
-  {
-    "date": "2026-09-24",
-    "file": "dyrenytt-2026-09-24.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-24.mp3",
-    "title": "Dyrenytt – torsdag 24. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Skal være avfyrt skudd mot bolig i Ullensaker – nabo varslet politiet; Hvis Milo, Luna eller Pus kunne snakke, ville de sagt takk; Avslører: – Jeg har blitt «pappa»; Nattefred i fare",
-    "duration": 389,
-    "size": 6220931,
-    "pubdate": "Thu, 24 Sep 2026 07:02:49 +0200"
   }
 ]

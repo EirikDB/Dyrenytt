@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 24. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Strikkesuksess for firbeinte: – Sjølv store hundar treng genserar; Lufter hunder for å donere penger: – Vil bidra til at flere innlagte barn på sykehus får besøk av hunder; Å vera brannkonstabel er ikkje berre ein jobb, det er ein livsstil; Oksene til Stig har ikke baller</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Strikkesuksess for firbeinte: – Sjølv store hundar treng genserar; Lufter hunder for å donere penger: – Vil bidra til at flere innlagte barn på sykehus får besøk av hunder; Å vera brannkonstabel er ikkje berre ein jobb, det er ein livsstil; Oksene til Stig har ikke baller</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-24.mp3" length="7659393" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-24.mp3</guid>
+      <pubDate>Sat, 24 Oct 2026 06:48:00 +0200</pubDate>
+      <itunes:duration>7:59</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 23. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Ukas kviss; Full krasj i høsttåken; Oppdal: Mann angrepet av flere okser; Ber om hjelp etter funn av parterte katter</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Ukas kviss; Full krasj i høsttåken; Oppdal: Mann angrepet av flere okser; Ber om hjelp etter funn av parterte katter</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-25.mp3</guid>
       <pubDate>Fri, 25 Sep 2026 07:06:02 +0200</pubDate>
       <itunes:duration>6:08</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 24. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Skal være avfyrt skudd mot bolig i Ullensaker – nabo varslet politiet; Hvis Milo, Luna eller Pus kunne snakke, ville de sagt takk; Avslører: – Jeg har blitt «pappa»; Nattefred i fare</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Skal være avfyrt skudd mot bolig i Ullensaker – nabo varslet politiet; Hvis Milo, Luna eller Pus kunne snakke, ville de sagt takk; Avslører: – Jeg har blitt «pappa»; Nattefred i fare</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-24.mp3" length="6220931" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-24.mp3</guid>
-      <pubDate>Thu, 24 Sep 2026 07:02:49 +0200</pubDate>
-      <itunes:duration>6:29</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
