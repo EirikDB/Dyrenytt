@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – søndag 25. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Ville avslutte livet – nå står hun i spissen for å hjelpe andre; Hund ble påkjørt og døde; Hund døde etter påkjørsel – bilfører forlot stedet; Gjentar suksessen: Følger valpene i åtte uker</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Ville avslutte livet – nå står hun i spissen for å hjelpe andre; Hund ble påkjørt og døde; Hund døde etter påkjørsel – bilfører forlot stedet; Gjentar suksessen: Følger valpene i åtte uker</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-25.mp3" length="5340417" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-25.mp3</guid>
+      <pubDate>Sun, 25 Oct 2026 06:55:27 +0200</pubDate>
+      <itunes:duration>5:34</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – lørdag 24. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Strikkesuksess for firbeinte: – Sjølv store hundar treng genserar; Lufter hunder for å donere penger: – Vil bidra til at flere innlagte barn på sykehus får besøk av hunder; Å vera brannkonstabel er ikkje berre ein jobb, det er ein livsstil; Oksene til Stig har ikke baller</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Strikkesuksess for firbeinte: – Sjølv store hundar treng genserar; Lufter hunder for å donere penger: – Vil bidra til at flere innlagte barn på sykehus får besøk av hunder; Å vera brannkonstabel er ikkje berre ein jobb, det er ein livsstil; Oksene til Stig har ikke baller</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-26.mp3</guid>
       <pubDate>Sat, 26 Sep 2026 07:09:37 +0200</pubDate>
       <itunes:duration>5:55</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – fredag 25. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Sola-gründer Mikal: Slik får du maksimalt ut av varmepumpen din!; Hytteslipp: Planlegg hytteturer i 2027; Har aldri opplevd lignende: – Dypt tragisk; Fyrer løs: – Bare legg deg flat</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Sola-gründer Mikal: Slik får du maksimalt ut av varmepumpen din!; Hytteslipp: Planlegg hytteturer i 2027; Har aldri opplevd lignende: – Dypt tragisk; Fyrer løs: – Bare legg deg flat</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-25.mp3" length="5882242" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-25.mp3</guid>
-      <pubDate>Fri, 25 Sep 2026 07:06:02 +0200</pubDate>
-      <itunes:duration>6:08</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

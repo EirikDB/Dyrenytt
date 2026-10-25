@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-25",
+    "file": "dyrenytt-2026-10-25.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-25.mp3",
+    "title": "Dyrenytt – søndag 25. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Ville avslutte livet – nå står hun i spissen for å hjelpe andre; Hund ble påkjørt og døde; Hund døde etter påkjørsel – bilfører forlot stedet; Gjentar suksessen: Følger valpene i åtte uker",
+    "duration": 334,
+    "size": 5340417,
+    "pubdate": "Sun, 25 Oct 2026 06:55:27 +0200"
+  },
+  {
     "date": "2026-10-24",
     "file": "dyrenytt-2026-10-24.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-24.mp3",
@@ -288,15 +298,5 @@
     "duration": 355,
     "size": 5677571,
     "pubdate": "Sat, 26 Sep 2026 07:09:37 +0200"
-  },
-  {
-    "date": "2026-09-25",
-    "file": "dyrenytt-2026-09-25.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-25.mp3",
-    "title": "Dyrenytt – fredag 25. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Sola-gründer Mikal: Slik får du maksimalt ut av varmepumpen din!; Hytteslipp: Planlegg hytteturer i 2027; Har aldri opplevd lignende: – Dypt tragisk; Fyrer løs: – Bare legg deg flat",
-    "duration": 368,
-    "size": 5882242,
-    "pubdate": "Fri, 25 Sep 2026 07:06:02 +0200"
   }
 ]
