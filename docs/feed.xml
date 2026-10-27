@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 27. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: POWER LANSERER NY KATEGORI; Frykter for nabolagets «siste pusterom»: – Folk vil lenke seg fast; Satan (6) søker nytt hjem; Ric Flair deler bilde etter dramatisk fall</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: POWER LANSERER NY KATEGORI; Frykter for nabolagets «siste pusterom»: – Folk vil lenke seg fast; Satan (6) søker nytt hjem; Ric Flair deler bilde etter dramatisk fall</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-27.mp3" length="5695233" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-27.mp3</guid>
+      <pubDate>Tue, 27 Oct 2026 07:16:28 +0200</pubDate>
+      <itunes:duration>5:56</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 26. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Tidligere Premier League-stjerne angrepet av hund: Måtte sy femti sting; Klarer du deg i en uke?; Labradoren Olav lyser opp på kveldsturen – men mange eiere glemmer refleks; Hundebråket på Fåset: Nå kan leieboerne bli kastet ut med tvang</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Tidligere Premier League-stjerne angrepet av hund: Måtte sy femti sting; Klarer du deg i en uke?; Labradoren Olav lyser opp på kveldsturen – men mange eiere glemmer refleks; Hundebråket på Fåset: Nå kan leieboerne bli kastet ut med tvang</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-28.mp3</guid>
       <pubDate>Mon, 28 Sep 2026 07:34:30 +0200</pubDate>
       <itunes:duration>6:46</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 27. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Turid fant sitt fristed på småbruket; Medisinen som gir bivirkninger vi ønsker oss; - Noen av oss er ruinert; Kan gjøre reisen langt dyrere</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Turid fant sitt fristed på småbruket; Medisinen som gir bivirkninger vi ønsker oss; - Noen av oss er ruinert; Kan gjøre reisen langt dyrere</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-27.mp3" length="6887171" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-27.mp3</guid>
-      <pubDate>Sun, 27 Sep 2026 07:26:57 +0200</pubDate>
-      <itunes:duration>7:10</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

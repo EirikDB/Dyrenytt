@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-27",
+    "file": "dyrenytt-2026-10-27.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-27.mp3",
+    "title": "Dyrenytt – tirsdag 27. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: POWER LANSERER NY KATEGORI; Frykter for nabolagets «siste pusterom»: – Folk vil lenke seg fast; Satan (6) søker nytt hjem; Ric Flair deler bilde etter dramatisk fall",
+    "duration": 356,
+    "size": 5695233,
+    "pubdate": "Tue, 27 Oct 2026 07:16:28 +0200"
+  },
+  {
     "date": "2026-10-26",
     "file": "dyrenytt-2026-10-26.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-26.mp3",
@@ -288,15 +298,5 @@
     "duration": 406,
     "size": 6498946,
     "pubdate": "Mon, 28 Sep 2026 07:34:30 +0200"
-  },
-  {
-    "date": "2026-09-27",
-    "file": "dyrenytt-2026-09-27.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-27.mp3",
-    "title": "Dyrenytt – søndag 27. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Turid fant sitt fristed på småbruket; Medisinen som gir bivirkninger vi ønsker oss; - Noen av oss er ruinert; Kan gjøre reisen langt dyrere",
-    "duration": 430,
-    "size": 6887171,
-    "pubdate": "Sun, 27 Sep 2026 07:26:57 +0200"
   }
 ]
