@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-28",
+    "file": "dyrenytt-2026-10-28.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-28.mp3",
+    "title": "Dyrenytt – onsdag 28. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Fryktar elgen kan bli raudlista: – Heilt tomt; Andrine (26) gjekk heilt til topps; Jeg vet om mange som kunne vært litt rausere; Ny snegle sprer seg i norske hager – kan også bære parasitt som rammer katter",
+    "duration": 341,
+    "size": 5464448,
+    "pubdate": "Wed, 28 Oct 2026 07:55:24 +0200"
+  },
+  {
     "date": "2026-10-27",
     "file": "dyrenytt-2026-10-27.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-27.mp3",
@@ -288,15 +298,5 @@
     "duration": 447,
     "size": 7153667,
     "pubdate": "Tue, 29 Sep 2026 07:52:19 +0200"
-  },
-  {
-    "date": "2026-09-28",
-    "file": "dyrenytt-2026-09-28.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-28.mp3",
-    "title": "Dyrenytt – mandag 28. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Marianne våknet til lyden av flammer - nå foregår søk med hund; Klart det var kjærlighetssorg; Pike med katt II (1912).; Etter kneskaden: Tuva gir bort valpepengene",
-    "duration": 406,
-    "size": 6498946,
-    "pubdate": "Mon, 28 Sep 2026 07:34:30 +0200"
   }
 ]
