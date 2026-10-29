@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-29",
+    "file": "dyrenytt-2026-10-29.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-29.mp3",
+    "title": "Dyrenytt – torsdag 29. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Zodiac (2007); Ikke kast eggekartongene: 6 smarte måter å gjenbruke dem hjemme på; - Eigenberedskap er avgjerande når krisa råkar; Latvia slår fast i loven: Dyr er følende vesener – ikke bare ting",
+    "duration": 386,
+    "size": 6182913,
+    "pubdate": "Thu, 29 Oct 2026 07:59:55 +0200"
+  },
+  {
     "date": "2026-10-28",
     "file": "dyrenytt-2026-10-28.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-28.mp3",
@@ -288,15 +298,5 @@
     "duration": 388,
     "size": 6212482,
     "pubdate": "Wed, 30 Sep 2026 07:43:10 +0200"
-  },
-  {
-    "date": "2026-09-29",
-    "file": "dyrenytt-2026-09-29.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-29.mp3",
-    "title": "Dyrenytt – tirsdag 29. september",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: «Fjellhytta»-vinnerne om fremtiden: – Kanskje vi bør begynne å snakke om det; Brochmann bommer, mener arkitekturhistoriker: – Å gi modernismen skylda er meningsløst; Sosiale opptak: – En følelse av ydmykelse da jeg dro; – Lever et annet liv",
-    "duration": 447,
-    "size": 7153667,
-    "pubdate": "Tue, 29 Sep 2026 07:52:19 +0200"
   }
 ]
