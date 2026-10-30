@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 30. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Viser alt som ble sjekket på V70-en i EU-kontrollen; Full fyr i garasje: Spredningsfare til bolighus; Garasje står i full fyr: – Flere propanflasker inne; Veterinærinstituttet advarer hunde- og katteeiere: Hold dyrene unna disse fuglene</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Viser alt som ble sjekket på V70-en i EU-kontrollen; Full fyr i garasje: Spredningsfare til bolighus; Garasje står i full fyr: – Flere propanflasker inne; Veterinærinstituttet advarer hunde- og katteeiere: Hold dyrene unna disse fuglene</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-30.mp3" length="5553536" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-30.mp3</guid>
+      <pubDate>Fri, 30 Oct 2026 08:00:35 +0200</pubDate>
+      <itunes:duration>5:47</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 29. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Zodiac (2007); Ikke kast eggekartongene: 6 smarte måter å gjenbruke dem hjemme på; - Eigenberedskap er avgjerande når krisa råkar; Latvia slår fast i loven: Dyr er følende vesener – ikke bare ting</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Zodiac (2007); Ikke kast eggekartongene: 6 smarte måter å gjenbruke dem hjemme på; - Eigenberedskap er avgjerande når krisa råkar; Latvia slår fast i loven: Dyr er følende vesener – ikke bare ting</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-01.mp3</guid>
       <pubDate>Thu, 01 Oct 2026 08:10:14 +0200</pubDate>
       <itunes:duration>7:02</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 30. september</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Er kjælerotter, labrotter og villrotter same dyr?; Sykdom ødela ferien for flest nordmenn; Pangstart for jaktlaget til Vegard under årets elgjakt; Søndeledplanene nekter å dø – vil kreve vanvittig mange millioner for å få prosjektet på beina</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Er kjælerotter, labrotter og villrotter same dyr?; Sykdom ødela ferien for flest nordmenn; Pangstart for jaktlaget til Vegard under årets elgjakt; Søndeledplanene nekter å dø – vil kreve vanvittig mange millioner for å få prosjektet på beina</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-30.mp3" length="6212482" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-09-30.mp3</guid>
-      <pubDate>Wed, 30 Sep 2026 07:43:10 +0200</pubDate>
-      <itunes:duration>6:28</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
