@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-10-31",
+    "file": "dyrenytt-2026-10-31.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-31.mp3",
+    "title": "Dyrenytt – lørdag 31. oktober",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Kvinne tiltalt for overgrep mot hund: Hevder det var selvforsvar; Nina var lei av å reise langt – nå satser hun hjemme; Har du alt på plass hvis det skulle skje en krise? Det har ordføreren; Hundeeierne på Fåset tapte i retten – må flytte",
+    "duration": 301,
+    "size": 4816257,
+    "pubdate": "Sat, 31 Oct 2026 07:55:57 +0200"
+  },
+  {
     "date": "2026-10-30",
     "file": "dyrenytt-2026-10-30.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-30.mp3",
@@ -288,15 +298,5 @@
     "duration": 373,
     "size": 5969791,
     "pubdate": "Fri, 02 Oct 2026 07:52:06 +0200"
-  },
-  {
-    "date": "2026-10-01",
-    "file": "dyrenytt-2026-10-01.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-01.mp3",
-    "title": "Dyrenytt – torsdag 1. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Inga Strümke får Akademikerprisen; Statistikk vs. saldoen på lønnskontoen; Bjeffende droner gjeter reinen til vinterbeitet; Raser mot det norske klesmerkets pelsgrep: – Forkastelig",
-    "duration": 422,
-    "size": 6745856,
-    "pubdate": "Thu, 01 Oct 2026 08:10:14 +0200"
   }
 ]

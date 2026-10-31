@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 31. oktober</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Kvinne tiltalt for overgrep mot hund: Hevder det var selvforsvar; Nina var lei av å reise langt – nå satser hun hjemme; Har du alt på plass hvis det skulle skje en krise? Det har ordføreren; Hundeeierne på Fåset tapte i retten – må flytte</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Kvinne tiltalt for overgrep mot hund: Hevder det var selvforsvar; Nina var lei av å reise langt – nå satser hun hjemme; Har du alt på plass hvis det skulle skje en krise? Det har ordføreren; Hundeeierne på Fåset tapte i retten – må flytte</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-31.mp3" length="4816257" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-31.mp3</guid>
+      <pubDate>Sat, 31 Oct 2026 07:55:57 +0200</pubDate>
+      <itunes:duration>5:01</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 30. oktober</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Viser alt som ble sjekket på V70-en i EU-kontrollen; Full fyr i garasje: Spredningsfare til bolighus; Garasje står i full fyr: – Flere propanflasker inne; Veterinærinstituttet advarer hunde- og katteeiere: Hold dyrene unna disse fuglene</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Viser alt som ble sjekket på V70-en i EU-kontrollen; Full fyr i garasje: Spredningsfare til bolighus; Garasje står i full fyr: – Flere propanflasker inne; Veterinærinstituttet advarer hunde- og katteeiere: Hold dyrene unna disse fuglene</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-02.mp3</guid>
       <pubDate>Fri, 02 Oct 2026 07:52:06 +0200</pubDate>
       <itunes:duration>6:13</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 1. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Inga Strümke får Akademikerprisen; Statistikk vs. saldoen på lønnskontoen; Bjeffende droner gjeter reinen til vinterbeitet; Raser mot det norske klesmerkets pelsgrep: – Forkastelig</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Inga Strümke får Akademikerprisen; Statistikk vs. saldoen på lønnskontoen; Bjeffende droner gjeter reinen til vinterbeitet; Raser mot det norske klesmerkets pelsgrep: – Forkastelig</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-01.mp3" length="6745856" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-01.mp3</guid>
-      <pubDate>Thu, 01 Oct 2026 08:10:14 +0200</pubDate>
-      <itunes:duration>7:02</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
