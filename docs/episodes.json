@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-01",
+    "file": "dyrenytt-2026-11-01.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-01.mp3",
+    "title": "Dyrenytt – søndag 1. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Eigenberedskap - sjekkliste; Dei ofra alt og opplevde ni år med psykisk nedsabling. Så rann millionane inn; Kattedrapene: Mysteriet som ryster Bærum og Oslo vest; Hundeeiere ber kommunen sikre plass til trening",
+    "duration": 368,
+    "size": 5894145,
+    "pubdate": "Sun, 01 Nov 2026 08:24:54 +0200"
+  },
+  {
     "date": "2026-10-31",
     "file": "dyrenytt-2026-10-31.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-31.mp3",
@@ -288,15 +298,5 @@
     "duration": 477,
     "size": 7636352,
     "pubdate": "Sat, 03 Oct 2026 07:27:49 +0200"
-  },
-  {
-    "date": "2026-10-02",
-    "file": "dyrenytt-2026-10-02.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-02.mp3",
-    "title": "Dyrenytt – fredag 2. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: En katastrofefilm for en ny (ende)tid; «Jeg er jo ikke spiritist, men …»; Fosse summa summarum; Profilert slakter ut mot hundemat-påstander",
-    "duration": 373,
-    "size": 5969791,
-    "pubdate": "Fri, 02 Oct 2026 07:52:06 +0200"
   }
 ]
