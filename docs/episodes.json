@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-02",
+    "file": "dyrenytt-2026-11-02.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-02.mp3",
+    "title": "Dyrenytt – mandag 2. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Skal drive videre en av landets mest populære turisthytter; Politiet hentet «Ville» – nå er hunden død: Eierne mener det var feil hund; Sæter-show senket Tromsø: – Så renner det inn; Sander Hindenes og Træet's Don vant Norgesserien 2026!",
+    "duration": 363,
+    "size": 5811200,
+    "pubdate": "Mon, 02 Nov 2026 08:25:21 +0200"
+  },
+  {
     "date": "2026-11-01",
     "file": "dyrenytt-2026-11-01.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-01.mp3",
@@ -288,15 +298,5 @@
     "duration": 307,
     "size": 4913024,
     "pubdate": "Sun, 04 Oct 2026 08:03:01 +0200"
-  },
-  {
-    "date": "2026-10-03",
-    "file": "dyrenytt-2026-10-03.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-03.mp3",
-    "title": "Dyrenytt – lørdag 3. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Døde hvaler skylles på land i Argentina; Denne skapningen vil helst ikke være et insekt; Ansiktsmasker kan true din digitale sikkerhet; Frisparkperle ikke nok: – En vill variant",
-    "duration": 477,
-    "size": 7636352,
-    "pubdate": "Sat, 03 Oct 2026 07:27:49 +0200"
   }
 ]
