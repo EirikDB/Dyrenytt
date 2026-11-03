@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 3. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: I bokhylla: Ola (11) elskar fakta – Gjendine (11) vil inn i fantasiverda; Rødt vil gi uføre og minstepensjonister 15.000 kroner mer å rutte med; Øker dusør etter funn av ny død katt; NY DREAME-GRUPPE I NORDEN</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: I bokhylla: Ola (11) elskar fakta – Gjendine (11) vil inn i fantasiverda; Rødt vil gi uføre og minstepensjonister 15.000 kroner mer å rutte med; Øker dusør etter funn av ny død katt; NY DREAME-GRUPPE I NORDEN</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-03.mp3" length="4825857" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-03.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 08:58:54 +0200</pubDate>
+      <itunes:duration>5:02</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 2. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Skal drive videre en av landets mest populære turisthytter; Politiet hentet «Ville» – nå er hunden død: Eierne mener det var feil hund; Sæter-show senket Tromsø: – Så renner det inn; Sander Hindenes og Træet's Don vant Norgesserien 2026!</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Skal drive videre en av landets mest populære turisthytter; Politiet hentet «Ville» – nå er hunden død: Eierne mener det var feil hund; Sæter-show senket Tromsø: – Så renner det inn; Sander Hindenes og Træet's Don vant Norgesserien 2026!</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-05.mp3</guid>
       <pubDate>Mon, 05 Oct 2026 07:53:23 +0200</pubDate>
       <itunes:duration>8:00</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 4. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Brann i hus i Vadsø; Boligbrann i Vadsø; Mistet sønnen i villmarka – nå gir de barn nye eventyr; Balder grøsser litt over gjenferdet Knut med Robek-ljåen, gleder seg over hønsehauk på kuryggen i Tolga og minnes prinsesse Astrids hund «Wilma»</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Brann i hus i Vadsø; Boligbrann i Vadsø; Mistet sønnen i villmarka – nå gir de barn nye eventyr; Balder grøsser litt over gjenferdet Knut med Robek-ljåen, gleder seg over hønsehauk på kuryggen i Tolga og minnes prinsesse Astrids hund «Wilma»</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-04.mp3" length="4913024" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-04.mp3</guid>
-      <pubDate>Sun, 04 Oct 2026 08:03:01 +0200</pubDate>
-      <itunes:duration>5:07</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

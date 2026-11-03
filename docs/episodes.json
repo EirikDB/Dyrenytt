@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-03",
+    "file": "dyrenytt-2026-11-03.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-03.mp3",
+    "title": "Dyrenytt – tirsdag 3. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: I bokhylla: Ola (11) elskar fakta – Gjendine (11) vil inn i fantasiverda; Rødt vil gi uføre og minstepensjonister 15.000 kroner mer å rutte med; Øker dusør etter funn av ny død katt; NY DREAME-GRUPPE I NORDEN",
+    "duration": 302,
+    "size": 4825857,
+    "pubdate": "Tue, 03 Nov 2026 08:58:54 +0200"
+  },
+  {
     "date": "2026-11-02",
     "file": "dyrenytt-2026-11-02.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-02.mp3",
@@ -288,15 +298,5 @@
     "duration": 480,
     "size": 7682815,
     "pubdate": "Mon, 05 Oct 2026 07:53:23 +0200"
-  },
-  {
-    "date": "2026-10-04",
-    "file": "dyrenytt-2026-10-04.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-04.mp3",
-    "title": "Dyrenytt – søndag 4. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Brann i hus i Vadsø; Boligbrann i Vadsø; Mistet sønnen i villmarka – nå gir de barn nye eventyr; Balder grøsser litt over gjenferdet Knut med Robek-ljåen, gleder seg over hønsehauk på kuryggen i Tolga og minnes prinsesse Astrids hund «Wilma»",
-    "duration": 307,
-    "size": 4913024,
-    "pubdate": "Sun, 04 Oct 2026 08:03:01 +0200"
   }
 ]
