@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-04",
+    "file": "dyrenytt-2026-11-04.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-04.mp3",
+    "title": "Dyrenytt – onsdag 4. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Jakthund ble påkjørt; Kristian (12) elskar gardslivet og brenn for dyra; Vinterferie med hund – på tur i Europas snødekte fjell; Hvorfor lever små hunder lenger enn store?",
+    "duration": 358,
+    "size": 5736704,
+    "pubdate": "Wed, 04 Nov 2026 08:41:26 +0200"
+  },
+  {
     "date": "2026-11-03",
     "file": "dyrenytt-2026-11-03.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-03.mp3",
@@ -288,15 +298,5 @@
     "duration": 358,
     "size": 5730560,
     "pubdate": "Tue, 06 Oct 2026 08:32:58 +0200"
-  },
-  {
-    "date": "2026-10-05",
-    "file": "dyrenytt-2026-10-05.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-05.mp3",
-    "title": "Dyrenytt – mandag 5. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Politiet måtte bruke gassmasker da de tok seg inn i boligen: – Store deler av inventar var dekket i møkk; Reiser du med hund eller katt? Nye EØS-regler er på vei; Konkurs for hundeklinikken: «Helsen må komme først»; Merete (50) fyrte av siste salve i Hvalertunnelen – nå leder hun Ap",
-    "duration": 480,
-    "size": 7682815,
-    "pubdate": "Mon, 05 Oct 2026 07:53:23 +0200"
   }
 ]

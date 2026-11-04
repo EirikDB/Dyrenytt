@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – onsdag 4. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Jakthund ble påkjørt; Kristian (12) elskar gardslivet og brenn for dyra; Vinterferie med hund – på tur i Europas snødekte fjell; Hvorfor lever små hunder lenger enn store?</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Jakthund ble påkjørt; Kristian (12) elskar gardslivet og brenn for dyra; Vinterferie med hund – på tur i Europas snødekte fjell; Hvorfor lever små hunder lenger enn store?</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-04.mp3" length="5736704" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-04.mp3</guid>
+      <pubDate>Wed, 04 Nov 2026 08:41:26 +0200</pubDate>
+      <itunes:duration>5:58</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – tirsdag 3. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: I bokhylla: Ola (11) elskar fakta – Gjendine (11) vil inn i fantasiverda; Rødt vil gi uføre og minstepensjonister 15.000 kroner mer å rutte med; Øker dusør etter funn av ny død katt; NY DREAME-GRUPPE I NORDEN</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: I bokhylla: Ola (11) elskar fakta – Gjendine (11) vil inn i fantasiverda; Rødt vil gi uføre og minstepensjonister 15.000 kroner mer å rutte med; Øker dusør etter funn av ny død katt; NY DREAME-GRUPPE I NORDEN</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-06.mp3</guid>
       <pubDate>Tue, 06 Oct 2026 08:32:58 +0200</pubDate>
       <itunes:duration>5:58</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – mandag 5. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Politiet måtte bruke gassmasker da de tok seg inn i boligen: – Store deler av inventar var dekket i møkk; Reiser du med hund eller katt? Nye EØS-regler er på vei; Konkurs for hundeklinikken: «Helsen må komme først»; Merete (50) fyrte av siste salve i Hvalertunnelen – nå leder hun Ap</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Politiet måtte bruke gassmasker da de tok seg inn i boligen: – Store deler av inventar var dekket i møkk; Reiser du med hund eller katt? Nye EØS-regler er på vei; Konkurs for hundeklinikken: «Helsen må komme først»; Merete (50) fyrte av siste salve i Hvalertunnelen – nå leder hun Ap</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-05.mp3" length="7682815" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-05.mp3</guid>
-      <pubDate>Mon, 05 Oct 2026 07:53:23 +0200</pubDate>
-      <itunes:duration>8:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
