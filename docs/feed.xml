@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 6. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Hun var på toppen av karrieren, da alt plutselig sa stopp: - Jeg ville bare bort; Kan katten merka korleis du har det?; Kva om du fekk éin million: Sara (10) ville kjøpt hest – Konstanse (10) ville floge; Motorola lanserer toppmobil: Enorme batterimuskler og en skjerm som knuser sollyset</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hun var på toppen av karrieren, da alt plutselig sa stopp: - Jeg ville bare bort; Kan katten merka korleis du har det?; Kva om du fekk éin million: Sara (10) ville kjøpt hest – Konstanse (10) ville floge; Motorola lanserer toppmobil: Enorme batterimuskler og en skjerm som knuser sollyset</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-06.mp3" length="7384063" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-06.mp3</guid>
+      <pubDate>Fri, 06 Nov 2026 08:59:25 +0200</pubDate>
+      <itunes:duration>7:41</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 5. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Funnet uten pote: – Fullstendig meningsløst og absurd; Hirvi har vært savnet i 24 dager: – Jeg har ikke gitt opp håpet; Bor alene for første gang; Tove Lo: – Kommer aldri til å sensurere den delen av meg selv</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Funnet uten pote: – Fullstendig meningsløst og absurd; Hirvi har vært savnet i 24 dager: – Jeg har ikke gitt opp håpet; Bor alene for første gang; Tove Lo: – Kommer aldri til å sensurere den delen av meg selv</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-08.mp3</guid>
       <pubDate>Thu, 08 Oct 2026 08:18:24 +0200</pubDate>
       <itunes:duration>5:54</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 7. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Disse jobbene er ledige i Nome akkurat nå; Test av Porsche Cayenne Turbo:Helt hinsides!; Tvinger Mattilsynet til å legge fram «skjulte» tall; «Alle» holder pusten før én bestemt dato</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Disse jobbene er ledige i Nome akkurat nå; Test av Porsche Cayenne Turbo:Helt hinsides!; Tvinger Mattilsynet til å legge fram «skjulte» tall; «Alle» holder pusten før én bestemt dato</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-07.mp3" length="4893823" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-07.mp3</guid>
-      <pubDate>Wed, 07 Oct 2026 08:10:52 +0200</pubDate>
-      <itunes:duration>5:06</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
