@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-08",
+    "file": "dyrenytt-2026-11-08.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-08.mp3",
+    "title": "Dyrenytt – søndag 8. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Skal skape klonede krigshunder; Barnepike døde sammen med 2 barn i flyulykke i Florida – søster deler trist detalj om hennes død; Vibeke og Ryan flyttet hjem til Tynset fra Trumps USA; Fann død hund i sjøen",
+    "duration": 308,
+    "size": 4924160,
+    "pubdate": "Sun, 08 Nov 2026 08:18:38 +0200"
+  },
+  {
     "date": "2026-11-07",
     "file": "dyrenytt-2026-11-07.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-07.mp3",
@@ -288,15 +298,5 @@
     "duration": 314,
     "size": 5029377,
     "pubdate": "Sat, 10 Oct 2026 08:02:52 +0200"
-  },
-  {
-    "date": "2026-10-09",
-    "file": "dyrenytt-2026-10-09.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-09.mp3",
-    "title": "Dyrenytt – fredag 9. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Det er deilig å være dyr i Danmark; Sánchez' sjansespill; Spredning; Hundeeier varslet Konkurransetilsynet om ulovlig prissamarbeid",
-    "duration": 471,
-    "size": 7538815,
-    "pubdate": "Fri, 09 Oct 2026 08:20:38 +0200"
   }
 ]
