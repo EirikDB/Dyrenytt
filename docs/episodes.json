@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-09",
+    "file": "dyrenytt-2026-11-09.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-09.mp3",
+    "title": "Dyrenytt – mandag 9. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Vinner av årets konkurranse; Vinterkarusell, deltakerrekord og gode prestasjoner i Ålesund; Kunsten å bo britisk – når hjemmet er viktigere enn interiørtrenden; BARNEREDAKSJONEN: Kropp, ritualer og myke puter i Bodø",
+    "duration": 395,
+    "size": 6321151,
+    "pubdate": "Mon, 09 Nov 2026 08:51:37 +0200"
+  },
+  {
     "date": "2026-11-08",
     "file": "dyrenytt-2026-11-08.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-08.mp3",
@@ -288,15 +298,5 @@
     "duration": 376,
     "size": 6021633,
     "pubdate": "Sun, 11 Oct 2026 08:00:04 +0200"
-  },
-  {
-    "date": "2026-10-10",
-    "file": "dyrenytt-2026-10-10.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-10.mp3",
-    "title": "Dyrenytt – lørdag 10. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Katter partert i Bærum: Suzie sitt hode var det eneste som lå igjen; Aurora (11) og Kaja (9) er med på ukentlig tur: – Det er så hyggelig med hund; Trusselsituasjon i Hamar: Mann pågrepet; Det finnes bøker som teller og bøker som ikke teller, eller?",
-    "duration": 314,
-    "size": 5029377,
-    "pubdate": "Sat, 10 Oct 2026 08:02:52 +0200"
   }
 ]
