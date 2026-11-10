@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 10. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Nye Claude knuser rekorder – bygde eget operativsystem; Sendte en melding på Instagram. Nå er de gift.; Narkohunder er lite treffsikre, viser internasjonale studier. Norsk politi har ikke oversikt; Ble nabolagets helt: Eliah (19) reddet både hund og hus fra brann</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Nye Claude knuser rekorder – bygde eget operativsystem; Sendte en melding på Instagram. Nå er de gift.; Narkohunder er lite treffsikre, viser internasjonale studier. Norsk politi har ikke oversikt; Ble nabolagets helt: Eliah (19) reddet både hund og hus fra brann</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-10.mp3" length="6846849" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-10.mp3</guid>
+      <pubDate>Tue, 10 Nov 2026 09:32:42 +0200</pubDate>
+      <itunes:duration>7:08</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 9. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Vinner av årets konkurranse; Vinterkarusell, deltakerrekord og gode prestasjoner i Ålesund; Kunsten å bo britisk – når hjemmet er viktigere enn interiørtrenden; BARNEREDAKSJONEN: Kropp, ritualer og myke puter i Bodø</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Vinner av årets konkurranse; Vinterkarusell, deltakerrekord og gode prestasjoner i Ålesund; Kunsten å bo britisk – når hjemmet er viktigere enn interiørtrenden; BARNEREDAKSJONEN: Kropp, ritualer og myke puter i Bodø</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-12.mp3</guid>
       <pubDate>Mon, 12 Oct 2026 08:10:55 +0200</pubDate>
       <itunes:duration>4:53</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 11. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Sendte en melding på Instagram. Nå er de gift.; Europris tilbakekaller kattemat – sjekk om du har denne hjemme; Dette sier politiet om aksjonen; Bønder: Hundeangrep mot sau aukar</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Sendte en melding på Instagram. Nå er de gift.; Europris tilbakekaller kattemat – sjekk om du har denne hjemme; Dette sier politiet om aksjonen; Bønder: Hundeangrep mot sau aukar</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-11.mp3" length="6021633" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-11.mp3</guid>
-      <pubDate>Sun, 11 Oct 2026 08:00:04 +0200</pubDate>
-      <itunes:duration>6:16</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
