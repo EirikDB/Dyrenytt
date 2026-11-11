@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – onsdag 11. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Bjørn Egil planla å legge ned tilbudet – men så fikk han seg en overraskelse: – Ganske drastisk; Trysil hundeklubb feirer 40 år; Forskerlivet | Nytte Å få øye på en mulighet underveis er noe helt annet enn å love den i søknaden Bastian Fromm Professor i zoologi, UiT – Norges arktiske universitet; Høysesongen starter nå: – Det blir spennende å se om det blir like mange denne høsten</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Bjørn Egil planla å legge ned tilbudet – men så fikk han seg en overraskelse: – Ganske drastisk; Trysil hundeklubb feirer 40 år; Forskerlivet | Nytte Å få øye på en mulighet underveis er noe helt annet enn å love den i søknaden Bastian Fromm Professor i zoologi, UiT – Norges arktiske universitet; Høysesongen starter nå: – Det blir spennende å se om det blir like mange denne høsten</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-11.mp3" length="7085696" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-11.mp3</guid>
+      <pubDate>Wed, 11 Nov 2026 08:45:09 +0200</pubDate>
+      <itunes:duration>7:23</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – tirsdag 10. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Nye Claude knuser rekorder – bygde eget operativsystem; Sendte en melding på Instagram. Nå er de gift.; Narkohunder er lite treffsikre, viser internasjonale studier. Norsk politi har ikke oversikt; Ble nabolagets helt: Eliah (19) reddet både hund og hus fra brann</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Nye Claude knuser rekorder – bygde eget operativsystem; Sendte en melding på Instagram. Nå er de gift.; Narkohunder er lite treffsikre, viser internasjonale studier. Norsk politi har ikke oversikt; Ble nabolagets helt: Eliah (19) reddet både hund og hus fra brann</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-13.mp3</guid>
       <pubDate>Tue, 13 Oct 2026 08:54:18 +0200</pubDate>
       <itunes:duration>8:12</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – mandag 12. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Hvis sivilisasjonen kollapser, ring Kim Sølve; Flyktet til Asker: – Hvorfor må jeg dra til fronten bare for å dø?; Katten Larry tilbake etter helsedrama; Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hvis sivilisasjonen kollapser, ring Kim Sølve; Flyktet til Asker: – Hvorfor må jeg dra til fronten bare for å dø?; Katten Larry tilbake etter helsedrama; Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-12.mp3" length="4685696" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-12.mp3</guid>
-      <pubDate>Mon, 12 Oct 2026 08:10:55 +0200</pubDate>
-      <itunes:duration>4:53</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

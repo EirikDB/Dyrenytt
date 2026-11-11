@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-11",
+    "file": "dyrenytt-2026-11-11.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-11.mp3",
+    "title": "Dyrenytt – onsdag 11. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Bjørn Egil planla å legge ned tilbudet – men så fikk han seg en overraskelse: – Ganske drastisk; Trysil hundeklubb feirer 40 år; Forskerlivet | Nytte Å få øye på en mulighet underveis er noe helt annet enn å love den i søknaden Bastian Fromm Professor i zoologi, UiT – Norges arktiske universitet; Høysesongen starter nå: – Det blir spennende å se om det blir like mange denne høsten",
+    "duration": 443,
+    "size": 7085696,
+    "pubdate": "Wed, 11 Nov 2026 08:45:09 +0200"
+  },
+  {
     "date": "2026-11-10",
     "file": "dyrenytt-2026-11-10.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-10.mp3",
@@ -288,15 +298,5 @@
     "duration": 492,
     "size": 7876353,
     "pubdate": "Tue, 13 Oct 2026 08:54:18 +0200"
-  },
-  {
-    "date": "2026-10-12",
-    "file": "dyrenytt-2026-10-12.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-12.mp3",
-    "title": "Dyrenytt – mandag 12. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Hvis sivilisasjonen kollapser, ring Kim Sølve; Flyktet til Asker: – Hvorfor må jeg dra til fronten bare for å dø?; Katten Larry tilbake etter helsedrama; Haaland og City herjet etter Liverpool-protester: – Et nydelig øyeblikk",
-    "duration": 293,
-    "size": 4685696,
-    "pubdate": "Mon, 12 Oct 2026 08:10:55 +0200"
   }
 ]
