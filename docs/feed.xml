@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 12. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Frykter at «Panda» nærmer seg riksveien: – Forferdelig vanskelig; Ekspropriasjon: Frp støtter Sp men lanserer plan B i tilfelle Høyre «svikter» om reinbeite; Vil avle fram bedre militære tjenestehunder; Advarer dyreeiere: Ulykkene skyter i været</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Frykter at «Panda» nærmer seg riksveien: – Forferdelig vanskelig; Ekspropriasjon: Frp støtter Sp men lanserer plan B i tilfelle Høyre «svikter» om reinbeite; Vil avle fram bedre militære tjenestehunder; Advarer dyreeiere: Ulykkene skyter i været</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-12.mp3" length="8213121" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-12.mp3</guid>
+      <pubDate>Thu, 12 Nov 2026 09:24:23 +0200</pubDate>
+      <itunes:duration>8:33</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 11. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Bjørn Egil planla å legge ned tilbudet – men så fikk han seg en overraskelse: – Ganske drastisk; Trysil hundeklubb feirer 40 år; Forskerlivet | Nytte Å få øye på en mulighet underveis er noe helt annet enn å love den i søknaden Bastian Fromm Professor i zoologi, UiT – Norges arktiske universitet; Høysesongen starter nå: – Det blir spennende å se om det blir like mange denne høsten</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Bjørn Egil planla å legge ned tilbudet – men så fikk han seg en overraskelse: – Ganske drastisk; Trysil hundeklubb feirer 40 år; Forskerlivet | Nytte Å få øye på en mulighet underveis er noe helt annet enn å love den i søknaden Bastian Fromm Professor i zoologi, UiT – Norges arktiske universitet; Høysesongen starter nå: – Det blir spennende å se om det blir like mange denne høsten</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-14.mp3</guid>
       <pubDate>Wed, 14 Oct 2026 07:03:23 +0200</pubDate>
       <itunes:duration>4:49</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – tirsdag 13. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: 111 påkjørt i oktober i fjor: - Nå må refleksen fram; Dyrlegens klare beskjed til katteeiere: – Har du ikke råd til dette, bør du ikke skaffe deg dyr; Ekspert om Trumps utspill: – Et brudd på loven; Arrangerte «valpeyoga» for landslaget: – En suksess</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: 111 påkjørt i oktober i fjor: - Nå må refleksen fram; Dyrlegens klare beskjed til katteeiere: – Har du ikke råd til dette, bør du ikke skaffe deg dyr; Ekspert om Trumps utspill: – Et brudd på loven; Arrangerte «valpeyoga» for landslaget: – En suksess</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-13.mp3" length="7876353" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-13.mp3</guid>
-      <pubDate>Tue, 13 Oct 2026 08:54:18 +0200</pubDate>
-      <itunes:duration>8:12</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
