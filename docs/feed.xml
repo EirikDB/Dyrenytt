@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – fredag 13. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Amerikanere vil klone hunder for krig; Hvorfor mjauer katten? Forskere har nå avslørt hva den egentlig prøver å fortelle deg; Rykket ut til singelulykke; Om å vinne over frykta</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Amerikanere vil klone hunder for krig; Hvorfor mjauer katten? Forskere har nå avslørt hva den egentlig prøver å fortelle deg; Rykket ut til singelulykke; Om å vinne over frykta</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-13.mp3" length="6207104" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-13.mp3</guid>
+      <pubDate>Fri, 13 Nov 2026 08:56:31 +0200</pubDate>
+      <itunes:duration>6:28</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – torsdag 12. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Frykter at «Panda» nærmer seg riksveien: – Forferdelig vanskelig; Ekspropriasjon: Frp støtter Sp men lanserer plan B i tilfelle Høyre «svikter» om reinbeite; Vil avle fram bedre militære tjenestehunder; Advarer dyreeiere: Ulykkene skyter i været</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Frykter at «Panda» nærmer seg riksveien: – Forferdelig vanskelig; Ekspropriasjon: Frp støtter Sp men lanserer plan B i tilfelle Høyre «svikter» om reinbeite; Vil avle fram bedre militære tjenestehunder; Advarer dyreeiere: Ulykkene skyter i været</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-15.mp3</guid>
       <pubDate>Thu, 15 Oct 2026 06:51:59 +0200</pubDate>
       <itunes:duration>5:54</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – onsdag 14. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: På torsdag bør du bruke fem minutter på dette før du går ut; Birger vil få barn med en ukjent kvinne; Suzie (1) ble halshogd – kattedrapene øker i omfang; TABU: Hvor mange menn må lide i stillhet før vi endelig begynner å lytte?</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: På torsdag bør du bruke fem minutter på dette før du går ut; Birger vil få barn med en ukjent kvinne; Suzie (1) ble halshogd – kattedrapene øker i omfang; TABU: Hvor mange menn må lide i stillhet før vi endelig begynner å lytte?</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-14.mp3" length="4620416" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-14.mp3</guid>
-      <pubDate>Wed, 14 Oct 2026 07:03:23 +0200</pubDate>
-      <itunes:duration>4:49</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

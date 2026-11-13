@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-13",
+    "file": "dyrenytt-2026-11-13.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-13.mp3",
+    "title": "Dyrenytt – fredag 13. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Amerikanere vil klone hunder for krig; Hvorfor mjauer katten? Forskere har nå avslørt hva den egentlig prøver å fortelle deg; Rykket ut til singelulykke; Om å vinne over frykta",
+    "duration": 388,
+    "size": 6207104,
+    "pubdate": "Fri, 13 Nov 2026 08:56:31 +0200"
+  },
+  {
     "date": "2026-11-12",
     "file": "dyrenytt-2026-11-12.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-12.mp3",
@@ -288,15 +298,5 @@
     "duration": 354,
     "size": 5665665,
     "pubdate": "Thu, 15 Oct 2026 06:51:59 +0200"
-  },
-  {
-    "date": "2026-10-14",
-    "file": "dyrenytt-2026-10-14.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-14.mp3",
-    "title": "Dyrenytt – onsdag 14. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: På torsdag bør du bruke fem minutter på dette før du går ut; Birger vil få barn med en ukjent kvinne; Suzie (1) ble halshogd – kattedrapene øker i omfang; TABU: Hvor mange menn må lide i stillhet før vi endelig begynner å lytte?",
-    "duration": 289,
-    "size": 4620416,
-    "pubdate": "Wed, 14 Oct 2026 07:03:23 +0200"
   }
 ]
