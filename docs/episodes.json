@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-15",
+    "file": "dyrenytt-2026-11-15.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-15.mp3",
+    "title": "Dyrenytt – søndag 15. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Hvor går forholdet mellom USA og Israel?; Det var tøft å være katt i Det gamle Egypt, tror forskere; Hun har vakt oppsikt i nabolaget - møt minigrisen Peppa; KI-forsker advarer: - Det skjer mye rart",
+    "duration": 510,
+    "size": 8157825,
+    "pubdate": "Sun, 15 Nov 2026 08:48:51 +0200"
+  },
+  {
     "date": "2026-11-14",
     "file": "dyrenytt-2026-11-14.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-14.mp3",
@@ -288,15 +298,5 @@
     "duration": 341,
     "size": 5458305,
     "pubdate": "Sat, 17 Oct 2026 06:40:09 +0200"
-  },
-  {
-    "date": "2026-10-16",
-    "file": "dyrenytt-2026-10-16.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-16.mp3",
-    "title": "Dyrenytt – fredag 16. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Fryktar invasjon av nye flått-typar; Nå returnerer de: – Vi skal farge himmelen gul; Oppsiktsvekkende forvandling: Da vekta bikket 125 kilo, tok John Harald Log grep; Tatt med giftslanger og øgler i kofferten",
-    "duration": 326,
-    "size": 5220224,
-    "pubdate": "Fri, 16 Oct 2026 06:43:13 +0200"
   }
 ]
