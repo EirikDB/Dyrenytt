@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – mandag 16. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Katten Isaac gjenforent med sin 13-årige eier etter bygningskollaps i New York; Fra syltetøy til kraftfôrautomat: Slik tester elevene på Storsteigen ut gründerdrømmen; Norge mangler tall på hvor gode narkohundene er. Likevel vil tre partier ha dem inn på skolene; Vil bli landets beste</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Katten Isaac gjenforent med sin 13-årige eier etter bygningskollaps i New York; Fra syltetøy til kraftfôrautomat: Slik tester elevene på Storsteigen ut gründerdrømmen; Norge mangler tall på hvor gode narkohundene er. Likevel vil tre partier ha dem inn på skolene; Vil bli landets beste</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-16.mp3" length="7017728" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-16.mp3</guid>
+      <pubDate>Mon, 16 Nov 2026 08:46:53 +0200</pubDate>
+      <itunes:duration>7:19</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – søndag 15. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Hvor går forholdet mellom USA og Israel?; Det var tøft å være katt i Det gamle Egypt, tror forskere; Hun har vakt oppsikt i nabolaget - møt minigrisen Peppa; KI-forsker advarer: - Det skjer mye rart</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hvor går forholdet mellom USA og Israel?; Det var tøft å være katt i Det gamle Egypt, tror forskere; Hun har vakt oppsikt i nabolaget - møt minigrisen Peppa; KI-forsker advarer: - Det skjer mye rart</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-18.mp3</guid>
       <pubDate>Sun, 18 Oct 2026 06:45:39 +0200</pubDate>
       <itunes:duration>6:24</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – lørdag 17. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Interessen for klubben har økt kraftig – nå har de tatt stor investering: – Vi skal være en aktiv klubb; Advarer hundeeiere: Konsekvenser for helsen; 25 år siden Barnestafetten: – Ina ble verken veterinær eller boende på gård, men livet ble et skikkelig eventyr; Vi har blitt så ærlige at vi har nådd barndommen</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Interessen for klubben har økt kraftig – nå har de tatt stor investering: – Vi skal være en aktiv klubb; Advarer hundeeiere: Konsekvenser for helsen; 25 år siden Barnestafetten: – Ina ble verken veterinær eller boende på gård, men livet ble et skikkelig eventyr; Vi har blitt så ærlige at vi har nådd barndommen</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-17.mp3" length="5458305" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-17.mp3</guid>
-      <pubDate>Sat, 17 Oct 2026 06:40:09 +0200</pubDate>
-      <itunes:duration>5:41</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

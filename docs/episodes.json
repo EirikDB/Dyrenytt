@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-16",
+    "file": "dyrenytt-2026-11-16.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-16.mp3",
+    "title": "Dyrenytt – mandag 16. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Katten Isaac gjenforent med sin 13-årige eier etter bygningskollaps i New York; Fra syltetøy til kraftfôrautomat: Slik tester elevene på Storsteigen ut gründerdrømmen; Norge mangler tall på hvor gode narkohundene er. Likevel vil tre partier ha dem inn på skolene; Vil bli landets beste",
+    "duration": 439,
+    "size": 7017728,
+    "pubdate": "Mon, 16 Nov 2026 08:46:53 +0200"
+  },
+  {
     "date": "2026-11-15",
     "file": "dyrenytt-2026-11-15.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-15.mp3",
@@ -288,15 +298,5 @@
     "duration": 384,
     "size": 6146433,
     "pubdate": "Sun, 18 Oct 2026 06:45:39 +0200"
-  },
-  {
-    "date": "2026-10-17",
-    "file": "dyrenytt-2026-10-17.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-17.mp3",
-    "title": "Dyrenytt – lørdag 17. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Interessen for klubben har økt kraftig – nå har de tatt stor investering: – Vi skal være en aktiv klubb; Advarer hundeeiere: Konsekvenser for helsen; 25 år siden Barnestafetten: – Ina ble verken veterinær eller boende på gård, men livet ble et skikkelig eventyr; Vi har blitt så ærlige at vi har nådd barndommen",
-    "duration": 341,
-    "size": 5458305,
-    "pubdate": "Sat, 17 Oct 2026 06:40:09 +0200"
   }
 ]
