@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 17. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Personopplysninger på avveie: – Del så lite som mulig; Var «død» i elleve år: Så dukket katten Bagheera (15) opp; Katt rømte fra Fauske, dukket opp i Elverum, 11 år senere; Nytt hundevirus i Norge</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Personopplysninger på avveie: – Del så lite som mulig; Var «død» i elleve år: Så dukket katten Bagheera (15) opp; Katt rømte fra Fauske, dukket opp i Elverum, 11 år senere; Nytt hundevirus i Norge</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-17.mp3" length="6452865" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-17.mp3</guid>
+      <pubDate>Tue, 17 Nov 2026 10:07:46 +0200</pubDate>
+      <itunes:duration>6:43</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 16. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Katten Isaac gjenforent med sin 13-årige eier etter bygningskollaps i New York; Fra syltetøy til kraftfôrautomat: Slik tester elevene på Storsteigen ut gründerdrømmen; Norge mangler tall på hvor gode narkohundene er. Likevel vil tre partier ha dem inn på skolene; Vil bli landets beste</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Katten Isaac gjenforent med sin 13-årige eier etter bygningskollaps i New York; Fra syltetøy til kraftfôrautomat: Slik tester elevene på Storsteigen ut gründerdrømmen; Norge mangler tall på hvor gode narkohundene er. Likevel vil tre partier ha dem inn på skolene; Vil bli landets beste</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-19.mp3</guid>
       <pubDate>Mon, 19 Oct 2026 06:53:48 +0200</pubDate>
       <itunes:duration>9:19</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 18. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Gutter fra «Black Bloc» til TV 2: – Vi skal knuse alt; Jørgen overtok gården og åpnet utsalg i garasjen: – Mye som skal læres på nytt; Bilulykke på kommunegrensa: – Store materielle skader; – Vil kommunen dekke eventuelle veterinærregninger, skader på barn eller ødelagte sko?</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Gutter fra «Black Bloc» til TV 2: – Vi skal knuse alt; Jørgen overtok gården og åpnet utsalg i garasjen: – Mye som skal læres på nytt; Bilulykke på kommunegrensa: – Store materielle skader; – Vil kommunen dekke eventuelle veterinærregninger, skader på barn eller ødelagte sko?</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-18.mp3" length="6146433" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-18.mp3</guid>
-      <pubDate>Sun, 18 Oct 2026 06:45:39 +0200</pubDate>
-      <itunes:duration>6:24</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-17",
+    "file": "dyrenytt-2026-11-17.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-17.mp3",
+    "title": "Dyrenytt – tirsdag 17. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Personopplysninger på avveie: – Del så lite som mulig; Var «død» i elleve år: Så dukket katten Bagheera (15) opp; Katt rømte fra Fauske, dukket opp i Elverum, 11 år senere; Nytt hundevirus i Norge",
+    "duration": 403,
+    "size": 6452865,
+    "pubdate": "Tue, 17 Nov 2026 10:07:46 +0200"
+  },
+  {
     "date": "2026-11-16",
     "file": "dyrenytt-2026-11-16.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-16.mp3",
@@ -288,15 +298,5 @@
     "duration": 559,
     "size": 8947328,
     "pubdate": "Mon, 19 Oct 2026 06:53:48 +0200"
-  },
-  {
-    "date": "2026-10-18",
-    "file": "dyrenytt-2026-10-18.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-18.mp3",
-    "title": "Dyrenytt – søndag 18. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Gutter fra «Black Bloc» til TV 2: – Vi skal knuse alt; Jørgen overtok gården og åpnet utsalg i garasjen: – Mye som skal læres på nytt; Bilulykke på kommunegrensa: – Store materielle skader; – Vil kommunen dekke eventuelle veterinærregninger, skader på barn eller ødelagte sko?",
-    "duration": 384,
-    "size": 6146433,
-    "pubdate": "Sun, 18 Oct 2026 06:45:39 +0200"
   }
 ]
