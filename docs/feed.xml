@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – onsdag 18. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Her er Norges ti mest populære kattetyper; Til å bli kvalm av; Advarer om «nihilistisk» terror i Norge; 7 interiørvalg som ser flotte ut på bilder, men gjør hverdagen vanskeligere</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Her er Norges ti mest populære kattetyper; Til å bli kvalm av; Advarer om «nihilistisk» terror i Norge; 7 interiørvalg som ser flotte ut på bilder, men gjør hverdagen vanskeligere</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-18.mp3" length="6225920" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-18.mp3</guid>
+      <pubDate>Wed, 18 Nov 2026 09:42:04 +0200</pubDate>
+      <itunes:duration>6:29</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – tirsdag 17. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Personopplysninger på avveie: – Del så lite som mulig; Var «død» i elleve år: Så dukket katten Bagheera (15) opp; Katt rømte fra Fauske, dukket opp i Elverum, 11 år senere; Nytt hundevirus i Norge</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Personopplysninger på avveie: – Del så lite som mulig; Var «død» i elleve år: Så dukket katten Bagheera (15) opp; Katt rømte fra Fauske, dukket opp i Elverum, 11 år senere; Nytt hundevirus i Norge</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-20.mp3</guid>
       <pubDate>Tue, 20 Oct 2026 07:00:49 +0200</pubDate>
       <itunes:duration>5:25</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – mandag 19. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Miljøgifter funnet i kattemat – norsk kjæledyrfôr overvåkes ikke; Tuva-Emilie (18) kjøpte Torshovs kanskje minste leilighet: – En syk pris; Jaguarer slaktes for «medisin» – levende unger selges som luksusdyr; Holdt fanget i 88 dager</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Miljøgifter funnet i kattemat – norsk kjæledyrfôr overvåkes ikke; Tuva-Emilie (18) kjøpte Torshovs kanskje minste leilighet: – En syk pris; Jaguarer slaktes for «medisin» – levende unger selges som luksusdyr; Holdt fanget i 88 dager</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-19.mp3" length="8947328" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-19.mp3</guid>
-      <pubDate>Mon, 19 Oct 2026 06:53:48 +0200</pubDate>
-      <itunes:duration>9:19</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
