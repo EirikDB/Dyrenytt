@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-20",
+    "file": "dyrenytt-2026-11-20.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-20.mp3",
+    "title": "Dyrenytt – fredag 20. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: - Jeg hadde fått hets; Besøker senioruniversitetet: Hva får ei ung jente til å dra til verdens tøffeste hundeløp?; Med en gang jeg lastet ned Chat GPT, ble jeg avhengig; Derfor skjøt han katten til Carola",
+    "duration": 363,
+    "size": 5811968,
+    "pubdate": "Fri, 20 Nov 2026 09:30:14 +0200"
+  },
+  {
     "date": "2026-11-19",
     "file": "dyrenytt-2026-11-19.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-19.mp3",
@@ -288,15 +298,5 @@
     "duration": 345,
     "size": 5523585,
     "pubdate": "Thu, 22 Oct 2026 07:02:40 +0200"
-  },
-  {
-    "date": "2026-10-21",
-    "file": "dyrenytt-2026-10-21.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-21.mp3",
-    "title": "Dyrenytt – onsdag 21. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Hvem eier egentlig Albanias fremtid?; Maren blar opp for sykehushundene: – Alt du trenger å gjøre er å dukke opp på lørdag; 320 hunder og katter påkjørt – nå kommer advarselen til norske dyreeiere; Derfor bør du banke på panseret før du starter bilen i høst",
-    "duration": 351,
-    "size": 5612288,
-    "pubdate": "Wed, 21 Oct 2026 07:00:15 +0200"
   }
 ]
