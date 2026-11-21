@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 21. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Storbritannia og EU inngår største avtale siden Brexit; Black Week: De 20 beste kjøpene den 21. november; – Ingenting kunne ha reddet henne; Nina (36) sa opp den trygge jobben og satset sparepengene: – Gått fra 100 til 300 prosent jobb</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Storbritannia og EU inngår største avtale siden Brexit; Black Week: De 20 beste kjøpene den 21. november; – Ingenting kunne ha reddet henne; Nina (36) sa opp den trygge jobben og satset sparepengene: – Gått fra 100 til 300 prosent jobb</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-21.mp3" length="7917825" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-21.mp3</guid>
+      <pubDate>Sat, 21 Nov 2026 09:24:55 +0200</pubDate>
+      <itunes:duration>8:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 20. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: - Jeg hadde fått hets; Besøker senioruniversitetet: Hva får ei ung jente til å dra til verdens tøffeste hundeløp?; Med en gang jeg lastet ned Chat GPT, ble jeg avhengig; Derfor skjøt han katten til Carola</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: - Jeg hadde fått hets; Besøker senioruniversitetet: Hva får ei ung jente til å dra til verdens tøffeste hundeløp?; Med en gang jeg lastet ned Chat GPT, ble jeg avhengig; Derfor skjøt han katten til Carola</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-23.mp3</guid>
       <pubDate>Fri, 23 Oct 2026 07:02:53 +0200</pubDate>
       <itunes:duration>7:40</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 22. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Dette vil tenåringer ha til bursdagen; – Latter, spenning og sjalu katt; Svensk debatt om pensjonerte politihunder – POD ønsker ikke endring; Android får nytt vern mot svindel-SMS – slik gjør du telefonen klar</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Dette vil tenåringer ha til bursdagen; – Latter, spenning og sjalu katt; Svensk debatt om pensjonerte politihunder – POD ønsker ikke endring; Android får nytt vern mot svindel-SMS – slik gjør du telefonen klar</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-22.mp3" length="5523585" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-22.mp3</guid>
-      <pubDate>Thu, 22 Oct 2026 07:02:40 +0200</pubDate>
-      <itunes:duration>5:45</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
