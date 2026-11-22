@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-22",
+    "file": "dyrenytt-2026-11-22.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-22.mp3",
+    "title": "Dyrenytt – søndag 22. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Britisk by stemte for å forlate Storbritannia; Så en idé på TikTok – nå har Ruben (30) startet for seg selv; Ensomhet: Forskere ser sammenheng med både psykisk og fysisk sykdom; Hverdagen var allerede snudd på hodet – så fikk Ada (7) nok et tilbakefall. Da skrev mamma én melding på Facebook",
+    "duration": 452,
+    "size": 7227393,
+    "pubdate": "Sun, 22 Nov 2026 09:05:23 +0200"
+  },
+  {
     "date": "2026-11-21",
     "file": "dyrenytt-2026-11-21.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-21.mp3",
@@ -288,15 +298,5 @@
     "duration": 479,
     "size": 7659393,
     "pubdate": "Sat, 24 Oct 2026 06:48:00 +0200"
-  },
-  {
-    "date": "2026-10-23",
-    "file": "dyrenytt-2026-10-23.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-23.mp3",
-    "title": "Dyrenytt – fredag 23. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Ukas kviss; Full krasj i høsttåken; Oppdal: Mann angrepet av flere okser; Ber om hjelp etter funn av parterte katter",
-    "duration": 460,
-    "size": 7361792,
-    "pubdate": "Fri, 23 Oct 2026 07:02:53 +0200"
   }
 ]
