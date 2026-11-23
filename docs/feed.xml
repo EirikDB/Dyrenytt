@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – mandag 23. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Unngå potetrøbbel; Lær deg språket NÅ!; Fredet knølhval døde i Røkke-tråler; Jovial juleglam</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Unngå potetrøbbel; Lær deg språket NÅ!; Fredet knølhval døde i Røkke-tråler; Jovial juleglam</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-23.mp3" length="6761600" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-23.mp3</guid>
+      <pubDate>Mon, 23 Nov 2026 09:53:02 +0200</pubDate>
+      <itunes:duration>7:03</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – søndag 22. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Britisk by stemte for å forlate Storbritannia; Så en idé på TikTok – nå har Ruben (30) startet for seg selv; Ensomhet: Forskere ser sammenheng med både psykisk og fysisk sykdom; Hverdagen var allerede snudd på hodet – så fikk Ada (7) nok et tilbakefall. Da skrev mamma én melding på Facebook</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Britisk by stemte for å forlate Storbritannia; Så en idé på TikTok – nå har Ruben (30) startet for seg selv; Ensomhet: Forskere ser sammenheng med både psykisk og fysisk sykdom; Hverdagen var allerede snudd på hodet – så fikk Ada (7) nok et tilbakefall. Da skrev mamma én melding på Facebook</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-25.mp3</guid>
       <pubDate>Sun, 25 Oct 2026 06:55:27 +0200</pubDate>
       <itunes:duration>5:34</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – lørdag 24. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Strikkesuksess for firbeinte: – Sjølv store hundar treng genserar; Lufter hunder for å donere penger: – Vil bidra til at flere innlagte barn på sykehus får besøk av hunder; Å vera brannkonstabel er ikkje berre ein jobb, det er ein livsstil; Oksene til Stig har ikke baller</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Strikkesuksess for firbeinte: – Sjølv store hundar treng genserar; Lufter hunder for å donere penger: – Vil bidra til at flere innlagte barn på sykehus får besøk av hunder; Å vera brannkonstabel er ikkje berre ein jobb, det er ein livsstil; Oksene til Stig har ikke baller</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-24.mp3" length="7659393" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-24.mp3</guid>
-      <pubDate>Sat, 24 Oct 2026 06:48:00 +0200</pubDate>
-      <itunes:duration>7:59</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
