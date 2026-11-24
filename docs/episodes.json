@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-24",
+    "file": "dyrenytt-2026-11-24.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-24.mp3",
+    "title": "Dyrenytt – tirsdag 24. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Garmin lar hunden din oppnå merker og oppnå prestasjoner under treningsøktene dine; Puuilo åpner første butikk i Sverige i dag – starter i Örebro med svensk e-handel; Meister Margarita; Er man underlagt kvinnen i GTA 6?",
+    "duration": 382,
+    "size": 6119553,
+    "pubdate": "Tue, 24 Nov 2026 12:05:34 +0200"
+  },
+  {
     "date": "2026-11-23",
     "file": "dyrenytt-2026-11-23.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-23.mp3",
@@ -288,15 +298,5 @@
     "duration": 299,
     "size": 4786688,
     "pubdate": "Mon, 26 Oct 2026 06:58:55 +0200"
-  },
-  {
-    "date": "2026-10-25",
-    "file": "dyrenytt-2026-10-25.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-25.mp3",
-    "title": "Dyrenytt – søndag 25. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Ville avslutte livet – nå står hun i spissen for å hjelpe andre; Hund ble påkjørt og døde; Hund døde etter påkjørsel – bilfører forlot stedet; Gjentar suksessen: Følger valpene i åtte uker",
-    "duration": 334,
-    "size": 5340417,
-    "pubdate": "Sun, 25 Oct 2026 06:55:27 +0200"
   }
 ]

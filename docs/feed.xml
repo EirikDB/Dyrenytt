@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – tirsdag 24. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Garmin lar hunden din oppnå merker og oppnå prestasjoner under treningsøktene dine; Puuilo åpner første butikk i Sverige i dag – starter i Örebro med svensk e-handel; Meister Margarita; Er man underlagt kvinnen i GTA 6?</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Garmin lar hunden din oppnå merker og oppnå prestasjoner under treningsøktene dine; Puuilo åpner første butikk i Sverige i dag – starter i Örebro med svensk e-handel; Meister Margarita; Er man underlagt kvinnen i GTA 6?</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-24.mp3" length="6119553" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-24.mp3</guid>
+      <pubDate>Tue, 24 Nov 2026 12:05:34 +0200</pubDate>
+      <itunes:duration>6:22</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – mandag 23. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Unngå potetrøbbel; Lær deg språket NÅ!; Fredet knølhval døde i Røkke-tråler; Jovial juleglam</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Unngå potetrøbbel; Lær deg språket NÅ!; Fredet knølhval døde i Røkke-tråler; Jovial juleglam</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-26.mp3</guid>
       <pubDate>Mon, 26 Oct 2026 06:58:55 +0200</pubDate>
       <itunes:duration>4:59</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – søndag 25. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Ville avslutte livet – nå står hun i spissen for å hjelpe andre; Hund ble påkjørt og døde; Hund døde etter påkjørsel – bilfører forlot stedet; Gjentar suksessen: Følger valpene i åtte uker</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Ville avslutte livet – nå står hun i spissen for å hjelpe andre; Hund ble påkjørt og døde; Hund døde etter påkjørsel – bilfører forlot stedet; Gjentar suksessen: Følger valpene i åtte uker</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-25.mp3" length="5340417" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-25.mp3</guid>
-      <pubDate>Sun, 25 Oct 2026 06:55:27 +0200</pubDate>
-      <itunes:duration>5:34</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
