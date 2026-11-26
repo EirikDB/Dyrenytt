@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – torsdag 26. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Hvorfor er bruk av narkotikahunder så problematisk?; En til sykehus etter brann i lavblokk i Bergen; Hvor mange ganger har du lest et innlegg om at flyktninger kommer til å ødelegge alt?; Flere hunder rammet av alvorlig sykdom</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Hvorfor er bruk av narkotikahunder så problematisk?; En til sykehus etter brann i lavblokk i Bergen; Hvor mange ganger har du lest et innlegg om at flyktninger kommer til å ødelegge alt?; Flere hunder rammet av alvorlig sykdom</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-26.mp3" length="7476993" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-26.mp3</guid>
+      <pubDate>Thu, 26 Nov 2026 10:39:31 +0200</pubDate>
+      <itunes:duration>7:47</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – onsdag 25. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Særlig én tjeneste «sluker» energi; I en sofa fra IKEA; Rådyr påkjørt i boligfelt; Se opp for månen! Send oss dine bilder</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Særlig én tjeneste «sluker» energi; I en sofa fra IKEA; Rådyr påkjørt i boligfelt; Se opp for månen! Send oss dine bilder</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-28.mp3</guid>
       <pubDate>Wed, 28 Oct 2026 07:55:24 +0200</pubDate>
       <itunes:duration>5:41</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – tirsdag 27. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: POWER LANSERER NY KATEGORI; Frykter for nabolagets «siste pusterom»: – Folk vil lenke seg fast; Satan (6) søker nytt hjem; Ric Flair deler bilde etter dramatisk fall</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: POWER LANSERER NY KATEGORI; Frykter for nabolagets «siste pusterom»: – Folk vil lenke seg fast; Satan (6) søker nytt hjem; Ric Flair deler bilde etter dramatisk fall</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-27.mp3" length="5695233" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-27.mp3</guid>
-      <pubDate>Tue, 27 Oct 2026 07:16:28 +0200</pubDate>
-      <itunes:duration>5:56</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
