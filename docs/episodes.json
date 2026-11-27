@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-27",
+    "file": "dyrenytt-2026-11-27.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-27.mp3",
+    "title": "Dyrenytt – fredag 27. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Ylva rotet seg bort - en mikrochip førte henne hjem; Pågrep mann for biltyveri; Lekkert illustrert slottshistorie; Fant forlatt katt i elleve minus: – Jeg er fortsatt veldig lei meg",
+    "duration": 422,
+    "size": 6758912,
+    "pubdate": "Fri, 27 Nov 2026 10:47:47 +0200"
+  },
+  {
     "date": "2026-11-26",
     "file": "dyrenytt-2026-11-26.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-26.mp3",
@@ -288,15 +298,5 @@
     "duration": 386,
     "size": 6182913,
     "pubdate": "Thu, 29 Oct 2026 07:59:55 +0200"
-  },
-  {
-    "date": "2026-10-28",
-    "file": "dyrenytt-2026-10-28.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-28.mp3",
-    "title": "Dyrenytt – onsdag 28. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Fryktar elgen kan bli raudlista: – Heilt tomt; Andrine (26) gjekk heilt til topps; Jeg vet om mange som kunne vært litt rausere; Ny snegle sprer seg i norske hager – kan også bære parasitt som rammer katter",
-    "duration": 341,
-    "size": 5464448,
-    "pubdate": "Wed, 28 Oct 2026 07:55:24 +0200"
   }
 ]
