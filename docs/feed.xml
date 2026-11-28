@@ -16,6 +16,16 @@
     <itunes:explicit>no</itunes:explicit>
     <image><url>https://eirikdb.github.io/Dyrenytt/cover.png</url><title>Dyrenytt</title><link>https://eirikdb.github.io/Dyrenytt</link></image>
     <item>
+      <title>Dyrenytt – lørdag 28. november</title>
+      <description>Dagens dyrehelse- og kjæledyrnyheter: Canton of Bern: wolf registered as a dog and kept privately, customs investigates; Is It Wrong to Own a Flat-Faced Dog?; Beijing lawmakers pass new regulation on dog management</description>
+      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Canton of Bern: wolf registered as a dog and kept privately, customs investigates; Is It Wrong to Own a Flat-Faced Dog?; Beijing lawmakers pass new regulation on dog management</itunes:summary>
+      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-28.mp3" length="6010113" type="audio/mpeg"/>
+      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-28.mp3</guid>
+      <pubDate>Sat, 28 Nov 2026 10:03:45 +0200</pubDate>
+      <itunes:duration>6:16</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <item>
       <title>Dyrenytt – fredag 27. november</title>
       <description>Dagens dyrehelse- og kjæledyrnyheter: Ylva rotet seg bort - en mikrochip førte henne hjem; Pågrep mann for biltyveri; Lekkert illustrert slottshistorie; Fant forlatt katt i elleve minus: – Jeg er fortsatt veldig lei meg</description>
       <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Ylva rotet seg bort - en mikrochip førte henne hjem; Pågrep mann for biltyveri; Lekkert illustrert slottshistorie; Fant forlatt katt i elleve minus: – Jeg er fortsatt veldig lei meg</itunes:summary>
@@ -303,16 +313,6 @@
       <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-30.mp3</guid>
       <pubDate>Fri, 30 Oct 2026 08:00:35 +0200</pubDate>
       <itunes:duration>5:47</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-    <item>
-      <title>Dyrenytt – torsdag 29. oktober</title>
-      <description>Dagens dyrehelse- og kjæledyrnyheter: Zodiac (2007); Ikke kast eggekartongene: 6 smarte måter å gjenbruke dem hjemme på; - Eigenberedskap er avgjerande når krisa råkar; Latvia slår fast i loven: Dyr er følende vesener – ikke bare ting</description>
-      <itunes:summary>Dagens dyrehelse- og kjæledyrnyheter: Zodiac (2007); Ikke kast eggekartongene: 6 smarte måter å gjenbruke dem hjemme på; - Eigenberedskap er avgjerande når krisa råkar; Latvia slår fast i loven: Dyr er følende vesener – ikke bare ting</itunes:summary>
-      <enclosure url="https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-29.mp3" length="6182913" type="audio/mpeg"/>
-      <guid isPermaLink="false">https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-29.mp3</guid>
-      <pubDate>Thu, 29 Oct 2026 07:59:55 +0200</pubDate>
-      <itunes:duration>6:26</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>

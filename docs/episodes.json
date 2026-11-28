@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-28",
+    "file": "dyrenytt-2026-11-28.mp3",
+    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-28.mp3",
+    "title": "Dyrenytt – lørdag 28. november",
+    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Canton of Bern: wolf registered as a dog and kept privately, customs investigates; Is It Wrong to Own a Flat-Faced Dog?; Beijing lawmakers pass new regulation on dog management",
+    "duration": 376,
+    "size": 6010113,
+    "pubdate": "Sat, 28 Nov 2026 10:03:45 +0200"
+  },
+  {
     "date": "2026-11-27",
     "file": "dyrenytt-2026-11-27.mp3",
     "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-11-27.mp3",
@@ -288,15 +298,5 @@
     "duration": 347,
     "size": 5553536,
     "pubdate": "Fri, 30 Oct 2026 08:00:35 +0200"
-  },
-  {
-    "date": "2026-10-29",
-    "file": "dyrenytt-2026-10-29.mp3",
-    "url": "https://github.com/EirikDB/Dyrenytt/releases/download/episodes/dyrenytt-2026-10-29.mp3",
-    "title": "Dyrenytt – torsdag 29. oktober",
-    "desc": "Dagens dyrehelse- og kjæledyrnyheter: Zodiac (2007); Ikke kast eggekartongene: 6 smarte måter å gjenbruke dem hjemme på; - Eigenberedskap er avgjerande når krisa råkar; Latvia slår fast i loven: Dyr er følende vesener – ikke bare ting",
-    "duration": 386,
-    "size": 6182913,
-    "pubdate": "Thu, 29 Oct 2026 07:59:55 +0200"
   }
 ]
